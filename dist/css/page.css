@@ -6,9 +6,9 @@
 .main-input .slogen{font-size: 44px; text-align: center; padding-top: 100px;  }
 .address-input {max-width: 765px; margin: 45px auto 0; padding-bottom: 500px}
 .address-input .input-area {border-radius: 100px 100px; border:2px solid #606060; height:70px; width: 100%; padding: 0 35px;}
-.address-input input {font-size: 24px; color: #5F5F5F; border: 0; z-index: 888;height:64px; position: absolute; background-color: transparent}
-.address-input span:first-child {width: 73%; display: inline-block; margin-right: 2%}
-.address-input span:last-child {width: 25%}
+.address-input input {font-size: 24px; color: #5F5F5F; border: 0; z-index: 888;height:64px; position: absolute; background-color: transparent; width: 60%}
+.address-input .input-area {width: 73%; display: inline-block; margin-right: 2%}
+.address-input .btn-free {width: 25%}
 .address-input span{display: inline-block; vertical-align: top}
 .address-input a.free-btn {background: #333854; border:2px solid #333854;height: 70px; line-height: 70px; font-size: 21px; color: #fff; width: 100%; text-align: center}
 .address-input a:hover {text-decoration: none;}
@@ -25,10 +25,13 @@
 	.main-input { background: url("../../img/bg_m_main.png")no-repeat center bottom; background-size: 100% 354px; }
 	.main-input .slogen{font-size: 23px; text-align: center; padding-top: 40px;}
 	.address-input {margin: 15px 36px 0; padding-bottom: 350px}
-	.address-input span:first-child,.address-input span:last-child {width: 100%; }
+	.address-input .input-area,.address-input .btn-free {width: 100%; }
 	.main-input {margin-left: -15px; margin-right: -15px}
 	.address-input input {height: 55px; font-size: 15px}
 	.address-input a.free-btn {height: 55px; line-height: 55px; font-size: 15px; margin-top: 15px;}
+	.address-layer,.address-input input {width: 100%;}
+	.road-num {color: #383838; margin-bottom: 13px; font-size: 15px;}
+	.road-name {color: #979797; font-size: 15px;}
 }
 
 
