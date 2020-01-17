@@ -1,16 +1,26 @@
 @charset 'UTF-8';
 
+.bg-wrap01 {background: #FDFCFD; padding: 60px 0}
+
 .main-input { background: url("../../img/bg_main.png")no-repeat center bottom;}
 .main-input .slogen{font-size: 44px; text-align: center; padding-top: 100px;  }
 .address-input {max-width: 765px; margin: 45px auto 0; padding-bottom: 500px}
-.address-input input {font-size: 24px; color: #5F5F5F; border-radius: 100px 100px; border:2px solid #606060; height:70px; width: 100%; padding: 0 35px;}
+.address-input .input-area {border-radius: 100px 100px; border:2px solid #606060; height:70px; width: 100%; padding: 0 35px;}
+.address-input input {font-size: 24px; color: #5F5F5F; border: 0; z-index: 888;height:64px; position: absolute; background-color: transparent}
 .address-input span:first-child {width: 73%; display: inline-block; margin-right: 2%}
 .address-input span:last-child {width: 25%}
 .address-input span{display: inline-block; vertical-align: top}
 .address-input a.free-btn {background: #333854; border:2px solid #333854;height: 70px; line-height: 70px; font-size: 21px; color: #fff; width: 100%; text-align: center}
 .address-input a:hover {text-decoration: none;}
 
-
+.address-layer {border-bottom: 1px solid #6ca4c4;border-right: 2px solid #606060;border-left: 2px solid #606060; border-bottom-left-radius: 35px;  border-bottom-right-radius: 35px; height: 360px; background: #fff; position: absolute; top: 30px; left: 0; right: 0;  width: 73%; padding-top: 30px ;padding-bottom: 10px}
+.form-row>.col, .form-row>[class*=col-]{padding: 0!important}
+.address-layer-scroll {overflow-y: scroll; height: 300px}
+.address-list {padding: 20px 25px; cursor: pointer;border-bottom: 1px solid #dcdcdc;}
+.address-list:hover,.address-list.select {background: #f2f6fe}
+.address-list span {height: 31px; width: 63px; line-height: 31px; color: #57b1fd; font-size: 13px; display: inline-block; border:1px solid #7ecef4; border-radius: 5px; text-align: center; margin-right: 20px; vertical-align: top; margin-top: -3px}
+.road-num {color: #383838; margin-bottom: 13px; font-size: 19px;}
+.road-name {color: #979797; font-size: 18px;}
 @media (max-width: 767px) {
 	.main-input { background: url("../../img/bg_m_main.png")no-repeat center bottom; background-size: 100% 354px; }
 	.main-input .slogen{font-size: 23px; text-align: center; padding-top: 40px;}
@@ -20,3 +30,78 @@
 	.address-input input {height: 55px; font-size: 15px}
 	.address-input a.free-btn {height: 55px; line-height: 55px; font-size: 15px; margin-top: 15px;}
 }
+
+
+
+
+/*** 기능분석 ***/
+#f-analysis {}
+#f-analysis .top-map-area {height: 480px; width: 100%}
+#f-analysis .top-map-area img {height: 480px; width: 100%}
+#f-analysis .address-info {background: #fff; font-size: 31px; padding: 50px 0 30px;}
+#f-analysis .address-info span {}
+#f-analysis .address-info a.edit {margin-left: 15px;vertical-align: middle}
+#f-analysis .address-info a.edit img {width: 51px; height: 51px;}
+#f-analysis .collapsed-area {background: #FDFCFD}
+#analysis-list .card {border:0; margin-bottom: 33px;}
+#analysis-list .card:last-child {margin-bottom: 0!important}
+#analysis-list .card-body {padding: 13px 0}
+#analysis-list .card-header {background: #343953; border-bottom: 0; border-radius: 4px;  padding: 22px 35px; margin-bottom: 0}
+#analysis-list .subject {font-size: 21px!important;  color: #fff; padding: 0; cursor: pointer}
+
+.land-info {display: table; width: 100%;  background: #fff; box-shadow: 0 3px 6px #D8D8D8; border-top: 5px solid #F68D00; border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6; padding: 25px 0}
+.land-info.v1 {border-top: 5px solid #B5E5FF;}
+.land-info.v1 div {width: auto;}
+.land-info.v1 div:last-child {width: auto}
+.land-info div {display: table-cell; width: 12%; text-align: center;  position: relative; border-right: 1px solid #E6E6E6}
+.land-info div:last-child {width: 28%; border-right: 0}
+.land-info h3 {font-size: 21px; color: #747474;font-family:'hyundailight'!important; position: relative}
+.land-info p {margin-bottom: 0; font-size: 25px; color: #474747;}
+.land-info a.btn-tooltip {width: 30px; height: 30px; position: absolute; top: -3px; right: 30px}
+.land-info a.btn-tooltip.v1 {right: 15px;}
+.land-info a.btn-tooltip img {width: 26px; ;height: 26px;}
+.table-area {background: #fff; box-shadow: 0 3px 6px #D8D8D8; border-top: 1px solid #E6E6E6; border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6;}
+#analysis-list h4 {font-size: 22px!important; color: #474747; padding: 30px 20px 0}
+#analysis-list .subject a.subject-link {text-decoration: underline; color: #fff; font-family: 'NanumSquare'; font-size: 18px; padding-left: 10px}
+#analysis-info01-cont .btm-txt {color: #B7B7B7; font-size: 25px; text-align: center; margin-bottom: 0;font-family:'hyundailight'!important; margin-top: 20px }
+@media (max-width: 767px){
+	.bg-wrap01 {background: #fff; padding: 20px}
+	#f-analysis {margin-left: -15px; margin-right: -15px;}
+	#f-analysis .top-map-area {height: 137px;}
+	#f-analysis .top-map-area img {height: 137px; }
+	#f-analysis .address-info-wrap {background: #F5F6F8; overflow: hidden}
+	#f-analysis .address-info {box-shadow: 0 3px 6px #EBEBEB; font-size: 17px; padding: 20px; position: relative; margin-bottom: 20px;}
+	#f-analysis .address-info span {border-bottom: #343953 1px solid; width: 80%; display: block;}
+	#f-analysis .address-info a.edit {position: absolute; left: 80%; top: 20px}
+	#f-analysis .address-info a.edit img {width: 28px; height: 28px;}
+	#analysis-list .subject {font-size: 15px!important;}
+	#analysis-list .card-header {border-radius: 0;  padding: 15px 25px;}
+	#analysis-list .card {border-radius: 0; margin-bottom: 12px;}
+	#analysis-list .subject a.subject-link {color: #C6EDFF; font-family: 'NanumSquare'; font-size: 15px;}
+	.land-info div,.land-info div:last-child {display: table; width: 100%; border-bottom: 1px solid #EDEDED; padding: 12px 0;border-right: 0}
+	.land-info.v1 {border-left: 5px solid #B5E5FF; border-top: 0; }
+	.land-info p {display: table-cell; width: 60%; font-size: 14px; color: #474747}
+	.land-info h3 {font-size: 14px; display: table-cell; width: 40%; color: #474747}
+	.land-info {border-left: 5px solid #F68D00; border-top: 0; padding: 0 }
+	.land-info a.btn-tooltip {left: 10px; top:0}
+	.land-info a.btn-tooltip.v1 {left: 10px;}
+	.land-info a.btn-tooltip img {width: 15px; ;height: 15px;}
+	#analysis-info01-cont .btm-txt {font-size: 13px; }
+	.land-info.v1 div,.land-info.v1 div:last-child {width: 100%;}
+	.mobile-none {display: none;}
+	#analysis-list h4 {font-size: 14px!important; padding: 20px 0 0}
+
+}
+
+/* table */
+.table-type01 td,.table-type01 th {text-align: center; font-size: 19px;  }
+.table-type01 th {color: #747474; font-family:'hyundailight'!important; padding: 33px 0; border-bottom: 1px solid #070707}
+.table-type01 td {color:#474747; padding:25px; border-bottom: 1px solid #C6C6C6}
+.table-type01 td.bg {background: #F7F9FC; font-size: 22px;}
+.table-type01 td em {color: #4593FF}
+.table-type01 td a.go-link {color: #4593FF}
+@media (max-width: 767px){
+	.table-type01 td,.table-type01 th,.table-type01 td.bg {font-size: 13px; padding: 10px 0  }
+
+}
+

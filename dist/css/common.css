@@ -15,28 +15,26 @@
 } 
 
 @font-face {
-	font-family: "hyundailight";
+	font-family:'hyundailight';
 	src: url(../font/hyundailight.eot);
 	src: url(../font/hyundailight.eot?#iefix) format('embedded-opentype'),
 		url(../font/hyundailight.ttf) format('truetype'),
 		url(../font/hyundailight.otf) format('opentype'),
 		url(../font/hyundailight.woff2) format('woff2'),
 		url(../font/hyundailight.woff) format('woff');
-	font-weight: normal;
+	font-weight: 300;
 	font-style: normal;
 } 
 
 @font-face {
-	font-family: "nanumgothic";
-	src: url(../font/NanumGothic.eot);
-	src: url(../font/NanumGothic.eot?#iefix) format('embedded-opentype'),
-		url(../font/NanumGothic.ttf) format('truetype'),
-		url(../font/NanumGothic.otf) format('opentype'),
-		url(../font/NanumGothic.woff2) format('woff2'),
-		url(../font/NanumGothic.woff) format('woff');
-	font-weight: normal;
-	font-style: normal;
+ font-family: 'NanumSquare';
+ font-weight: 400;
+ src: url(../font/NanumSquareR.eot);
+ src: url(../font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+      url(../font/NanumSquareR.woff) format('woff'),
+      url(../font/NanumSquareR.ttf) format('truetype');
 }
+
 
 @font-face { 
   font-family:'NotoSansKRR'; 
@@ -93,6 +91,7 @@ hr { display: none; }
 .txt_center { text-align: center }
 .invisible { visibility: hidden; overflow: hidden; position: absolute; left:-1000em; width: 0; height: 0; font-size: 0; line-height: 0 }
 
+.mt15 {margin-top: 15px;}
 #skip_navigation p { margin: 0px; padding: 0px }
 #skip_navigation a.accessibility { z-index: 1000; position :absolute; display: block; width:100%; left: 0; text-align: center; top: -10000px; font-size: 1.3em }
 #skip_navigation a.accessibility:hover,	
@@ -196,80 +195,73 @@ vertical-align: middle;
 @media only screen and (max-width: 1000px){
 	header .container {padding-left: 0; padding-right: 0;}
 	.gnb-list {padding-top: 0; }
-.gnb {height: 100px; text-align: center}
+	.gnb {height: 100px; text-align: center}
 	.gnb a {padding-left: 0;}
 	.logo {top: 35px; left: 21px;}
-.logo img {height: 19px; width: 149px}
-.gnbMenu-on {
-background-color: transparent;
-transition: all .25s; }
-	
-.gnbMenu-on:before {
-transition: all .25s;
-content: "";
--ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-transform: rotate(45deg);
-top: 0px;
-}
-.gnbMenu-on:after {
-transition: all .25s;
-content: "";
--ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-transform: rotate(-45deg);
-top: 0px;
-width: 16px
-}
+	.logo img {height: 19px; width: 149px}
+	.gnbMenu-on {background-color: transparent;transition: all .25s; }
+	.gnbMenu-on:before {
+		transition: all .25s;
+		content: "";
+		-ms-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
+		top: 0px;
+	}
+	.gnbMenu-on:after {
+		transition: all .25s;
+		content: "";
+		-ms-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		top: 0px;
+		width: 16px
+	}
+	.gnb-collapsed {display: block; z-index: 101}
 
+	.gnb-list {
+		position: relative;
+		height: 70%;
+		top: 50%;
+		width: 100%;
 
+		-ms-transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		  transform: translateY(-50%);
+	}
 
-.gnb-collapsed {
-display: block; z-index: 101
-}
-
-.gnb-list {
-position: relative;
-height: 70%;
-top: 50%;
-	width: 100%;
-	
-	-ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-	  transform: translateY(-50%);}
-
-.gnb-list li {
-display: block;
-position: relative; border-bottom: 1px solid #EEEEEE;
-}
+	.gnb-list li {
+		display: block;
+		position: relative; border-bottom: 1px solid #EEEEEE;
+	}
 	.gnb-list li:first-child {border-top: 1px solid #EEEEEE;}
-	.gnb-list li:hover {  background-color: #f0f5fa;
-}
-	.gnb-list li a {padding: 24px 0; display: block
-}
-.Overlay {
-position: fixed;
-top: 0;
-right: 0;
-width: 0;
-height: 100%;
-visibility: hidden;
-transition: opacity .35s, visibility .35s, width .35s;
-overflow: hidden;
-background: #fff; z-index: 100}
+	.gnb-list li:hover {  background-color: #f0f5fa;}
+	.gnb-list li a {padding: 24px 0; display: block}
+	.Overlay {
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 0;
+		height: 100%;
+		visibility: hidden;
+		transition: opacity .35s, visibility .35s, width .35s;
+		overflow: hidden;
+		background: #fff; z-index: 100
+	}
 
-.Overlay-on {
-width: 80%;
-visibility: visible;
-}
+	.Overlay-on {
+		width: 80%;
+		visibility: visible;
+	}
 	#content {margin-top: 100px!important}
 }
+
 .Overlay-bg {}
 .Overlay-bg-on {opacity: 0.62;background: #000; position: fixed;
 top: 0;
