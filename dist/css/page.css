@@ -48,7 +48,7 @@
 #f-analysis .collapsed-area {background: #FDFCFD}
 #analysis-list .card {border:0; margin-bottom: 33px;}
 #analysis-list .card:last-child {margin-bottom: 0!important}
-#analysis-list .card-body {padding: 13px 0}
+#analysis-list .card-body {padding: 13px 0; margin-left: 70px}
 #analysis-list .card-header {background: #343953; border-bottom: 0; border-radius: 4px;  padding: 22px 35px; margin-bottom: 0; margin-left: 70px}
 #analysis-list .subject {font-size: 21px!important;  color: #fff; padding: 0; cursor: pointer}
 
@@ -101,6 +101,8 @@
 	#analysis-list .card-header.v1 {margin-left: 0!important}
 	#analysis-list .m-card-header{cursor:pointer}
 	#analysis-list .card {border-radius: 0; margin-bottom: 12px;}
+	#analysis-list .card-body { margin-left: 0}
+
 	#analysis-list .subject a.subject-link {color: #C6EDFF; font-family: 'NanumSquare'; font-size: 13px;}
 	.land-info div,.land-info div:last-child {display: table; width: 100%; border-bottom: 1px solid #EDEDED; padding: 12px 0;border-right: 0}
 	.land-info.v1 {border-left: 5px solid #B5E5FF; border-top: 0; }
