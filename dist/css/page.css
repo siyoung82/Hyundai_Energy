@@ -39,7 +39,7 @@
 
 /*** 기능분석 ***/
 #f-analysis {}
-#f-analysis .top-map-area {height: 480px; width: 100%}
+#f-analysis .top-map-area {height: 480px; width: 100%; }
 #f-analysis .top-map-area img {height: 480px; width: 100%}
 #f-analysis .address-info {background: #fff; font-size: 31px; padding: 50px 0 30px;}
 #f-analysis .address-info span {}
@@ -49,7 +49,7 @@
 #analysis-list .card {border:0; margin-bottom: 33px;}
 #analysis-list .card:last-child {margin-bottom: 0!important}
 #analysis-list .card-body {padding: 13px 0}
-#analysis-list .card-header {background: #343953; border-bottom: 0; border-radius: 4px;  padding: 22px 35px; margin-bottom: 0}
+#analysis-list .card-header {background: #343953; border-bottom: 0; border-radius: 4px;  padding: 22px 35px; margin-bottom: 0; margin-left: 70px}
 #analysis-list .subject {font-size: 21px!important;  color: #fff; padding: 0; cursor: pointer}
 
 .land-info {display: table; width: 100%;  background: #fff; box-shadow: 0 3px 6px #D8D8D8; border-top: 5px solid #F68D00; border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6; padding: 25px 0}
@@ -66,7 +66,26 @@
 .table-area {background: #fff; box-shadow: 0 3px 6px #D8D8D8; border-top: 1px solid #E6E6E6; border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6;}
 #analysis-list h4 {font-size: 22px!important; color: #474747; padding: 30px 20px 0}
 #analysis-list .subject a.subject-link {text-decoration: underline; color: #fff; font-family: 'NanumSquare'; font-size: 18px; padding-left: 10px}
-#analysis-info01-cont .btm-txt {color: #B7B7B7; font-size: 25px; text-align: center; margin-bottom: 0;font-family:'hyundailight'!important; margin-top: 20px }
+#analysis-list .btm-txt {color: #B7B7B7; font-size: 25px; text-align: center; margin-bottom: 0;font-family:'hyundailight'!important; margin-top: 20px }
+.law-box-area {display: block;margin-top: 17px;}
+.law-box-area .law-box {background: #fff; box-shadow: 0 3px 6px #D8D8D8; border-top: 5px solid #F68D00;border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6;  width: 49%; padding: 40px 28px; color: #474747; margin-bottom:10px}
+.law-box-area .law-box div {position: relative; font-size: 24px;  padding: 0 20px 20px; border-bottom: 1px solid #070707}
+.law-box-area .law-box p {font-size: 19px; font-family:'hyundailight'!important; padding: 30px 20px 0}
+.law-box-area .law-box.v1 {float: left;}
+.law-box-area .law-box.v2 {float: right;}
+.law-box .btn-area {background: #F68D00; border-radius: 100px 100px; color: #fff; font-size: 19px; padding: 10px 28px; position: absolute; right: 0px; top:-10px }
+.customer-cs {background: #fff; box-shadow: 0 3px 6px #D8D8D8;border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6; border-top: 1px solid #E6E6E6; border-bottom: 1px solid #070707; margin-top: 10px;}
+.customer-cs .number {font-size: 24px; padding: 35px 50px 20px; overflow: hidden;}
+.customer-cs .number div {float: left; margin-right: 60px; color: #323755 }
+.customer-cs .number div span {display: block; font-size: 19px; font-family:'hyundailight'!important; color: #000000}
+.btm-customer {background: #F7F9FC; padding: 25px 47px; font-size: 21px; font-family:'hyundailight'!important; }
+.btm-customer button {font-size: 19px; border:1px solid #323755; border-radius: 100px 100px; padding: 10px 19px; width: 190px; background: #fff; position: absolute; right: 0; top:0; }
+.btm-customer .btm-row {overflow: hidden; display: block; position: relative; padding: 12px 0}
+.loading-false {text-align: center; font-size: 25px; color: #B7B7B7}
+.loading-false img {height: 60px; width: 60px;}
+.loading-false div {padding: 10px 0 30px}
+.data-loading {position: absolute; left: 0; width: 56px; height: 56px; display: inline-block; top: 5px}
+.data-loading img {width: 100%; height: 100%}
 @media (max-width: 767px){
 	.bg-wrap01 {background: #fff; padding: 20px}
 	#f-analysis {margin-left: -15px; margin-right: -15px;}
@@ -77,10 +96,12 @@
 	#f-analysis .address-info span {border-bottom: #343953 1px solid; width: 80%; display: block;}
 	#f-analysis .address-info a.edit {position: absolute; left: 80%; top: 20px}
 	#f-analysis .address-info a.edit img {width: 28px; height: 28px;}
-	#analysis-list .subject {font-size: 15px!important;}
-	#analysis-list .card-header {border-radius: 0;  padding: 15px 25px;}
+	#analysis-list .subject {font-size: 15px!important; padding: 15px 25px}
+	#analysis-list .card-header {border-radius: 0;  padding: 0; margin-left: 35px; cursor:pointer;z-index: 999}
+	#analysis-list .card-header.v1 {margin-left: 0!important}
+	#analysis-list .m-card-header{cursor:pointer}
 	#analysis-list .card {border-radius: 0; margin-bottom: 12px;}
-	#analysis-list .subject a.subject-link {color: #C6EDFF; font-family: 'NanumSquare'; font-size: 15px;}
+	#analysis-list .subject a.subject-link {color: #C6EDFF; font-family: 'NanumSquare'; font-size: 13px;}
 	.land-info div,.land-info div:last-child {display: table; width: 100%; border-bottom: 1px solid #EDEDED; padding: 12px 0;border-right: 0}
 	.land-info.v1 {border-left: 5px solid #B5E5FF; border-top: 0; }
 	.land-info p {display: table-cell; width: 60%; font-size: 14px; color: #474747}
@@ -89,20 +110,41 @@
 	.land-info a.btn-tooltip {left: 10px; top:0}
 	.land-info a.btn-tooltip.v1 {left: 10px;}
 	.land-info a.btn-tooltip img {width: 15px; ;height: 15px;}
-	#analysis-info01-cont .btm-txt {font-size: 13px; }
+	#analysis-list .btm-txt {font-size: 13px; }
 	.land-info.v1 div,.land-info.v1 div:last-child {width: 100%;}
 	.mobile-none {display: none;}
 	#analysis-list h4 {font-size: 14px!important; padding: 20px 0 0}
+	.law-box-area .law-box {width: 100%;}
+	.law-box-area .law-box { padding: 15px ;}
+	.law-box-area .law-box div {font-size: 14px;  padding: 0 8px 10px;}
+	.law-box-area .law-box p {font-size: 13px; padding: 15px 8px 0; margin-bottom: 10px}
+	.law-box .btn-area {font-size: 12px; padding: 5px 18px; position: absolute; top:-5px }
+	.customer-cs .number {font-size: 24px; padding: 35px 50px 20px; overflow: hidden;}
+	.customer-cs .number div {float: left; font-size: 17px; margin-right: 0 }
+	.customer-cs .number div span {font-size: 12px; color: #969696}
+	.customer-cs .number {font-size: 24px; padding: 15px 17px 20px; overflow: hidden;}
+	.btm-customer {padding: 15px 17px; font-size: 12px; overflow: hidden}
+	.btm-customer button {font-size: 12px; padding: 8px 0; width: 117px; background: #fff; position: inherit; margin-bottom: 10px}
+	.btm-customer .btm-row {overflow: hidden; display: inline-block; position: relative; padding: 12px 0; width: 50%; float: left; text-align: center}
+	.btm-customer .btm-row span {display: block;}
+	.loading-false {font-size: 14px;}
+	.loading-false img {height: 33px; width: 33px;}
+	.loading-false div {padding: 10px 0 20px}
+	.data-loading {top:10px}
+	.data-loading {position: absolute; left: 0; width: 25px; height: 25px; display: inline-block}
 
 }
 
 /* table */
-.table-type01 td,.table-type01 th {text-align: center; font-size: 19px;  }
+.table-type01 td,.table-type01 th {text-align: center; font-size: 19px; font-family:'hyundailight'!important; }
 .table-type01 th {color: #747474; font-family:'hyundailight'!important; padding: 33px 0; border-bottom: 1px solid #070707}
 .table-type01 td {color:#474747; padding:25px; border-bottom: 1px solid #C6C6C6}
 .table-type01 td.bg {background: #F7F9FC; font-size: 22px;}
+.table-type01 td.bg2 {background: #E6EFF8; }
 .table-type01 td em {color: #4593FF}
 .table-type01 td a.go-link {color: #4593FF}
+.table-type01 th.line1 {border-bottom: 1px solid #C6C6C6}
+.table-type01 td .td-select{border:0; width: 100%; text-align: center; background:#E6EFF8 url("../../img/ico-arrow.png") no-repeat right 50%; background-size: 19px 8px;}
 @media (max-width: 767px){
 	.table-type01 td,.table-type01 th,.table-type01 td.bg {font-size: 13px; padding: 10px 0  }
 

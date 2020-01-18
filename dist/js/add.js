@@ -3,3 +3,11 @@ $('.gnb-collapsed').click(function() {
   $('.gnbMenu').toggleClass('gnbMenu-on');
   $('.Overlay-bg').toggleClass('Overlay-bg-on');
 });
+
+$(".m-card-header").click(function(){
+	var infoId = $(this).attr("id");
+	$("#" + infoId).addClass("v1");
+	
+ });
+
+

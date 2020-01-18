@@ -90,7 +90,7 @@ hr { display: none; }
 .txt_right { text-align: right }
 .txt_center { text-align: center }
 .invisible { visibility: hidden; overflow: hidden; position: absolute; left:-1000em; width: 0; height: 0; font-size: 0; line-height: 0 }
-
+.mt80 {margin-top: 80px;}
 .mt15 {margin-top: 15px;}
 #skip_navigation p { margin: 0px; padding: 0px }
 #skip_navigation a.accessibility { z-index: 1000; position :absolute; display: block; width:100%; left: 0; text-align: center; top: -10000px; font-size: 1.3em }
@@ -278,4 +278,19 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 	#footer {padding: 25px 6px;}
 	#footer .btm-logo img {width: 86px; height: 19px;}
 	#footer .btm-logo {top:20px; }
+}
+
+/* button */
+.btm-btn-area {overflow: hidden; position: relative; text-align: center;}
+.btm-btn-area.v1 {margin-top: 80px;}
+.r-btn {border-radius: 100px 100px; display: inline-block; }
+.r-btn.v1 {width: 460px; height: 71px; font-size: 21px;}
+.btn-org {background: #F58D00; color: #fff;}
+.btn-org:disabled {background: #DBDBDB; color: #fff;}
+@media only screen and (max-width: 767px){
+	.btm-btn-area {padding: 0 15px;}
+	.r-btn {border-radius: 5px 5px; }
+	.r-btn.v1 {width: 100%; height: 55px; font-size: 15px;}
+	.btm-btn-area.v1 {margin-top: 30px;}
+
 }

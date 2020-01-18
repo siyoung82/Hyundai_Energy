@@ -57,7 +57,8 @@
 				<div class="collapsed-area">
 					<div class="accordion" id="analysis-list">
 						<div class="card"><!-- 토지정보 -->
-							<div class="card-header" id="analysis-info01">
+							<div class="data-loading"><img src="../img/loading.gif" alt="로딩"/></div><!-- 로딩바 -->
+							<div class="card-header m-card-header" id="analysis-info01">
 								<h3 class="mb-0">
 									<div class="subject" data-toggle="collapse" data-target="#analysis-info01-cont" aria-expanded="true">토지정보<a href="#" class="f_r subject-link">토지(임야)대장 열람</a></div>
 								</h3>
@@ -98,8 +99,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="card"><!-- 소유 및 가격 -->
-							<div class="card-header" id="analysis-info02">
+						<div class="loading-false"><!-- 로딩실패 -->
+							<img src="../img/btn_reload.png" alt="loading"/> 
+						  <div>데이터를 불러오는데 실패했습니다.</div>
+					  </div>
+					  <div class="card"><!-- 소유 및 가격 -->
+							<div class="data-loading"><img src="../img/loading2.gif" alt="로딩"/></div><!-- 로딩바 -->
+							<div class="card-header m-card-header" id="analysis-info02">
 								<h3 class="mb-0">
 									<div class="subject" data-toggle="collapse" data-target="#analysis-info02-cont" aria-expanded="true">소유 및 가격<a href="#" class="f_r subject-link">인터넷등기</a><a href="#" class="f_r subject-link">공시지가 확인</a></div>
 								</h3>
@@ -203,44 +209,181 @@
 							</div>
 						</div>
 						<div class="card"><!-- 개별주택가격 -->
-							<div class="card-header" id="analysis-info03">
+							<div class="data-loading"><img src="../img/loading2.gif" alt="로딩"/></div><!-- 로딩바 -->
+							<div class="card-header m-card-header" id="analysis-info03">
 								<h3 class="mb-0">
-									<div class="subject" data-toggle="collapse" data-target="#analysis-info03-cont" aria-expanded="true">개별주택가격</div>
+									<div class="subject" data-toggle="collapse" data-target="#analysis-info03-cont" aria-expanded="true">개별주택가격<a href="#" class="f_r subject-link">개별 주택가격 확인</a></div>
 								</h3>
 							</div>
 							<div id="analysis-info03-cont" class="collapse" aria-labelledby="analysis-info03" data-parent="#analysis-list">
 								<div class="card-body">
-								개별주택가격
+									<div class="table-area">
+										<table width="100%" border="0" class="table-type01">
+										<tbody>
+											<tr>
+												<th rowspan="2">건물번호</th>
+												<th rowspan="2">기준년도</th>
+												<th colspan="2" class="line1">대지면적&#40;m<sup>2</sup>&#41;</th>
+												<th colspan="2" class="line1">건물면적&#40;m<sup>2</sup>&#41;</th>
+												<th rowspan="2">주택가격(원)</th>
+											</tr>
+											<tr>
+												<th>전체</th>
+												<th>산정</th>
+												<th>전체</th>
+												<th>산정</th>
+											</tr>
+											<tr>
+												<td colspan="7">해당사항 없음</td>
+											</tr>
+										</tbody>
+										</table>
+									</div>
+									<p class="btm-txt">개별주택가격은 단독/다가구에서만 조회가능합니다. 개별주택가격의 건물면적과 건축물대장의 건물면적은 다를 수가 있습니다.</p>
 								</div>
 							</div>
 						</div>
 						<div class="card"><!-- 조례정보 -->
-							<div class="card-header" id="analysis-info04">
+							<div class="data-loading"><img src="../img/loading2.gif" alt="로딩"/></div><!-- 로딩바 -->
+							<div class="card-header m-card-header" id="analysis-info04">
 								<h3 class="mb-0">
 									<div class="subject" data-toggle="collapse" data-target="#analysis-info04-cont" aria-expanded="true">조례정보</div>
 								</h3>
 							</div>
 							<div id="analysis-info04-cont" class="collapse" aria-labelledby="analysis-info04" data-parent="#analysis-list">
 								<div class="card-body">
-								조례정보
+									<div class="table-area">
+										<table width="100%" border="0" class="table-type01">
+											<colgroup>
+												<col width="20%">
+												<col width="50%">
+												<col width="30%">
+											</colgroup>
+											<thead>
+												<tr>
+													<th>종류</th>
+													<th>법규명</th>
+													<th>재/개정일</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>조례</td>
+													<td>[폐지]제주도도시계획에관한조례</td>
+													<td>2007 - 05 - 09</td>
+												</tr>
+												<tr>
+													<td>조례</td>
+													<td>제주특별자치도 도시계획 조례</td>
+													<td>2019 - 06 - 12</td>
+												</tr>
+												<tr>
+													<td>규칙</td>
+													<td>제주특별자치도 도시계획 조례 시행규칙</td>
+													<td>2017 - 06 - 14</td>
+												</tr>
+												<tr>
+													<td>조례</td>
+													<td>제주특별자치도 장기미집행 도시계획시설 대지 등 보상 및 기반시설 특별회계 설치 조례</td>
+													<td>2016 - 03 - 16</td>
+												</tr>
+												<tr>
+													<td>조례</td>
+													<td>[폐지]제주도특별자치도 장기미집행 도시계획 시설대지보상 특별회계 조례</td>
+													<td>2010 - 03 - 24</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="law-box-area">
+										<div class="law-box v1">
+											<div>관련부서정보 요청성공<button type="button" class="btn-area">전화번호 수정 요청</button></div>
+											<p>정확한 정보는 꼭 담당자에게 확인하세요.</p>
+										</div>
+										<div class="law-box v2">
+											<div>입법예고 확인<button type="button" class="btn-area">전화번호 수정 요청</button></div>
+											<p>재/개정일 시기가 오래된 경우 입법예고를 확인해 보세요.</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="card"><!-- 전력계통정보 -->
-							<div class="card-header" id="analysis-info05">
+							<div class="data-loading"><img src="../img/loading2.gif" alt="로딩"/></div><!-- 로딩바 -->
+							<div class="card-header m-card-header" id="analysis-info05">
 								<h3 class="mb-0">
 									<div class="subject" data-toggle="collapse" data-target="#analysis-info05-cont" aria-expanded="true">전력계통정보</div>
 								</h3>
 							</div>
 							<div id="analysis-info05-cont" class="collapse" aria-labelledby="analysis-info05" data-parent="#analysis-list">
 								<div class="card-body">
-								전력계통정보
-								</div>
-							</div>
-						</div>
-					</div>
+									<div class="table-area">
+										<table width="100%" border="0" class="table-type01">
+											<thead>
+												<tr>
+													<th>전신주 위치</th>
+													<th>구분</th>
+													<th>변전소</th>
+													<th>변압기</th>
+													<th>D/L</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="bg">&nbsp;</td>
+													<td>이름</td>
+													<td>한*</td>
+													<td>1</td>
+													<td>상대</td>
+												</tr>
+												<tr>
+													<td class="bg2">
+														<select class="td-select">
+															<option selected>75-2</option>
+															<option value="1">One</option>
+															<option value="2">Two</option>
+															<option value="3">Three</option>
+														</select>
+													</td>
+													<td>누적연계용량</td>
+													<td>113,550 kW</td>
+													<td>67,859 KW</td>
+													<td>7,589 KW</td>
+												</tr>
+												<tr>
+													<td class="bg">&nbsp;</td>
+													<td>여유용량</td>
+													<td>36,450kW</td>
+													<td>0 KW</td>
+													<td>2,411 KW</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="customer-cs">
+										<div class="number">
+											<div>064-740-3444<span>제주지역본부 / 제주지역 / 본부직할</span></div>
+											<div>064-740-34561<span>제주지역본부 / 제주지역 / 계통운영(기술)부</span></div>
+										</div>
+										<div class="btm-customer">
+											<div class="btm-row">
+												<span><button type="button">전화번호 수정 요청</button></span>
+												<span>정확한 정보는 꼭 담당자에게 전화로 확인해보세요.</span>
+											</div>
+											<div class="btm-row">
+												<span><button type="button">계통연계비 검토</button></span>
+												<span>연계 가능한 전신주 위치와 거리는 지도로 확인해보세요.</span>
+											</div>
+										</div>
+								  </div>
+									
+							  </div>
+						  </div>
+					  </div>
+				  </div>
 				</div>
 			</div>
+			<div class="btm-btn-area v1"><button type="button" class="r-btn btn-org v1" disabled>저장 후 다음단계</button><button type="button" class="r-btn btn-org v1">저장 후 다음단계</button></div><!-- button -->
 		</div>
 	</section>
 </div>
