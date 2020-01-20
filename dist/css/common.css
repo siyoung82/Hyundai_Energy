@@ -267,6 +267,7 @@ vertical-align: middle;
 top: 0;
 right: 0; left: 0; bottom: 0; }
 #content {margin-top: 120px;}
+#m-content {margin-top: 120px; background: url("../../img/bg_main.png")no-repeat center bottom;}
 footer {background: #383839; font-size: 15px; color: #fff;}
 footer .copyright {margin-bottom: 0; color: #B2B2B2}
 #footer {padding: 35px 30px; position: relative}

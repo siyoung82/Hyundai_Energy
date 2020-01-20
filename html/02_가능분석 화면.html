@@ -44,8 +44,22 @@
 <!-- content -->	
 <div id="content">
 	<section id="f-analysis">
-		<div class="container">
-			<div class="top-map-area"><img src="../img/bg_map.png" alt="지도"/></div><!-- map -->
+		<div class="container"><!-- map -->
+			<div class="top-map-area">
+				<div class="top-map-control">
+					<a href="#">스카이뷰</a><a href="#">지적, 경계</a><a href="#">로드뷰</a>
+				</div>
+				<div class="left-map-control">
+					<a href="#">거리</a><a href="#">면적</a><a href="#">반경</a>
+				</div>
+				<div class="left-map-control v1">
+					<a href="#"><img src="../img/ico_map_location.png" alt="현재위치"/></a>
+				</div>
+				<div class="left-map-control v2">
+					<a href="#"><img src="../img/ico_map_plus.png" alt="확대"/></a><a href="#"><img src="../img/ico_map_minus.png" alt="축소"/></a>
+				</div>
+			  <img src="../img/bg_map.png" alt="지도"/>
+			</div>
 			<div class="address-info-wrap"><!-- 주소정보 -->
 				<div class="address-info">
 					<span>서울시 노원구 공릉동 126</span><a href="#" class="edit"><img src="../img/btn_edit.png" alt="편집"/></a>
@@ -102,8 +116,8 @@
 						<div class="loading-false"><!-- 로딩실패 -->
 							<img src="../img/btn_reload.png" alt="loading"/> 
 						  <div>데이터를 불러오는데 실패했습니다.</div>
-					  </div>
-					  <div class="card"><!-- 소유 및 가격 -->
+					  	</div>
+					  	<div class="card"><!-- 소유 및 가격 -->
 							<div class="data-loading"><img src="../img/loading2.gif" alt="로딩"/></div><!-- 로딩바 -->
 							<div class="card-header m-card-header" id="analysis-info02">
 								<h3 class="mb-0">
@@ -317,75 +331,86 @@
 							</div>
 							<div id="analysis-info05-cont" class="collapse" aria-labelledby="analysis-info05" data-parent="#analysis-list">
 								<div class="card-body">
-									<div class="table-area">
-										<table width="100%" border="0" class="table-type01">
-											<thead>
-												<tr>
-													<th>전신주 위치</th>
-													<th>구분</th>
-													<th>변전소</th>
-													<th>변압기</th>
-													<th>D/L</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td class="bg">&nbsp;</td>
-													<td>이름</td>
-													<td>한*</td>
-													<td>1</td>
-													<td>상대</td>
-												</tr>
-												<tr>
-													<td class="bg2">
-														<select class="td-select">
-															<option selected>75-2</option>
-															<option value="1">One</option>
-															<option value="2">Two</option>
-															<option value="3">Three</option>
-														</select>
-													</td>
-													<td>누적연계용량</td>
-													<td>113,550 kW</td>
-													<td>67,859 KW</td>
-													<td>7,589 KW</td>
-												</tr>
-												<tr>
-													<td class="bg">&nbsp;</td>
-													<td>여유용량</td>
-													<td>36,450kW</td>
-													<td>0 KW</td>
-													<td>2,411 KW</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
+									<div class="tit-box">
+										<h4><span></span>전신주 위치</h4>
+										<a class="btn-select">
+											<input type="hidden" class="btn-select-input" id="" name="" value="" />
+											<span class="btn-select-value">27-3</span>
+											<div class="select-cont">
+												<div class="select-cont-input"><input type="text" value="27-3"></div>
+												<ul>
+													<li>27-1</li>
+													<li>27-2</li>
+													<li>27-3</li>
+													<li>27-4</li>
+													<li>27-5</li>
+													<li>27-6</li>
+												</ul>
+											</div>
+										</a>
+									</div>	
+									<div class="power-box-area">
+										<div class="power-box">
+											<div class="f_l tit">이름</div>
+											<div class="f_r cont">
+												<div><span>변전소</span><span>한*</span></div>
+												<div><span>변압기</span><span>1</span></div>
+												<div><span>D/L</span><span>상대</span></div>
+											</div>
+										</div>
+										<div class="power-box">
+											<div class="f_l tit">누적연계용량</div>
+											<div class="f_r cont">
+												<div><span>변전소</span><span>113,550 kW</span></div>
+												<div><span>변압기</span><span>67,859 KW</span></div>
+												<div><span>D/L</span><span>7,589 KW</span></div>
+											</div>
+										</div>
+										<div class="power-box">
+											<div class="f_l tit">여유용량</div>
+											<div class="f_r cont">
+												<div><span>변전소</span><span>36,450kW</span></div>
+												<div><span>변압기</span><span>36,450kW</span></div>
+												<div><span>D/L</span><span>36,450kW</span></div>
+											</div>
+										</div>
+									</div>									
 									<div class="customer-cs">
 										<div class="number">
 											<div>064-740-3444<span>제주지역본부 / 제주지역 / 본부직할</span></div>
 											<div>064-740-34561<span>제주지역본부 / 제주지역 / 계통운영(기술)부</span></div>
+											<button type="button" disabled>계통연계비 검토 확인하기</button>
 										</div>
 										<div class="btm-customer">
 											<div class="btm-row">
-												<span><button type="button">전화번호 수정 요청</button></span>
-												<span>정확한 정보는 꼭 담당자에게 전화로 확인해보세요.</span>
+												<span>담당자</span>
+												<span>양지혁</span>
 											</div>
 											<div class="btm-row">
-												<span><button type="button">계통연계비 검토</button></span>
-												<span>연계 가능한 전신주 위치와 거리는 지도로 확인해보세요.</span>
+												<span>연락처</span>
+												<span>010-3241-3123</span>
 											</div>
+											<div class="btm-row">
+												<span>이메일</span>
+												<span>hyundai@energy.com</span>
+											</div>
+											<div class="btm-row">
+												<span>해당 내용으로 보고서에 출력됩니다.</span>
+											</div>
+											<button type="button" disabled class="modify">수정</button>
 										</div>
 								  </div>
 									
 							  </div>
 						  </div>
-					  </div>
-				  </div>
+					  	</div>
+					</div>
 				</div>
-			</div>
 			<div class="btm-btn-area v1"><button type="button" class="r-btn btn-org v1" disabled>저장 후 다음단계</button><button type="button" class="r-btn btn-org v1">저장 후 다음단계</button></div><!-- button -->
-		</div>
+			</div>
+		</div>	
 	</section>
+	
 </div>
 <!-- //content -->
 <!-- footer -->

@@ -2,7 +2,7 @@
 
 .bg-wrap01 {background: #FDFCFD; padding: 60px 0}
 
-.main-input { background: url("../../img/bg_main.png")no-repeat center bottom;}
+.main-input { }
 .main-input .slogen{font-size: 44px; text-align: center; padding-top: 100px;  }
 .address-input {max-width: 765px; margin: 45px auto 0; padding-bottom: 500px}
 .address-input .input-area {border-radius: 100px 100px; border:2px solid #606060; height:70px; width: 100%; padding: 0 35px;}
@@ -16,15 +16,17 @@
 .address-layer {border-bottom: 1px solid #6ca4c4;border-right: 2px solid #606060;border-left: 2px solid #606060; border-bottom-left-radius: 35px;  border-bottom-right-radius: 35px; height: 360px; background: #fff; position: absolute; top: 30px; left: 0; right: 0;  width: 73%; padding-top: 30px ;padding-bottom: 10px}
 .form-row>.col, .form-row>[class*=col-]{padding: 0!important}
 .address-layer-scroll {overflow-y: scroll; height: 300px}
-.address-list {padding: 20px 25px; cursor: pointer;border-bottom: 1px solid #dcdcdc;}
-.address-list:hover,.address-list.select {background: #f2f6fe}
-.address-list span {height: 31px; width: 63px; line-height: 31px; color: #57b1fd; font-size: 13px; display: inline-block; border:1px solid #7ecef4; border-radius: 5px; text-align: center; margin-right: 20px; vertical-align: top; margin-top: -3px}
-.road-num {color: #383838; margin-bottom: 13px; font-size: 19px;}
-.road-name {color: #979797; font-size: 18px;}
+.address-list {padding: 20px 25px; cursor: pointer;border-bottom: 1px solid #dcdcdc; font-size: 15px}
+.address-list:hover,.address-list.select {background: #f2f6fe; border-bottom: 1px solid #707070; border-top: #707070 1px solid; margin-top: -1px}
+.address-layer-scroll .address-list:first-child:hover,.address-list:first-child.select{margin-top: 0}
+.address-list span {height: 26px; width: 63px; line-height: 26px; color: #1D4F93; font-size: 13px; display: inline-block; border-radius: 12px; text-align: center; margin-right: 20px; vertical-align: top; margin-top: -3px; background: #D4E5F7}
+.address-list:hover,.address-list.select .road-num {color: #126FCC;}
+.road-num {color: #000000; margin-bottom: 13px; font-size: 15px;}
+.road-name {color: #000000; font-size: 15px;}
 @media (max-width: 767px) {
 	.main-input { background: url("../../img/bg_m_main.png")no-repeat center bottom; background-size: 100% 354px; }
 	.main-input .slogen{font-size: 23px; text-align: center; padding-top: 40px;}
-	.address-input {margin: 15px 36px 0; padding-bottom: 350px}
+	.address-input {margin: 15px 36px 0; padding-bottom: 350px!important}
 	.address-input .input-area,.address-input .btn-free {width: 100%; }
 	.main-input {margin-left: -15px; margin-right: -15px}
 	.address-input input {height: 55px; font-size: 15px}
@@ -32,15 +34,26 @@
 	.address-layer,.address-input input {width: 100%;}
 	.road-num {color: #383838; margin-bottom: 13px; font-size: 15px;}
 	.road-name {color: #979797; font-size: 15px;}
+	.address-list span {font-size: 10px; margin-right:10px; height: 20px; width: 50px; line-height: 20px; }
+	.address-list {padding: 20px 15px; border-bottom: 1px solid #707070; }
+
 }
-
-
-
-
 /*** 기능분석 ***/
 #f-analysis {}
-#f-analysis .top-map-area {height: 480px; width: 100%; }
-#f-analysis .top-map-area img {height: 480px; width: 100%}
+#f-analysis .top-map-area {height: 480px; width: 100%; position: relative;}
+.top-map-area .top-map-control {border:1px solid #707070;border-radius: 8px; background: #fff; position: absolute; top: 20px; right: 18px; overflow: hidden}
+.top-map-area .top-map-control a {padding: 17px 34px; color: #474747;font-size: 15px; display: inline-block; font-family: 'NanumSquare'; font-weight: bold; border-right:1px solid #707070;}
+.top-map-area .top-map-control a:last-child {border-right: 0;}
+.top-map-area .top-map-control a:hover {text-decoration: none; color: #000000;background-color: #ffeb7b;}
+.top-map-area .left-map-control {border:1px solid #707070;border-radius: 8px; background: #fff; position: absolute; top: 100px; right: 18px; overflow: hidden}
+.top-map-area .left-map-control.v1 {top:280px}
+.top-map-area .left-map-control.v1 a img {width: 32px!important; height: 32px!important;}
+.top-map-area .left-map-control.v2 {top:350px}
+.top-map-area .left-map-control.v2 a img {width: 20px!important; height: 20px!important;}
+.top-map-area .left-map-control a {width: 54px; height: 54px; color: #474747;font-size: 14px; display: block; font-family: 'NanumSquare'; font-weight: bold; border-bottom:1px solid #707070;text-align: center; line-height: 54px}
+.top-map-area .left-map-control a:last-child {border-bottom: 0;}
+.top-map-area .left-map-control a:hover {text-decoration: none; }
+#f-analysis .top-map-area img {height: 480px; width: 100%} 
 #f-analysis .address-info {background: #fff; font-size: 31px; padding: 50px 0 30px;}
 #f-analysis .address-info span {}
 #f-analysis .address-info a.edit {margin-left: 15px;vertical-align: middle}
@@ -63,7 +76,7 @@
 .land-info a.btn-tooltip {width: 30px; height: 30px; position: absolute; top: -3px; right: 30px}
 .land-info a.btn-tooltip.v1 {right: 15px;}
 .land-info a.btn-tooltip img {width: 26px; ;height: 26px;}
-.table-area {background: #fff; box-shadow: 0 3px 6px #D8D8D8; border-top: 1px solid #E6E6E6; border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6;}
+.table-area {background: #fff; box-shadow: 0 3px 6px #D8D8D8; border-top: 1px solid #E6E6E6; border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6; clear: both;}
 #analysis-list h4 {font-size: 22px!important; color: #474747; padding: 30px 20px 0}
 #analysis-list .subject a.subject-link {text-decoration: underline; color: #fff; font-family: 'NanumSquare'; font-size: 18px; padding-left: 10px}
 #analysis-list .btm-txt {color: #B7B7B7; font-size: 25px; text-align: center; margin-bottom: 0;font-family:'hyundailight'!important; margin-top: 20px }
@@ -74,19 +87,116 @@
 .law-box-area .law-box.v1 {float: left;}
 .law-box-area .law-box.v2 {float: right;}
 .law-box .btn-area {background: #F68D00; border-radius: 100px 100px; color: #fff; font-size: 19px; padding: 10px 28px; position: absolute; right: 0px; top:-10px }
-.customer-cs {background: #fff; box-shadow: 0 3px 6px #D8D8D8;border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6; border-top: 1px solid #E6E6E6; border-bottom: 1px solid #070707; margin-top: 10px;}
-.customer-cs .number {font-size: 24px; padding: 35px 50px 20px; overflow: hidden;}
-.customer-cs .number div {float: left; margin-right: 60px; color: #323755 }
+.customer-cs {clear: both; }
+.customer-cs .number {background: #fff; box-shadow: 0 3px 6px #D8D8D8;border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6; border-top: 5px solid #B5E5FF;overflow: hidden; padding: 40px;}
+.customer-cs .number div {float: left; margin-right: 140px; color: #323755; font-size: 30px; }
 .customer-cs .number div span {display: block; font-size: 19px; font-family:'hyundailight'!important; color: #000000}
-.btm-customer {background: #F7F9FC; padding: 25px 47px; font-size: 21px; font-family:'hyundailight'!important; }
-.btm-customer button {font-size: 19px; border:1px solid #323755; border-radius: 100px 100px; padding: 10px 19px; width: 190px; background: #fff; position: absolute; right: 0; top:0; }
-.btm-customer .btm-row {overflow: hidden; display: block; position: relative; padding: 12px 0}
+.customer-cs .number button {color: #4593FF; border-bottom: #4593FF 2px solid; font-size: 21px; float: right; padding-top: 35px}
+.customer-cs .number button:disabled {color: #C7DFFF; border-bottom: #C7DFFF 2px solid; }
+.btm-customer {background: #F7F9FC; padding: 25px 47px 15px 47px; font-size: 21px; font-family:'hyundailight'!important; margin-top: 15px; border-bottom: 1px solid #070707; box-shadow: 0 3px 6px #D8D8D8; position: relative}
+.btm-customer .modify {font-size: 17px; border: solid 1.6px #323755;width: 91px; height: 40px; color: #383838; position: absolute; right: 40px; top: 17px; background: #fff;}
+.btm-customer .modify:disabled {border: solid 1.6px #cbcbcb; background-color: #eaecf0; color: #c0c1c5;}
+.btm-customer .btm-row {overflow: hidden; display: inline-block; position: relative; padding: 0 20px; }
+.btm-customer .btm-row span:first-child {padding-right: 20px}
 .loading-false {text-align: center; font-size: 25px; color: #B7B7B7}
 .loading-false img {height: 60px; width: 60px;}
 .loading-false div {padding: 10px 0 30px}
 .data-loading {position: absolute; left: 0; width: 56px; height: 56px; display: inline-block; top: 5px}
 .data-loading img {width: 100%; height: 100%}
+#analysis-info05-cont .tit-box {background: #fff; box-shadow: 0 3px 6px #D8D8D8; border-top: 1px solid #E6E6E6; border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6; padding: 25px 40px;}
+#analysis-info05-cont .tit-box h4 {margin-top: 0!important; margin-bottom: 0!important; padding: 0!important; font-size: 21px; display: inline-block}
+#analysis-info05-cont .tit-box h4 span {background: #808080; width: 2px; height:14px; display: inline-block; margin-right: 15px;}
+.btn-select {
+    position: relative;
+    background: #F2F2F2 url("../../img/ico-arrow2.png") no-repeat 90% 50%;
+	background-size: 9px 7px;
+	display: inline-block;
+	border-radius: 5px 5px;
+	border:2px solid #323755;
+	cursor: pointer;
+	vertical-align: middle;
+	height: 40px;
+	line-height: 40px;
+	width: 195px;
+	z-index: 100
+}
+
+.btn-select .btn-select-value {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 34px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 17px;
+	width: 195px;
+	padding: 0 15px 0 10px
+	
+}
+
+.select-cont {
+	position: absolute;
+    left: -1px;
+    right: -1px;
+    top: 40px;
+	background: #fff;
+	box-shadow: 0 3px 6px #D8D8D8;
+	border-radius: 4px 4px;
+}
+.select-cont-input {border-bottom: 1px solid #000000; background: url("../../img/btn-search.png") 15px 50% no-repeat; background-size: 11px 11px; padding-left: 35px; padding-right: 10px; overflow: hidden}
+.select-cont-input input {border:0;  color: #7BA7DD; }
+.btn-select ul {
+    background-color: white;
+    color: black;
+    clear: both;
+    list-style: none;
+    margin: 0;
+    border-top: none !important;
+    z-index: 999;
+	height: 140px;
+	overflow-y: scroll;
+
+}
+
+.btn-select ul li {
+    text-align: left;
+	color: #4D4D4D;
+	padding: 0 20px
+
+}
+
+.btn-select ul li:hover {
+    background-color: #EBF6FD;
+	color: #4593FF
+}
+
+.btn-select ul li.selected {
+     background-color: #EBF6FD;
+	color: #4593FF;
+}
+
+.power-box-area {display: inline-block;margin-top: 17px; width: 100%;}
+.power-box-area .power-box:last-child {margin-right: 0}
+.power-box-area .power-box {background: #fff; box-shadow: 0 3px 6px #D8D8D8; border-top: 5px solid #F68D00;border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6;  width: 32%; padding: 25px 0; color: #474747; margin-bottom:10px; overflow: hidden; float: left; margin-right: 2%}
+.power-box-area .power-box .tit {position: relative; font-size: 19px;  text-align: center;color: #474747; width: 40%; vertical-align: middle; display: block;line-height:84px}
+.power-box-area .power-box .cont {position: relative; width: 60%; padding-right: 40px}
+.power-box-area .power-box .cont>div {overflow: hidden;}
+.power-box-area .power-box .cont>div span:first-child {color: #000000; font-size: 16px; text-align: left; width: 50px; display: inline-block; float: left;}
+.power-box-area .power-box .cont>div span:last-child {color: #474747; font-size: 19px; text-align: right;  display: inline-block; float: right;}
+
+
+.power-box-area .power-box p {font-size: 19px; font-family:'hyundailight'!important; padding: 30px 20px 0}
+.power-box-area .power-box.v1 {float: left;}
+.power-box-area .power-box.v2 {float: right;}
+/* Default End */
 @media (max-width: 767px){
+	.top-map-area .top-map-control,.top-map-area .left-map-control {display: none;}
 	.bg-wrap01 {background: #fff; padding: 20px}
 	#f-analysis {margin-left: -15px; margin-right: -15px;}
 	#f-analysis .top-map-area {height: 137px;}
@@ -125,17 +235,30 @@
 	.customer-cs .number div {float: left; font-size: 17px; margin-right: 0 }
 	.customer-cs .number div span {font-size: 12px; color: #969696}
 	.customer-cs .number {font-size: 24px; padding: 15px 17px 20px; overflow: hidden;}
-	.btm-customer {padding: 15px 17px; font-size: 12px; overflow: hidden}
-	.btm-customer button {font-size: 12px; padding: 8px 0; width: 117px; background: #fff; position: inherit; margin-bottom: 10px}
-	.btm-customer .btm-row {overflow: hidden; display: inline-block; position: relative; padding: 12px 0; width: 50%; float: left; text-align: center}
-	.btm-customer .btm-row span {display: block;}
+	.customer-cs .number button {font-size: 13px; float: right; padding-top: 5px}
+	.customer-cs .number button:disabled { }
+	.btm-customer {display: none;}
 	.loading-false {font-size: 14px;}
 	.loading-false img {height: 33px; width: 33px;}
 	.loading-false div {padding: 10px 0 20px}
 	.data-loading {top:10px}
 	.data-loading {position: absolute; left: 0; width: 25px; height: 25px; display: inline-block}
+	.power-box-area .power-box {float: inherit; width: 100%}
+	.power-box-area .power-box .cont {padding-right: 17px}
+	.power-box-area .power-box .tit {position: relative; font-size: 14px; line-height:inherit}
+	.power-box-area .power-box .cont>div span:first-child {font-size: 15px;}
+	.power-box-area .power-box .cont>div span:last-child {font-size: 15px;}
+	#analysis-info05-cont .tit-box {padding: 13px 20px; clear: both; position: relative}
+	#analysis-info05-cont .tit-box h4 {font-size: 15px;}
+	#analysis-info05-cont .tit-box h4 span {margin-right: 8px; vertical-align: top; margin-top: 0px}
+	.btn-select {height: 36px;line-height: 36px;width: 158px; position: absolute; right: 10px; top: 7px}
+	.btn-select .btn-select-value {height: 36px;line-height: 36px;width: 158px; font-size: 14px;}
 
 }
+
+/* 배치방법선택 */
+.arrange-select { background: url("../../img/bg_main.png")no-repeat center bottom;}
+.address-input {max-width: 765px; margin: 45px auto 0; padding-bottom: 500px}
 
 /* table */
 .table-type01 td,.table-type01 th {text-align: center; font-size: 19px; font-family:'hyundailight'!important; }
