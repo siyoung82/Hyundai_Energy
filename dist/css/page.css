@@ -258,7 +258,6 @@
 
 /* 배치방법선택 */
 .arrange-select { background: url("../../img/bg_main.png")no-repeat center bottom;}
-.address-input {max-width: 765px; margin: 45px auto 0; padding-bottom: 500px}
 
 /* table */
 .table-type01 td,.table-type01 th {text-align: center; font-size: 19px; font-family:'hyundailight'!important; }
