@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 
 .bg-wrap01 {background: #FDFCFD; padding: 60px 0}
-
+.row {display: flex;display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;}
 .main-input { }
 .main-input .slogen{font-size: 44px; text-align: center; padding-top: 100px;  }
 .address-input {max-width: 765px; margin: 45px auto 0; padding-bottom: 500px}
@@ -10,8 +10,8 @@
 .address-input .input-area {width: 73%; display: inline-block; margin-right: 2%}
 .address-input .btn-free {width: 25%}
 .address-input span{display: inline-block; vertical-align: top}
-.address-input a.free-btn {background: #333854; border:2px solid #333854;height: 70px; line-height: 70px; font-size: 21px; color: #fff; width: 100%; text-align: center}
-.address-input a:hover {text-decoration: none;}
+.address-input a.free-btn {background: #333854; border:2px solid #333854;height: 70px; line-height: 70px; font-size: 21px; color: #fff; width: 100%; text-align: center; border-radius: 100px 100px;}
+.address-input a:hover {text-decoration: none; background: #FB8F00; color: #fff; border:2px solid #FB8F00;}
 
 .address-layer {border-bottom: 1px solid #6ca4c4;border-right: 2px solid #606060;border-left: 2px solid #606060; border-bottom-left-radius: 35px;  border-bottom-right-radius: 35px; height: 360px; background: #fff; position: absolute; top: 30px; left: 0; right: 0;  width: 73%; padding-top: 30px ;padding-bottom: 10px}
 .form-row>.col, .form-row>[class*=col-]{padding: 0!important}
@@ -24,14 +24,15 @@
 .road-num {color: #000000; margin-bottom: 13px; font-size: 15px;}
 .road-name {color: #000000; font-size: 15px;}
 @media (max-width: 767px) {
-	.main-input { background: url("../../img/bg_m_main.png")no-repeat center bottom; background-size: 100% 354px; }
+	.main-input { }
 	.main-input .slogen{font-size: 23px; text-align: center; padding-top: 40px;}
 	.address-input {margin: 15px 36px 0; padding-bottom: 350px!important}
-	.address-input .input-area,.address-input .btn-free {width: 100%; }
+	.address-input .input-area,.address-input .btn-free {display: block; width: 100%;}
+	.address-input .input-area {height: 55px;}
 	.main-input {margin-left: -15px; margin-right: -15px}
 	.address-input input {height: 55px; font-size: 15px}
 	.address-input a.free-btn {height: 55px; line-height: 55px; font-size: 15px; margin-top: 15px;}
-	.address-layer,.address-input input {width: 100%;}
+	.address-layer {width: 100%;}
 	.road-num {color: #383838; margin-bottom: 13px; font-size: 15px;}
 	.road-name {color: #979797; font-size: 15px;}
 	.address-list span {font-size: 10px; margin-right:10px; height: 20px; width: 50px; line-height: 20px; }
@@ -257,7 +258,52 @@
 }
 
 /* 배치방법선택 */
-.arrange-select { background: url("../../img/bg_main.png")no-repeat center bottom;}
+.arrange-select { background: url("../../img/bg_cont.png")no-repeat center bottom; padding: 8.750em 0 5.625em 0}
+.select-sunlight {position: relative;}
+.select-sunlight a.box-r {box-shadow: 0 3px 10px #D8D8D8; padding: 65px 50px; display: inline-block; background: #fff; width: 100%; text-align: center; color: #000;}
+.select-sunlight a.box-r h2 {font-size: 33px;}
+.select-sunlight a.box-r p {font-size: 21px; padding-bottom: 250px}
+.select-sunlight a.simple {background:#fff url("../../img/arrange_img01.png") no-repeat center 55%; background-size: 216px 216px;}
+.select-sunlight a.simple:hover {background:#FFF7C5 url("../../img/arrange_img01_hover.png") no-repeat center 55%; background-size: 216px 216px;} 
+.select-sunlight button.go-arrange {height: 61px; padding: 0 60px; color: #fff; background: #F88E00; border-radius: 100px 100px; font-weight: bold; font-size: 21px; display: inline-block}
+.select-sunlight a.detailed {background:#fff url("../../img/arrange_img02.png") no-repeat center 55%; background-size: 216px 216px;}
+.select-sunlight a.detailed:hover {background:#FFF7C5 url("../../img/arrange_img02_hover.png") no-repeat center 55%; background-size: 216px 216px;} 
+.select-sunlight .col-md-6 {padding: 0 25px!important}
+@media (max-width: 767px){
+	.arrange-select {background: none; padding: 3.750em 0 5.625em 0}
+	.select-sunlight a.box-r {text-align: left; padding: 35px 25px 60px 125px}
+	.select-sunlight a.box-r h2 {font-size: 18px;}
+	.select-sunlight a.box-r p {font-size: 14px; padding-bottom: 0px}
+	.select-sunlight a.simple {background:#fff url("../../img/arrange_img01.png") no-repeat 25px 30px; background-size: 82px 82px;}
+	.select-sunlight a.simple:hover {background:#FFF7C5 url("../../img/arrange_img01_hover.png") no-repeat 25px 30px; background-size: 82px 82px;}
+	.select-sunlight a.detailed {background:#fff url("../../img/arrange_img02.png") no-repeat 25px 30px; background-size: 82px 82px;}
+	.select-sunlight a.detailed:hover {background:#FFF7C5 url("../../img/arrange_img02_hover.png") no-repeat 25px 30px; background-size: 82px 82px;} 
+	.select-sunlight .col-md-6 {padding: 0 !important; display: block; margin-bottom: 35px}
+	.arrange-select .col-md-9  {padding: 0 5px !important; display: block;}
+	.select-sunlight button.go-arrange {height: 44px; border-radius: 0; font-weight: bold; font-size: 15px; display: block; width: 100%; position: absolute; left: 0; right: 0; bottom: 0;}
+
+
+}
+#fixed-container {background: #000;width:100%; position:absolute; left:0; top:120px; right:0; bottom:150px;}
+#fixed-footer {width:100%; position:absolute; left:0; right:0; bottom:0;}
+#map-bg {background: #000; opacity: 0.58;width:100%; height:100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0;}
+#map{width:100%;  z-index:0; position: fixed; left: 0; right: 0; top: 120px; bottom: 150px; overflow: hidden;}
+#map img{width:100%; min-height: 100%; height: 100%}	
+.set-box { z-index: 100; overflow: hidden; position: fixed; top: 120px; left: 0; right: 0; }
+.set-box .help-box {background: #F5F6F8; padding: 12px 0; overflow: hidden;}
+.set-box .help-box .address-box {border:1.3px solid #E0E0E0; color: #676767; font-size: 21px; padding: 0 24px 0 60px; background: #fff url("../../img/ico-search.png") no-repeat 24px 50%; background-size: 23px 23px; height: 52px; line-height: 52px; border-radius: 4px}
+.set-box .help-box .button-help {border:1.3px solid #E0E0E0; font-size: 23px; padding: 0 45px 0 45px; height: 52px; line-height: 52px; border-radius: 4px}
+.set-box .help-box .button-help button {color: #0454B6;}
+.set-box .map-box {}
+.set-box .map-box img {width:100%; height: 100%;  }	
+.set-box .txt-box {background: #313656!important; color: #fff; text-align: center; font-size: 23px; padding: 30px 0; position: relative}
+.set-box .txt-box .process-num {padding-right: 50px; display: inline-block; vertical-align: middle}
+.set-box .txt-box .txt-ex {display: inline-block; vertical-align: middle;padding-right: 50px;}
+.set-box .set-guide {text-align: center; font-size: 15px; font-weight: bold; color: #3ab0f8; padding: 15px 0; background: #fff;}
+.set-box .txt-box button {font-size: 19px; text-align: center; border-radius: 100px 100px; padding: 10px 45px;}
+.set-box .txt-box button.finish {background: #fff; color: #0454B6; border:1px solid #fff}
+.set-box .txt-box button.cancel {color: #fff; border: 1px solid #fff;}
+.set-box .txt-box button:disabled.finish {background: #5E617A;  color: #273C6B; border:1px solid #5E617A}
 
 /* table */
 .table-type01 td,.table-type01 th {text-align: center; font-size: 19px; font-family:'hyundailight'!important; }
@@ -271,6 +317,29 @@
 .table-type01 td .td-select{border:0; width: 100%; text-align: center; background:#E6EFF8 url("../../img/ico-arrow.png") no-repeat right 50%; background-size: 19px 8px;}
 @media (max-width: 767px){
 	.table-type01 td,.table-type01 th,.table-type01 td.bg {font-size: 13px; padding: 10px 0  }
+	#fixed-container {top: 100px; bottom: 0;}
+	#fixed-footer {display: none;}
+	#map{top: 100px; bottom: 0; }
+	.set-box .help-box {background:none;}
+	.set-box {top: 100px;}
+	.set-box .help-box .address-box {display: none;}
+	.set-box .help-box {position: fixed; right: 4px; top:170px}
+	.set-box .help-box .button-help {font-size: 15px; padding: 0 22px; height: 45px; line-height: 45px; border-radius: 100px 100px; color: #343953; background: #fff;}
+	.set-box .txt-box {font-size: 16px; padding: 20px 0;}
+	.set-box .txt-box .txt-ex {padding-right: 0;}
+	.set-box .txt-box .process-num {padding-right: 10px; }
+	.set-box .txt-box button {font-size: 15px; text-align: center; border-radius: 100px 100px; padding: 10px 60px;  }
+	.set-box .txt-box button.finish {background: #B5BCC3; color: #fff; border:1px solid #BFBFBF; position: fixed; bottom: 20px;  right: 20px;}
+	.set-box .txt-box button.cancel {background: #B5BCC3; color: #fff; border: 1px solid #BFBFBF; position: fixed; bottom: 20px; left: 20px;}
+	.set-box .txt-box button:disabled.finish {background: #B5BCC3; color: #fff; border:1px solid #BFBFBF; position: fixed; bottom: 20px; left: 20px;}
+	.set-box .txt-box button:hover {background: #FF9200; border: 1px solid #FF9200}
+	
+
+
+
+
+
+
 
 }
 

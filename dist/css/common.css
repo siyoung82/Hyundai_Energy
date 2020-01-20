@@ -106,7 +106,7 @@ hr { display: none; }
 @media (min-width: 1200px) {
 	.container{max-width:1410px!important;}
 }
-header {font-size: 24px; position: fixed; top: 0;  overflow: hidden; width: 100%; z-index: 9999}
+header {font-size: 24px; position: fixed; top: 0;  overflow: hidden; width: 100%; z-index: 9999; background: #fff;}
 
 .gnbMenu {position: fixed; right: 1.5em;top: 2.25em;
 height: 2px;
@@ -279,6 +279,8 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 	#footer {padding: 25px 6px;}
 	#footer .btm-logo img {width: 86px; height: 19px;}
 	#footer .btm-logo {top:20px; }
+	#m-content {background: url("../../img/bg_m_main.png")no-repeat center bottom; background-size: 100% 354px;;}
+	#content.v1 {background: url("../../img/bg_m_cont.png")no-repeat center bottom; background-size: 100% 354px;;}
 }
 
 /* button */
