@@ -57,7 +57,7 @@
 			</div>
 			<div class="container">
 				<div class="help-box">
-					<div class="button-help"><button>Help</button></div>
+					<div class="button-help"><button data-toggle="modal" data-target="#helpbox">Help</button></div>
 				</div>
 			</div>
 		</div>
@@ -67,9 +67,74 @@
 
 </div>
 <!-- //container -->
+
+
+<!-- help Modal -->
+<div class="modal fade help-layer" id="helpbox" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title" id="exampleModalLongTitle">Help</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">완료</span>
+				</button>
+			</div>
+			<div class="modal-body w-help-cont"><!-- web -->
+				<div id="help-cont01">
+					<div class="process-bar" style="width: 50%"></div>
+					<div class="ex-tit"><span>STEP1</span>설치할 곳의 외곽선과 꼭지점을 클릭하세요.</div>
+					<p class="ex-cont">태양광을 설치할 지붕 한 면의 꼭지점을 클릭해 주세요.</p>
+					<div class="ex-img help-img01"></div>
+				</div>
+				<div id="help-cont02" style="display: none;">
+					<div class="process-bar" style="width: 50%"></div>
+					<div class="ex-tit"><span>STEP1</span>설치할 곳의 외곽선과 꼭지점을 클릭하세요.</div>
+					<p class="ex-cont">나머지 꼭지점을 이어서 첫번째 꼭지점을 클릭해 도형을 만들어주세요.</p>
+					<div class="ex-img help-img02"></div>
+				</div>
+				<div id="help-cont03" style="display: none;">
+					<div class="process-bar"></div>
+					<div class="ex-tit"><span>STEP2</span>모듈이 배치되었습니다.</div>
+					<p class="ex-cont">나머지 꼭지점을 이어서 첫번째 꼭지점을 클릭해 도형을 만들어주세요.</p>
+					<div class="ex-img help-img03"></div>
+				</div>
+			</div>
+			<div class="modal-body m-help-cont"> <!-- mobile -->
+				<div id="mobile-help" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#mobile-help" data-slide-to="0" class="active"></li>
+						<li data-target="#mobile-help" data-slide-to="1"></li>
+						<li data-target="#mobile-help" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="ex-tit"><span>STEP1.</span>설치할 곳의 외곽선과 꼭지점을 클릭하세요.</div>
+							<p class="ex-cont">태양광을 설치할 지붕 한 면의 <br> 꼭지점을 클릭해 주세요.</p>
+							<img src="../img/m_help_img01.png" alt="First slide">
+						</div>
+						<div class="carousel-item">
+							<div class="ex-tit"><span>STEP1.</span>설치할 곳의 외곽선과 꼭지점을 클릭하세요.</div>
+							<p class="ex-cont">나머지 꼭지점을 이어서 첫번째 꼭지점을 클릭해 도형을 만들어주세요.</p>
+							<img src="../img/m_help_img02.png" alt="Second slide">
+						</div>
+						<div class="carousel-item">
+							<div class="ex-tit"><span>STEP2.</span>모듈이 배치되었습니다.</div>
+							<p class="ex-cont">나머지 꼭지점을 이어서 첫번째 꼭지점을 클릭해 도형을 만들어주세요.</p>
+							<img src="../img/m_help_img03.png" alt="Third slide">
+						</div>
+				  </div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="prev-btn">이전</button>
+				<button type="button" class="next-btn">다음</button>
+			</div>
+		</div>
+	</div>
+</div>	
+<!-- //help -->	
 </body>
 <script src="../dist/js/jquery-3.4.1.min.js"></script>
 <script src="../dist/js/bootstrap.min.js"></script>
 <script src="../dist/js/add.js"></script>
-
 </html>

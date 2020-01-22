@@ -296,3 +296,52 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 	.btm-btn-area.v1 {margin-top: 30px;}
 
 }
+
+/* layer */
+.modal {top: 60px!important}
+.modal-backdrop {top:100px!important}
+.modal-backdrop.show {opacity: 0.71!important}
+@media (min-width: 1200px){
+	.help-layer .modal-dialog {max-width:1100px!important;}
+}
+@media (max-width: 1024px){
+	.help-layer .modal-dialog {max-width:700px!important;}
+	.help-layer .w-help-cont .ex-img {background-size: 500px 518px!important; height: 172px!important;}
+	.help-layer .w-help-cont .ex-tit {font-size: 20px; padding-top: 20px}
+
+	
+}
+.help-layer .modal-header {background: #323755; padding: 30px 0; text-align: center; color: #fff; font-size: 25px; font-weight: bold; display: block; position: relative;border-top-left-radius:0;border-top-right-radius:0; border-bottom: 0;}
+.help-layer .modal-header .close {position: absolute; right: 70px; top: 50px; box-shadow:none; color: #fff; opacity: 1; background: url("../../img/layer_close.png") center center no-repeat; background-size: 20px 20px; font-size: 0}
+.help-layer .w-help-cont {text-align: center; padding: 0}
+.help-layer .w-help-cont .ex-tit {font-size: 23px; padding-top: 30px}
+.help-layer .w-help-cont .ex-tit span {display: inline-block; background: #FF9100; font-size: 17px; color: #fff; height: 42px; padding: 0 19px; line-height: 42px; border-radius: 100px 100px; vertical-align: top; margin-right: 20px; margin-top: -5px;}
+.help-layer .w-help-cont .ex-cont {font-size: 21px; color: #5C5C5C; margin-top: 15px}
+.help-layer .w-help-cont .ex-img {background: url("../../img/bg_help.png") no-repeat; display: block; background-size: 720px 746px; height: 248px; margin: 35px 0;}
+.help-layer .w-help-cont .help-img01 {background-position: center 0}
+.help-layer .w-help-cont .help-img02 {background-position: center -248px}
+.help-layer .w-help-cont .help-img03 {background-position: center -496px}
+.help-layer .modal-footer {border-top:0;border-bottom-left-radius:0;border-bottom-right-radius:0; text-align: center; display: block; padding: 25px 0}
+.help-layer .modal-footer .prev-btn,.help-layer .modal-footer .next-btn {display: inline-block; border-radius: 5px 5px; padding: 15px 95px; font-size: 21px; color: #fff;}
+.help-layer .modal-footer .prev-btn {background: #DEDEDE}
+.help-layer .modal-footer .next-btn {background: #FF9100}
+.help-layer .process-bar {height: 7px; background: #FF9100}
+.help-layer .m-help-cont {display: none;}
+@media only screen and (max-width: 767px){ 
+	.modal {top: 50px!important}
+	#mobile-help {padding-bottom: 40px;}
+	.help-layer .w-help-cont {display: none;}
+	.help-layer .modal-footer {display: none;}
+	.help-layer .modal-header {padding: 20px 0;font-size: 17px; border-top-left-radius:4px;border-top-right-radius:4px;}
+	.help-layer .modal-header .close {position: absolute; right: 27px; top: 27px; background: none;font-size: 15px; font-weight: normal;  }
+	.help-layer .m-help-cont {display: block; text-align: center}
+	.m-help-cont .carousel-inner img {height: 300px; width: 142px!important; text-align: center}
+	.m-help-cont .carousel-indicators li {width: 7px; height: 7px; border-radius:100px 100px; background: #DEDEDE; border-top:0; border-bottom: 0;}
+	.m-help-cont .carousel-indicators .active {background: #0454B6}
+	.help-layer .m-help-cont .ex-tit {font-size: 15px; }
+	.help-layer .m-help-cont .ex-cont {font-size: 14px; color: #9D9D9D; }
+
+
+	
+}
+
