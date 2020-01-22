@@ -291,7 +291,6 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .btn-org {background: #F58D00; color: #fff;}
 .btn-org:disabled {background: #DBDBDB; color: #fff;}
 @media only screen and (max-width: 767px){
-	.btm-btn-area {padding: 0 15px;}
 	.r-btn {border-radius: 5px 5px; }
 	.r-btn.v1 {width: 100%; height: 55px; font-size: 15px;}
 	.btm-btn-area.v1 {margin-top: 30px;}

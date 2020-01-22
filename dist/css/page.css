@@ -41,20 +41,20 @@
 }
 /*** 기능분석 ***/
 #f-analysis {}
-#f-analysis .top-map-area {height: 480px; width: 100%; position: relative;}
-.top-map-area .top-map-control {border:1px solid #707070;border-radius: 8px; background: #fff; position: absolute; top: 20px; right: 18px; overflow: hidden}
-.top-map-area .top-map-control a {padding: 17px 34px; color: #474747;font-size: 15px; display: inline-block; font-family: 'NanumSquare'; font-weight: bold; border-right:1px solid #707070;}
+#f-analysis .top-map-area {height: 370px; width: 100%; position: relative;}
+.top-map-area .top-map-control {border:1px solid #707070;border-radius: 8px; background: #fff; position: absolute; top: 11px; right: 100px; overflow: hidden; z-index: 99}
+.top-map-area .top-map-control a {padding: 12px 34px; color: #474747;font-size: 15px; display: inline-block; font-family: 'NanumSquare'; font-weight: bold; border-right:1px solid #707070;}
 .top-map-area .top-map-control a:last-child {border-right: 0;}
 .top-map-area .top-map-control a:hover {text-decoration: none; color: #000000;background-color: #ffeb7b;}
-.top-map-area .left-map-control {border:1px solid #707070;border-radius: 8px; background: #fff; position: absolute; top: 100px; right: 18px; overflow: hidden}
-.top-map-area .left-map-control.v1 {top:280px}
+.top-map-area .left-map-control {border:1px solid #707070;border-radius: 8px; background: #fff; position: absolute; top: 11px; right: 18px; overflow: hidden;z-index: 99}
+.top-map-area .left-map-control.v1 {top:185px}
 .top-map-area .left-map-control.v1 a img {width: 32px!important; height: 32px!important;}
-.top-map-area .left-map-control.v2 {top:350px}
+.top-map-area .left-map-control.v2 {top:250px}
 .top-map-area .left-map-control.v2 a img {width: 20px!important; height: 20px!important;}
 .top-map-area .left-map-control a {width: 54px; height: 54px; color: #474747;font-size: 14px; display: block; font-family: 'NanumSquare'; font-weight: bold; border-bottom:1px solid #707070;text-align: center; line-height: 54px}
 .top-map-area .left-map-control a:last-child {border-bottom: 0;}
 .top-map-area .left-map-control a:hover {text-decoration: none; }
-#f-analysis .top-map-area img {height: 480px; width: 100%} 
+#f-analysis .top-map-area img {height: 370px; width: 100%} 
 #f-analysis .address-info {background: #fff; font-size: 31px; padding: 50px 0 30px;}
 #f-analysis .address-info span {}
 #f-analysis .address-info a.edit {margin-left: 15px;vertical-align: middle}
@@ -62,8 +62,9 @@
 #f-analysis .collapsed-area {background: #FDFCFD}
 #analysis-list .card {border:0; margin-bottom: 33px;}
 #analysis-list .card:last-child {margin-bottom: 0!important}
-#analysis-list .card-body {padding: 13px 0; margin-left: 70px}
-#analysis-list .card-header {background: #343953; border-bottom: 0; border-radius: 4px;  padding: 22px 35px; margin-bottom: 0; margin-left: 70px}
+#analysis-list .card-body {padding: 13px 0; }
+#analysis-list .card-header {background: #343953; border-bottom: 0; border-radius: 4px;  padding: 22px 35px; margin-bottom: 0; margin-left: 70px; z-index: 999}
+#analysis-list .card-header.v1 {margin-left: 0!important}
 #analysis-list .subject {font-size: 21px!important;  color: #fff; padding: 0; cursor: pointer}
 
 .land-info {display: table; width: 100%;  background: #fff; box-shadow: 0 3px 6px #D8D8D8; border-top: 5px solid #F68D00; border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6; padding: 25px 0}
@@ -107,6 +108,22 @@
 #analysis-info05-cont .tit-box {background: #fff; box-shadow: 0 3px 6px #D8D8D8; border-top: 1px solid #E6E6E6; border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6; padding: 25px 40px;}
 #analysis-info05-cont .tit-box h4 {margin-top: 0!important; margin-bottom: 0!important; padding: 0!important; font-size: 21px; display: inline-block}
 #analysis-info05-cont .tit-box h4 span {background: #808080; width: 2px; height:14px; display: inline-block; margin-right: 15px;}
+#analysis-info05-cont .tit-box select{
+	position: relative;
+    background: #F2F2F2 url("../../img/ico-arrow2.png") no-repeat 90% 50%;
+	background-size: 9px 7px;
+	display: inline-block;
+	border-radius: 5px 5px;
+	border:2px solid #323755;
+	cursor: pointer;
+	vertical-align: middle;
+	height: 40px;
+	line-height: 40px;
+	width: 195px;
+	z-index: 100;
+	padding: 0 15px;
+	margin-left: 60px
+}
 .btn-select {
     position: relative;
     background: #F2F2F2 url("../../img/ico-arrow2.png") no-repeat 90% 50%;
@@ -208,8 +225,7 @@
 	#f-analysis .address-info a.edit {position: absolute; left: 80%; top: 20px}
 	#f-analysis .address-info a.edit img {width: 28px; height: 28px;}
 	#analysis-list .subject {font-size: 15px!important; padding: 15px 25px}
-	#analysis-list .card-header {border-radius: 0;  padding: 0; margin-left: 35px; cursor:pointer;z-index: 999}
-	#analysis-list .card-header.v1 {margin-left: 0!important}
+	#analysis-list .card-header {border-radius: 0;  padding: 0; margin-left: 35px; cursor:pointer;}
 	#analysis-list .m-card-header{cursor:pointer}
 	#analysis-list .card {border-radius: 0; margin-bottom: 12px;}
 	#analysis-list .card-body { margin-left: 0}
@@ -252,6 +268,7 @@
 	#analysis-info05-cont .tit-box {padding: 13px 20px; clear: both; position: relative}
 	#analysis-info05-cont .tit-box h4 {font-size: 15px;}
 	#analysis-info05-cont .tit-box h4 span {margin-right: 8px; vertical-align: top; margin-top: 0px}
+	#analysis-info05-cont .tit-box select {height: 36px;line-height: 36px;width: 158px; position: absolute; right: 10px; top: 7px}
 	.btn-select {height: 36px;line-height: 36px;width: 158px; position: absolute; right: 10px; top: 7px}
 	.btn-select .btn-select-value {height: 36px;line-height: 36px;width: 158px; font-size: 14px;}
 

@@ -10,7 +10,14 @@
 <link href="../dist/css/common.css" rel="stylesheet">
 <link href="../dist/css/page.css" rel="stylesheet">
 <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
-	
+<style>
+#map-canvas{
+  height: 370px;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+</style>
 </head>
 
 <body>
@@ -58,7 +65,7 @@
 				<div class="left-map-control v2">
 					<a href="#"><img src="../img/ico_map_plus.png" alt="확대"/></a><a href="#"><img src="../img/ico_map_minus.png" alt="축소"/></a>
 				</div>
-			  <img src="../img/bg_map.png" alt="지도"/>
+			  	<div id="map-canvas"></div>
 			</div>
 			<div class="address-info-wrap"><!-- 주소정보 -->
 				<div class="address-info">
@@ -71,7 +78,7 @@
 				<div class="collapsed-area">
 					<div class="accordion" id="analysis-list">
 						<div class="card"><!-- 토지정보 -->
-							<div class="data-loading"><img src="../img/loading.gif" alt="로딩"/></div><!-- 로딩바 -->
+							<div class="data-loading"><img src="../img/loading_repeat.gif" alt="로딩"/></div><!-- 로딩바 -->
 							<div class="card-header m-card-header" id="analysis-info01">
 								<h3 class="mb-0">
 									<div class="subject" data-toggle="collapse" data-target="#analysis-info01-cont" aria-expanded="true">토지정보<a href="#" class="f_r subject-link">토지(임야)대장 열람</a></div>
@@ -118,7 +125,7 @@
 						  <div>데이터를 불러오는데 실패했습니다.</div>
 					  	</div>
 					  	<div class="card"><!-- 소유 및 가격 -->
-							<div class="data-loading"><img src="../img/loading2.gif" alt="로딩"/></div><!-- 로딩바 -->
+							<div class="data-loading"><img src="../img/loading_repeat.gif" alt="로딩"/></div><!-- 로딩바 -->
 							<div class="card-header m-card-header" id="analysis-info02">
 								<h3 class="mb-0">
 									<div class="subject" data-toggle="collapse" data-target="#analysis-info02-cont" aria-expanded="true">소유 및 가격<a href="#" class="f_r subject-link">인터넷등기</a><a href="#" class="f_r subject-link">공시지가 확인</a></div>
@@ -223,7 +230,7 @@
 							</div>
 						</div>
 						<div class="card"><!-- 개별주택가격 -->
-							<div class="data-loading"><img src="../img/loading2.gif" alt="로딩"/></div><!-- 로딩바 -->
+							<div class="data-loading"><img src="../img/loading_fail.gif" alt="로딩"/></div><!-- 로딩바 -->
 							<div class="card-header m-card-header" id="analysis-info03">
 								<h3 class="mb-0">
 									<div class="subject" data-toggle="collapse" data-target="#analysis-info03-cont" aria-expanded="true">개별주택가격<a href="#" class="f_r subject-link">개별 주택가격 확인</a></div>
@@ -258,7 +265,7 @@
 							</div>
 						</div>
 						<div class="card"><!-- 조례정보 -->
-							<div class="data-loading"><img src="../img/loading2.gif" alt="로딩"/></div><!-- 로딩바 -->
+							<div class="data-loading"><img src="../img/loading_success.gif" alt="로딩"/></div><!-- 로딩바 -->
 							<div class="card-header m-card-header" id="analysis-info04">
 								<h3 class="mb-0">
 									<div class="subject" data-toggle="collapse" data-target="#analysis-info04-cont" aria-expanded="true">조례정보</div>
@@ -323,7 +330,7 @@
 							</div>
 						</div>
 						<div class="card"><!-- 전력계통정보 -->
-							<div class="data-loading"><img src="../img/loading2.gif" alt="로딩"/></div><!-- 로딩바 -->
+							<div class="data-loading"><img src="../img/loading_success.gif" alt="로딩"/></div><!-- 로딩바 -->
 							<div class="card-header m-card-header" id="analysis-info05">
 								<h3 class="mb-0">
 									<div class="subject" data-toggle="collapse" data-target="#analysis-info05-cont" aria-expanded="true">전력계통정보</div>
@@ -333,7 +340,12 @@
 								<div class="card-body">
 									<div class="tit-box">
 										<h4><span></span>전신주 위치</h4>
-										<a class="btn-select">
+										<select>
+											<option>27-1</option>
+											<option>27-2</option>
+											<option>27-3</option>
+										</select>
+										<!--<a class="btn-select">
 											<input type="hidden" class="btn-select-input" id="" name="" value="" />
 											<span class="btn-select-value">27-3</span>
 											<div class="select-cont">
@@ -347,7 +359,7 @@
 													<li>27-6</li>
 												</ul>
 											</div>
-										</a>
+										</a>-->
 									</div>	
 									<div class="power-box-area">
 										<div class="power-box">
@@ -381,28 +393,9 @@
 											<div>064-740-34561<span>제주지역본부 / 제주지역 / 계통운영(기술)부</span></div>
 											<button type="button" disabled>계통연계비 검토 확인하기</button>
 										</div>
-										<div class="btm-customer">
-											<div class="btm-row">
-												<span>담당자</span>
-												<span>양지혁</span>
-											</div>
-											<div class="btm-row">
-												<span>연락처</span>
-												<span>010-3241-3123</span>
-											</div>
-											<div class="btm-row">
-												<span>이메일</span>
-												<span>hyundai@energy.com</span>
-											</div>
-											<div class="btm-row">
-												<span>해당 내용으로 보고서에 출력됩니다.</span>
-											</div>
-											<button type="button" disabled class="modify">수정</button>
-										</div>
-								  </div>
-									
-							  </div>
-						  </div>
+								  	</div>
+							  	</div>
+						  	</div>
 					  	</div>
 					</div>
 				</div>
@@ -428,5 +421,41 @@
 <script src="../dist/js/jquery-3.4.1.min.js"></script>
 <script src="../dist/js/bootstrap.min.js"></script>
 <script src="../dist/js/add.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+<script>
+	// if HTML DOM Element that contains the map is found...
+if (document.getElementById('map-canvas')) {
 
+  // Coordinates to center the map
+  var myLatlng = new google.maps.LatLng(18.41604, -66.1626177);
+
+  // Other options for the map, pretty much selfexplanatory
+  var mapOptions = {
+    zoom: 16,
+    center: myLatlng,
+    scrollwheel: false,
+    query: 'Roberto Perez Obregon Law Office',
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+  // Attach a map to the DOM Element, with the defined settings
+  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: "Roberto Perez Obregon Law Office",
+  });
+ 
+
+  //Resize map
+  google.map.event.addDomListener(window, 'load', initialize);
+  google.map.event.addDomListener(window, "resize", function() {
+    var center = map.getCenter();
+    google.map.event.trigger(map, "resize");
+    map.setCenter(center);
+  });
+
+}
+</script>
 </html>
