@@ -7,9 +7,8 @@ $('.gnb-collapsed').click(function() {
 $(".m-card-header").click(function(){
 	var infoId = $(this).attr("id");
 	$("#" + infoId).addClass("v1");
-	
+	$('.data-loading').addClass("v1");
  });
-
 
 
 

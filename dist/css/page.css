@@ -63,10 +63,10 @@
 #analysis-list .card {border:0; margin-bottom: 33px;}
 #analysis-list .card:last-child {margin-bottom: 0!important}
 #analysis-list .card-body {padding: 13px 0; }
-#analysis-list .card-header {background: #343953; border-bottom: 0; border-radius: 4px;  padding: 22px 35px; margin-bottom: 0; margin-left: 70px; z-index: 999}
+#analysis-list .card-header {background: #343953; border-bottom: 0; border-radius: 4px;  padding: 22px 35px; margin-bottom: 0; margin-left: 70px; z-index: 9999; display: block}
 #analysis-list .card-header.v1 {margin-left: 0!important}
 #analysis-list .subject {font-size: 21px!important;  color: #fff; padding: 0; cursor: pointer}
-
+#analysis-list .data-loading.v1 {z-index: 999!important; }
 .land-info {display: table; width: 100%;  background: #fff; box-shadow: 0 3px 6px #D8D8D8; border-top: 5px solid #F68D00; border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6; padding: 25px 0}
 .land-info.v1 {border-top: 5px solid #B5E5FF;}
 .land-info.v1 div {width: auto;}
@@ -217,7 +217,7 @@
 	.top-map-area .top-map-control,.top-map-area .left-map-control {display: none;}
 	.bg-wrap01 {background: #fff; padding: 20px}
 	#f-analysis {margin-left: -15px; margin-right: -15px;}
-	#f-analysis .top-map-area {height: 137px;}
+	#f-analysis .top-map-area {height: 137px; overflow: hidden;}
 	#f-analysis .top-map-area img {height: 137px; }
 	#f-analysis .address-info-wrap {background: #F5F6F8; overflow: hidden}
 	#f-analysis .address-info {box-shadow: 0 3px 6px #EBEBEB; font-size: 17px; padding: 20px; position: relative; margin-bottom: 20px;}
@@ -301,7 +301,7 @@
 
 
 }
-#fixed-container {background: #000;width:100%; position:absolute; left:0; top:120px; right:0; bottom:0px;}
+#fixed-container {background: #000;width:100%; position:absolute; left:0; top:120px; right:0; bottom:0px; }
 #fixed-footer {width:100%; position:absolute; left:0; right:0; bottom:0;}
 #map-bg {background: #000; opacity: 0.58;width:100%; height:100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0;}
 #map{width:100%;  z-index:0; position: fixed; left: 0; right: 0; top: 120px; bottom: 0px; overflow: hidden;}
@@ -342,9 +342,9 @@
 	.set-box .txt-box {font-size: 16px; padding: 20px 0;}
 	.set-box .txt-box .txt-ex {padding-right: 0;}
 	.set-box .txt-box .process-num {padding-right: 10px; }
-	.set-box .txt-box button {font-size: 15px; text-align: center; border-radius: 100px 100px; padding: 10px 60px;  }
-	.set-box .txt-box button.finish {background: #B5BCC3; color: #fff; border:1px solid #BFBFBF; position: fixed; bottom: 20px;  right: 20px;}
-	.set-box .txt-box button.cancel {background: #B5BCC3; color: #fff; border: 1px solid #BFBFBF; position: fixed; bottom: 20px; left: 20px;}
+	.set-box .txt-box button {font-size: 15px; text-align: center; border-radius: 100px 100px; padding: 10px 0; width: 183px;  }
+	.set-box .txt-box button.finish {background: #B5BCC3; color: #fff; border:1px solid #BFBFBF; position: fixed; bottom: 20px;  right: 20px!important; left: inherit!important;width: 42%!important; display: inline-block}
+	.set-box .txt-box button.cancel {background: #B5BCC3; color: #fff; border: 1px solid #BFBFBF; position: fixed; bottom: 20px; left: 20px!important; width: 42%!important;  right: inherit!important; display: inline-block}
 	.set-box .txt-box button:disabled.finish {background: #B5BCC3; color: #fff; border:1px solid #BFBFBF; position: fixed; bottom: 20px; left: 20px;}
 	.set-box .txt-box button:hover {background: #FF9200; border: 1px solid #FF9200}
 	.set-box .txt-box button.cancel,.set-box .txt-box button.finish {top:inherit;}

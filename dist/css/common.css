@@ -168,7 +168,7 @@ top: 0.875em;
 right: 1.125em;
 height: 24px;
 width: 24px;
-z-index: 1;
+z-index: 1053;
 cursor: pointer;
 transition: all .25s;
 }
@@ -221,7 +221,7 @@ vertical-align: middle;
 		top: 0px;
 		width: 16px
 	}
-	.gnb-collapsed {display: block; z-index: 101}
+	.gnb-collapsed {display: block; z-index: 1053;}
 
 	.gnb-list {
 		position: relative;
@@ -252,12 +252,13 @@ vertical-align: middle;
 		visibility: hidden;
 		transition: opacity .35s, visibility .35s, width .35s;
 		overflow: hidden;
-		background: #fff; z-index: 100
+		background: #fff; z-index: 1052;
 	}
 
 	.Overlay-on {
 		width: 80%;
 		visibility: visible;
+		z-index: 1052;
 	}
 	#content {margin-top: 100px!important}
 }
@@ -298,8 +299,8 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 }
 
 /* layer */
-.modal {top: 60px!important}
-.modal-backdrop {top:100px!important}
+.modal {top: 60px!important; z-index: 100000!important}
+.modal-backdrop {top:100px!important; width: 100%; height: 100% }
 .modal-backdrop.show {opacity: 0.71!important}
 @media (min-width: 1200px){
 	.help-layer .modal-dialog {max-width:1100px!important;}
