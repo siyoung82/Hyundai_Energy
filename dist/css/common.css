@@ -60,7 +60,7 @@
 	src: local('Roboto'), local('Roboto-Regular'), url(https://font.gstatic.com/s/roboto/v16/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-
+body {background-color: #383839!important;}
 body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,fieldset,legend,th,td,input,select,button { margin: 0; padding: 0; font-family: 'hyundaimedium' , 'NotoSansKRM'!important  }
 header,footer,section,article,nav,aside,figure,figcaption { display: block }
 fieldset,img { border: 0 none }
@@ -179,7 +179,7 @@ text-align: center;
 margin-bottom: 0;
 padding-top: 58px;
 }
-
+.gnb-list a.admin {width: 55px; height: 55px; display: inline-block; border:3px solid #FF9100; border-radius: 100px 100px; font-size: 17px; padding-left: 0; line-height: 50px; margin-left: 30px}
 .logo {
 position: absolute;
 left:12px;
@@ -192,7 +192,7 @@ display: inline-block;
 vertical-align: middle;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1200px){
 	header .container {padding-left: 0; padding-right: 0;}
 	.gnb-list {padding-top: 0; }
 	.gnb {height: 100px; text-align: center}
@@ -261,27 +261,33 @@ vertical-align: middle;
 		z-index: 1052;
 	}
 	#content {margin-top: 100px!important}
+	.gnb-list li:last-child {border-bottom: 0}
+	.gnb-list a.admin {border:3px solid #FF9100; border-radius: 5px 5px; font-size: 24px; line-height: 50px; padding: 0 30px; width: auto; margin: 10px 20px; display: block;}
+
 }
 
 .Overlay-bg {}
 .Overlay-bg-on {opacity: 0.62;background: #000; position: fixed;
 top: 0;
 right: 0; left: 0; bottom: 0; }
-#content {margin-top: 120px;}
-#m-content {margin-top: 120px; background: url("../../img/bg_main.png")no-repeat center bottom;}
+#content {margin-top: 120px; background-color: #fff;}
+#m-content {margin-top: 100px; background:#fff url("../../img/bg_main.png")no-repeat center bottom;}
 footer {background: #383839; font-size: 15px; color: #fff;}
 footer .copyright {margin-bottom: 0; color: #B2B2B2}
 #footer {padding: 35px 30px; position: relative}
 #footer .btm-logo {position: absolute; right: 0; top:53px; }
 #footer .btm-logo img {width: 212px; height: 47px;}
 @media only screen and (max-width: 767px){
+	#m-content {margin-top: 100px;}
+
 	footer {font-size: 10px; }
 	footer address {padding-top: 3px;}
 	#footer {padding: 25px 6px;}
 	#footer .btm-logo img {width: 86px; height: 19px;}
 	#footer .btm-logo {top:20px; }
-	#m-content {background: url("../../img/bg_m_main.png")no-repeat center bottom; background-size: 100% 354px;;}
-	#content.v1 {background: url("../../img/bg_m_cont.png")no-repeat center bottom; background-size: 100% 354px;;}
+	#m-content {background:#fff url("../../img/bg_m_main.png")no-repeat center bottom; background-size: 100% 354px;}
+	#content.v1 {background:#fff url("../../img/bg_m_cont.png")no-repeat center bottom; background-size: 100% 354px;}
+	#content.v2 {background:#fff url("../../img/bg_m_free.png")no-repeat center bottom; background-size: 100% 353px;}
 }
 
 /* button */

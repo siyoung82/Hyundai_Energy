@@ -322,40 +322,8 @@
 .set-box .txt-box button.cancel {color: #fff; border: 1px solid #fff; position: absolute; right: 145px; top: 24px}
 .set-box .txt-box button:disabled.finish {background: #5E617A;  color: #273C6B; border:1px solid #5E617A}
 
-/* 무료견적 */
-.free-estimate { background: url("../../img/bg_free.png")no-repeat center bottom; min-height: 800px; overflow: hidden}
-.free-estimate .input-info-box {width: 100%; max-width: 940px; margin: 70px auto 0; border-radius: 13px; background: #fff; overflow: hidden; box-shadow: 0 3px 12px #C2C2C2; text-align: center; }
-.free-estimate .input-info-box .free-header{background: #333854; padding: 58px 0 0 0; overflow: hidden;}
-.free-estimate .input-info-box .free-header h2{color: #fff;}
-.free-estimate .input-info-box .free-header p{opacity: 0.5; color: #fff;}
-.free-estimate .input-info-box .free-cont {padding: 40px 220px}
-.free-estimate .input-info-box .free-cont .input-title {font-size: 19px; color: #474747}
-.free-estimate .input-info-box .free-cont .form-control {border:1px solid #BFBFBF; height: 50px; line-height: 50px; padding: 0 20px; border-radius: 5px; color: #474747}
-.free-estimate .input-info-box .free-cont .form-group {position: relative;}
-.free-estimate .input-info-box .free-cont .form-group .error-txt {font-size: 16px; color: #D0310C; position: absolute; right: 10px; top: 13px;}
-.free-estimate .input-info-box .free-cont .form-group .finish-txt {font-size: 16px; color: #B7B7B7; position: absolute; right: 10px; top: 13px;}
-.free-estimate .input-info-box .free-cont input::placeholder {line-height: 50px; color: #474747}
-.free-estimate .input-info-box .free-cont input.error {border:1px solid #D0310C}
-.free-estimate .input-info-box .free-cont select {border:1px solid #BFBFBF; height: 50px; line-height: 50px; width: 100%; border-radius: 5px; background: url("../../img/ico-arrow2.png") 93% 50% no-repeat; background-size: 9px 7px; padding: 0 10px; color: #474747}
-.free-estimate .input-info-box .phone-n,.free-estimate .input-info-box .certi-n {margin-bottom: 1rem;}
-.free-estimate .input-info-box .phone-n .col-md-3 {padding-right: 0px!important;}
-.free-estimate .input-info-box .certi-n .col-md-3 {padding-left: 0!important}
-.free-estimate .input-info-box .certi-n button {border-radius: 5px; background: #FF9100; color: #fff; font-size: 17px; display: block; width: 100%; height: 50px; line-height: 50px;}
-.free-estimate .input-info-box .certi-n button:disabled {background: #DBDBDB;}
-.free-estimate .input-info-box .form-check input {border: #959595 1px solid; background: #fff; width: 15px; height: 15px; vertical-align: middle}
-.free-estimate .input-info-box .form-check label {color: #979797; font-size: 13px; padding-left: 10px; vertical-align: middle; margin-bottom: 0}
-.free-cont .submission {border-radius: 100px 100px; background: #DBDBDB; padding: 20px 110px; font-size: 21px; color: #fff; margin-top: 38px;}
-/* table */
-.table-type01 td,.table-type01 th {text-align: center; font-size: 19px; font-family:'hyundailight'!important; }
-.table-type01 th {color: #747474; font-family:'hyundailight'!important; padding: 33px 0; border-bottom: 1px solid #070707}
-.table-type01 td {color:#474747; padding:25px; border-bottom: 1px solid #C6C6C6}
-.table-type01 td.bg {background: #F7F9FC; font-size: 22px;}
-.table-type01 td.bg2 {background: #E6EFF8; }
-.table-type01 td em {color: #4593FF}
-.table-type01 td a.go-link {color: #4593FF}
-.table-type01 th.line1 {border-bottom: 1px solid #C6C6C6}
-.table-type01 td .td-select{border:0; width: 100%; text-align: center; background:#E6EFF8 url("../../img/ico-arrow.png") no-repeat right 50%; background-size: 19px 8px;}
-
+@media (max-width: 1192px) and (min-width: 768px)
+	{.set-box {top: 100px;}}
 @media (max-width: 767px){
 	.table-type01 td,.table-type01 th,.table-type01 td.bg {font-size: 13px; padding: 10px 0;}
 	#fixed-container {top: 100px; bottom: 0;}
@@ -379,6 +347,71 @@
 	.set-box .txt-box button.finish,.set-box .txt-box button.cancel {top: 20px;}
 	
 }
+
+/* 무료견적 */
+.free-estimate { background: url("../../img/bg_free.png")no-repeat center bottom; min-height: 800px; overflow: hidden}
+.free-estimate .input-info-box {width: 100%; max-width: 940px; margin: 70px auto 0; border-radius: 13px; background: #fff; overflow: hidden; box-shadow: 0 3px 12px #C2C2C2; text-align: center; }
+.free-estimate .input-info-box.v1 {margin: 216px auto 0}
+.free-estimate .input-info-box .free-header{background: #333854; padding: 48px 0 20px 0; overflow: hidden;}
+.free-estimate .input-info-box .free-header h2{color: #fff; font-size: 30px;}
+.free-estimate .input-info-box .free-header p{opacity: 0.5; color: #fff; font-size: 18px;}
+.free-estimate .input-info-box .free-cont {padding: 40px 220px}
+.free-estimate .input-info-box .free-cont .input-title {font-size: 19px; color: #474747}
+.free-estimate .input-info-box .free-cont .form-control {border:1px solid #BFBFBF; height: 50px; line-height: 50px; padding: 0 20px; border-radius: 5px; color: #474747}
+.free-estimate .input-info-box .free-cont .form-group, .free-estimate .input-info-box .certi-n .form-control {position: relative;}
+.free-estimate .input-info-box .free-cont .form-control.finish{background: #F8F8F8}
+.free-estimate .input-info-box .free-cont .form-group .error-txt {font-size: 16px; color: #D0310C; position: absolute; right: 10px; top: 13px;}
+.free-estimate .input-info-box .free-cont .finish-txt {font-size: 16px; color: #B7B7B7; position: absolute; right: 30px; top: 13px;}
+.free-estimate .input-info-box .free-cont input::placeholder {line-height: 50px; color: #474747}
+.free-estimate .input-info-box .free-cont input.error {border:1px solid #D0310C}
+.free-estimate .input-info-box .free-cont select {border:1px solid #BFBFBF; height: 50px; line-height: 50px; width: 100%; border-radius: 5px; background: url("../../img/ico-arrow2.png") 93% 50% no-repeat; background-size: 9px 7px; padding: 0 10px; color: #474747}
+.free-estimate .input-info-box .phone-n,.free-estimate .input-info-box .certi-n {margin-bottom: 1rem; }
+.free-estimate .input-info-box .phone-n .col-md-3 {padding-right: 0px!important;}
+.free-estimate .input-info-box .certi-n .col-md-3 {padding-left: 0!important}
+.free-estimate .input-info-box .certi-n button {border-radius: 5px; background: #FF9100; color: #fff; font-size: 17px; display: block; width: 100%; height: 50px; line-height: 50px;}
+.free-estimate .input-info-box .certi-n button:disabled {background: #DBDBDB;}
+.free-estimate .input-info-box .form-check input {border: #959595 1px solid; background: #fff; width: 15px; height: 15px; vertical-align: middle}
+.free-estimate .input-info-box .form-check label {color: #979797; font-size: 13px; padding-left: 10px; vertical-align: middle; margin-bottom: 0}
+.free-cont .submission {border-radius: 100px 100px; background: #FF9100; padding: 20px 110px; font-size: 21px; color: #fff; margin-top: 38px;}
+.free-cont .submission:disabled {border-radius: 100px 100px; background: #DBDBDB; padding: 20px 110px; font-size: 21px; color: #fff; margin-top: 38px;}
+.free-cont.v1 .submission {margin-top: 0;}
+@media (max-width: 767px) {
+	.free-estimate .input-info-box.v1 {margin: 140px auto 0}
+	.free-estimate {padding: 0 10px; min-height: 100%; padding-bottom: 123px; background: none;}
+	.free-estimate .input-info-box {border-radius: 0; margin: 20px auto 0;}
+	.free-estimate .input-info-box .free-header{padding: 20px 0 0 0;}
+	.free-estimate .input-info-box .free-header.v1 {background: #fff; color: #333854; padding-bottom: 10px}
+	.free-estimate .input-info-box .free-header.v1 h2 {color: #333854}
+	.free-estimate .input-info-box .free-header.v1 p {color: #000; opacity: 1}
+	.free-estimate .input-info-box .free-header h2{font-size: 17px;}
+	.free-estimate .input-info-box .free-header p{font-size: 15px;}
+	.free-estimate .input-info-box .free-cont .input-title {font-size: 15px;}
+	.free-estimate .input-info-box .free-cont {padding: 30px 25px 80px}
+	.free-estimate .input-info-box .free-cont.v1 {padding: 0 0 50px}
+	.free-estimate .input-info-box .phone-n .col-md-3,.free-estimate .input-info-box .certi-n .col-md-3 {width: 30%;}
+	.free-estimate .input-info-box .phone-n .col-md-9,.free-estimate .input-info-box .certi-n .col-md-9 {width: 70%;}
+	.free-estimate .input-info-box .free-cont select { background: url("../../img/ico-arrow2.png") 90% 50% no-repeat; background-size: 9px 7px;}
+	.free-cont {position: relative; }
+	.free-cont .submission {border-radius: 0; padding: 18px 0; font-size: 15px; color: #fff;position: absolute; bottom: 0; left: 0px; right: 0; width: 100%; display: block;}
+	.free-cont .submission:disabled {border-radius: 0; padding: 18px 0; font-size: 15px; color: #fff; position: absolute; bottom: 0; left: 0; right: 0; width: 100%; display: block;}
+	.free-estimate .input-info-box .free-cont .form-group .error-txt {font-size: 12px; color: #D0310C; position: absolute; right: 10px; top: 16px;}
+	.free-estimate .input-info-box .free-cont .finish-txt {font-size: 12px; color: #B7B7B7; position: absolute; right: 20px; top: 16px;}
+
+
+}
+
+/* table */
+.table-type01 td,.table-type01 th {text-align: center; font-size: 19px; font-family:'hyundailight'!important; }
+.table-type01 th {color: #747474; font-family:'hyundailight'!important; padding: 33px 0; border-bottom: 1px solid #070707}
+.table-type01 td {color:#474747; padding:25px; border-bottom: 1px solid #C6C6C6}
+.table-type01 td.bg {background: #F7F9FC; font-size: 22px;}
+.table-type01 td.bg2 {background: #E6EFF8; }
+.table-type01 td em {color: #4593FF}
+.table-type01 td a.go-link {color: #4593FF}
+.table-type01 th.line1 {border-bottom: 1px solid #C6C6C6}
+.table-type01 td .td-select{border:0; width: 100%; text-align: center; background:#E6EFF8 url("../../img/ico-arrow.png") no-repeat right 50%; background-size: 19px 8px;}
+
+
 
 
 
