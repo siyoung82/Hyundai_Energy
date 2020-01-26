@@ -423,15 +423,32 @@
 .control-box .control-cont li .form-group input {background: #F5F6F8; padding: 0 10px; border-radius: 4px; height: 40px; width: 195px; line-height: 40px; color: #383838; border:0}
 .control-box .control-cont li .form-group input:hover {background: #fff ;;border:1.6px solid #FB8F00;}
 .control-box .control-cont li .form-group span {position: absolute; color: #383838; right: 15px; top: 10px}
+.control-box .control-cont li:last-child {border-bottom: 0}
 .mapping-btm-btn button {border-radius: 5px; width: 190px; height: 55px; background: #FF9100; color: #fff;}
-.mapping-btm-btn button:disabled {background: #DEDEDE}
+ㅁmapping-btm-btn button:disabled {background: #DEDEDE}
 .mapping-btm-btn {position: absolute; bottom: 30px; left:36px; right: 36px;}
 .address-box {background: #fff url("../../img/ico-search.png") 26px 50% no-repeat; background-size: 17px 17px; border: 1px solid #E0E0E0; border-radius: 5px; padding: 12px 30px 12px 55px; font-size: 17px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.42);float: left; color: #676767 }
 .panel-box {background: #fff; border: 1px solid #E0E0E0; border-radius: 5px; padding: 12px 39px; font-size: 17px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.42); float: left; margin-left: 30px; color: #676767}
 .panel-box div {display: inline-block}
 .panel-box div span:first-child {padding-right: 47px;}
 .panel-box div:last-child {margin-left: 77px;}
+.angle-control {border: 1px solid #fff;border-radius: 4px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); background: #fff; padding: 45px 19px 55px; position: relative;overflow: hidden}
+.angle-control:hover {border:1px solid #323755}
+.angle-control .input-box {background: #F5F6F8;width: 141px;height: 40px; position: relative; margin-top: 20px;}
+.angle-control:hover .input-box {background: #EBF5FF}
+.angle-control:hover .input-box input,.angle-control:hover .input-box span {color: #0C3A79}
+.angle-control .input-box input {background-color:transparent; border: 0; width: 100px;}
+.angle-control .input-box span {position: absolute; right: 8px; top:8px; color: #848484}
+.angle-control .round-slider01 {position: absolute; top: 35px; right: 40px; background: url("../../img/bg_angle01.png")center top no-repeat; width: 116px; height: 116px; padding: 6px;}
+.angle-control .round-slider02 {position: absolute; top: 35px; right: 40px; background: url("../../img/bg_angle02.png")center top no-repeat; width: 116px; height: 116px; }
+.angle-control .round-slider02 .bg-round {position: relative;}
+.angle-control .round-slider02 .bg-round .rslider {position: absolute; top: 38px; left: 6px; bottom: 0}
 
+.select-option a {border-radius: 4px;background-color: #f5f6f8;font-size: 16px; border: solid 1.5px #f5f6f8; color: #585858; font-weight: 500; display: inline-block; padding: 16px 0; text-align: center; margin-top: 15px}
+.select-option a.w50 {width: 50%;}
+.select-option a.w25 {width: 25%;}
+
+.select-option a:hover,.select-option a.select { box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);border: solid 1.5px #323755; color: #323755; background: #fff; text-decoration: none;}
 /* table */
 .table-type01 td,.table-type01 th {text-align: center; font-size: 19px; font-family:'hyundailight'!important; }
 .table-type01 th {color: #747474; font-family:'hyundailight'!important; padding: 33px 0; border-bottom: 1px solid #070707}

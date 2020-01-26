@@ -92,6 +92,8 @@ hr { display: none; }
 .invisible { visibility: hidden; overflow: hidden; position: absolute; left:-1000em; width: 0; height: 0; font-size: 0; line-height: 0 }
 .mt80 {margin-top: 80px;}
 .mt15 {margin-top: 15px;}
+.mt20 {margin-top: 20px;}
+
 #skip_navigation p { margin: 0px; padding: 0px }
 #skip_navigation a.accessibility { z-index: 1000; position :absolute; display: block; width:100%; left: 0; text-align: center; top: -10000px; font-size: 1.3em }
 #skip_navigation a.accessibility:hover,	
