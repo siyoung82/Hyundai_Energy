@@ -401,8 +401,11 @@
 }
 
 /* 매핑 */
+@media (max-width: 1200px) {
+	#mapping-control-box,#map{top: 100px!important;}
+}
 #mapping-control-box {background: #fff; position: fixed; left: 0; bottom:0; top: 120px; width: 464px; z-index: 1}
-#mapping-info {position: fixed; left: 490px; top: 145px;z-index: 1 }
+#mapping-info {position: fixed; left: 490px; top: 145px;z-index: 1 ;width: 100%; display: block}
 .control-box .step-box {background: #323755; padding: 40px}
 .control-box .step-box span {display: block; font-size: 21px; color: #fff;}
 .control-box .step-bar {background: #00336C; height: 6px; width: 100%;}
@@ -413,25 +416,25 @@
 .control-box .step-bar.step05 {width: 80%;}
 .control-box .step-bar.step06 {width: 100%;}
 
-.control-box .control-cont {padding: 35px 25px; overflow: hidden;}
+.control-box .control-cont {padding: 25px 25px 70px; overflow-y: auto; height: 600px}
 .control-cont .tit {font-size: 21px;}
-.control-cont .tit .bar{height: 14px; width: 2px; background: #808080; display: inline-block; margin-left: 4px; margin-right: 19px; }
-.control-box .control-cont li {border-bottom: 2px solid #DEDEDE; overflow: hidden; padding: 20px 3px; }
-.control-box .control-cont li select {border:1.6px solid #F5F6F8; background: #F5F6F8 url("../../img/ico-arrow3.png") 95% 50% no-repeat; padding: 0 10px; background-size: 9px 7px; border-radius: 4px; height: 40px; width: 195px; line-height: 40px; color: #383838; text-align: center;}
+.control-cont .tit .bar{height: 14px; width: 2px; background: #808080; display: inline-block; margin-left: 8px; margin-right: 19px; }
+.control-box .control-cont li {border-bottom: 2px solid #DEDEDE; overflow: hidden; padding: 20px 3px; position: relative}
+.control-box .control-cont li select {border:1.6px solid #F5F6F8; background: #F5F6F8 url("../../img/ico-arrow3.png") 95% 50% no-repeat; padding: 0 10px; background-size: 9px 7px; border-radius: 4px; height: 40px; width: 190px; line-height: 40px; color: #383838; text-align: center;}
 .control-box .control-cont li select:hover {background: #fff url("../../img/ico-arrow4.png") 95% 50% no-repeat;;border:1.6px solid #FB8F00; background-size: 9px 7px;}
 .control-box .control-cont li .form-group {position: relative; margin-top: 10px}
 .control-box .control-cont li .form-group input {background: #F5F6F8; padding: 0 10px; border-radius: 4px; height: 40px; width: 195px; line-height: 40px; color: #383838; border:0}
 .control-box .control-cont li .form-group input:hover {background: #fff ;;border:1.6px solid #FB8F00;}
 .control-box .control-cont li .form-group span {position: absolute; color: #383838; right: 15px; top: 10px}
-.control-box .control-cont li:last-child {border-bottom: 0}
+.control-box .control-cont li:last-child {border-bottom: 0; padding-bottom: 0}
 .control-box .control-cont li .right-input input {background: #F5F6F8; padding: 0 10px; border-radius: 4px; height: 40px; width: 130px; line-height: 40px; color: #383838; border:0; display: inline-block; text-align: center}
-.control-box .control-cont li .right-input span { text-align: right; width: 45px; display: inline-block; color: #585858}
+.control-box .control-cont li .right-input span { text-align: right; width: 60px; display: inline-block; color: #585858; padding-right: 10px}
 .control-box .control-cont li .module-select {display: block; clear: both; padding-top: 20px; padding-bottom: 15px; overflow: hidden; border-bottom: 2px solid #FAFAFA}
 .control-box .control-cont li .module-select input {background: #F5F6F8; padding: 0 10px; border-radius: 4px; height: 40px; width: 130px; line-height: 40px; color: #383838; border:0; display: inline-block; text-align: center}
 .control-box .control-cont li .module-select span {padding: 0 15px;}
-.control-box .control-cont li .module-button {text-align: right; margin-top: 20px;}
-.control-box .control-cont li .module-button button {border-radius: 4px;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);border: solid 1.3px #323755; background-color: #fff; padding: 15px 22px; font-size: 17px; margin-left: 30px;}
-.control-box .control-cont li .module-button button:disabled {box-shadow:none;border: solid 1.3px #d6d6d6; color:#d6d6d6 }
+.control-box .control-cont .module-button {text-align: right; margin-top: 20px;}
+.control-box .control-cont .module-button button {border-radius: 4px;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);border: solid 1.3px #323755; background-color: #fff; padding: 15px 22px; font-size: 17px; margin-left: 30px;}
+.control-box .control-cont .module-button button:disabled {box-shadow:none;border: solid 1.3px #d6d6d6; color:#d6d6d6 }
 .mapping-btm-btn button {border-radius: 5px; width: 190px; height: 55px; background: #FF9100; color: #fff;}
 .mapping-btm-btn button:disabled {background: #DEDEDE}
 .mapping-btm-btn {position: absolute; bottom: 30px; left:36px; right: 36px;}
@@ -440,23 +443,129 @@
 .panel-box div {display: inline-block}
 .panel-box div span:first-child {padding-right: 47px;}
 .panel-box div:last-child {margin-left: 77px;}
-.angle-control {border: 1px solid #fff;border-radius: 4px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); background: #fff; padding: 45px 19px 55px; position: relative;overflow: hidden}
+.angle-control {border: 1px solid #fff;border-radius: 4px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); background: #fff; padding: 35px 19px 45px; position: relative;overflow: hidden}
 .angle-control:hover {border:1px solid #323755}
 .angle-control .input-box {background: #F5F6F8;width: 141px;height: 40px; position: relative; margin-top: 20px;}
 .angle-control:hover .input-box {background: #EBF5FF}
 .angle-control:hover .input-box input,.angle-control:hover .input-box span {color: #0C3A79}
 .angle-control .input-box input {background-color:transparent; border: 0; width: 100px;}
 .angle-control .input-box span {position: absolute; right: 8px; top:8px; color: #848484}
-.angle-control .round-slider01 {position: absolute; top: 35px; right: 40px; background: url("../../img/bg_angle01.png")center top no-repeat; width: 116px; height: 116px; padding: 6px;}
-.angle-control .round-slider02 {position: absolute; top: 35px; right: 40px; background: url("../../img/bg_angle02.png")center top no-repeat; width: 116px; height: 116px; }
+.angle-control .round-slider01 {position: absolute; top: 30px; right: 40px; background: url("../../img/bg_angle01.png")center top no-repeat; width: 116px; height: 116px; padding: 6px;}
+.angle-control .round-slider02 {position: absolute; top: 30px; right: 40px; background: url("../../img/bg_angle02.png")center top no-repeat; width: 116px; height: 116px; }
 .angle-control .round-slider02 .bg-round {position: relative;}
 .angle-control .round-slider02 .bg-round .rslider {position: absolute; top: 38px; left: 6px; bottom: 0}
 
 .select-option a {border-radius: 4px;background-color: #f5f6f8;font-size: 16px; border: solid 1.5px #f5f6f8; color: #585858; font-weight: 500; display: inline-block; padding: 16px 0; text-align: center; margin-top: 15px}
 .select-option a.w50 {width: 50%;}
 .select-option a.w25 {width: 25%;}
-
 .select-option a:hover,.select-option a.select { box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);border: solid 1.5px #323755; color: #323755; background: #fff; text-decoration: none;}
+.text-layer {border-radius: 4px; background-color: #5f5f5f; font-size: 17px; color: #fff; padding: 20px; text-align: center; display: inline-block}
+.angle-result {border-radius: 4px;background-color: #f5f6f8; padding: 15px 0}
+.angle-result ul {margin-bottom: 0}
+.angle-result li {border-bottom: 0!important; padding: 5px!important}
+.angle-result li .tit,.angle-result li .angle-num {font-size: 19px!important; color: #6A6A6A!important; display: inline-block}
+.angle-result li .angle-num {padding-right: 20px}
+.angle-result li .angle-num em {padding-left: 15px;}
+
+/* sub page */
+.cont-box {border-radius: 4px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); background-color:#fff;}
+/* 지역별 일사량 */
+.region-solar {padding: 45px}
+.region-solar h2, .region-solar .view-select {display: none;}
+.region-solar p {font-size: 17px; color: #8D8D8D; margin-top: 15px;}
+.region-solar .map-img {max-width: 550px; max-height: 660px; float: left; width: 100%; height: 100%;}
+.region-solar .map-img img {width: 100%; height: auto}
+
+/* 한전정보 */
+.han-info {padding: 39px 32px; min-height: 744px}
+.han-info h2 {display: none;}
+.han-info h3 {font-size: 22px; color: #000000; text-align: center; padding-top: 25px; position: relative}
+.han-info h3 a {position: absolute; right: 24px; top: 25px; font-size: 21px; text-decoration: underline; color: #4593FF}
+.han-info .select-area {border:1px solid #DBDBDB; padding: 35px 25px 25px; overflow: hidden; margin-top: 25px;}
+.han-info .select-area ul {overflow: hidden}
+.han-info .select-area li {width:16.6%; float: left; padding-left: 6px;}
+.han-info .select-area li:first-child {padding-left: 0}
+.han-info .select-area li select {width: 100%; border:1px solid #F5F6F8; font-size: 21px; color: #383838; padding: 0 24px; height: 50px; background:#F5F6F8 url("../../img/ico-arrow3.png") 95% 50% no-repeat; background-size: 9px 7px; border-radius: 4px;}
+.han-info .select-area li select:hover {background:#fff url("../../img/ico-arrow4.png") 95% 50% no-repeat;background-size: 9px 7px;border:1px solid #FB8F00;  }
+.han-info .select-area li select option:seleted{background:#fff url("../../img/ico-arrow3.png") 95% 50% no-repeat;background-size: 9px 7px;border:1px solid #4B4B4B;  }
+
+.han-info .select-area .button-area {text-align: center; margin-top: 35px}
+.han-info .select-area button {border-radius: 100px 100px; text-align: center; color: #fff; background: #323755; width: 226px; height: 62px; font-size: 21px; margin: 0 10px;}
+.han-info .select-area button.reset {background: #F58D00}
+.region-power {margin-top: 5px}
+.region-power .power-box-area .power-box {background: #fff; box-shadow: 0 3px 6px #D8D8D8; border-top: 5px solid #F68D00;border-left: 0; border-right: 0;  width: 33.3%; padding: 25px 0; color: #474747; margin-bottom:10px; overflow: hidden; float: left; margin-right: 0}
+
+/* 문의하기 */
+.contact-us h2 {display: none}
+.contact-btn-area {text-align: center; padding: 35px 0}
+.contact-btn-area button {font-size: 21px; background: #F58D00; border-radius: 100px 100px; padding: 20px 185px; color: #fff;}
+.contact-btn-area button:disabled {background: #DBDBDB}
+
+.contact-table {border-top: 1px solid #6A6A6A; }
+.contact-table .t-row {display: table; width: 100%; }
+.contact-table .t-td,.contact-table .t-th {display: table-cell;  font-family:'hyundailight'!important; border-bottom: 1px solid #d9d9d9; padding: 15px 20px;}
+.contact-table .t-th {color: #000000;font-size: 21px;  background: #F5F9FC; text-align: center ;width: 25%;}
+.contact-table .t-th span {font-size: 21px; color: #D6815C ;font-weight: bold; padding-right: 10px;}
+.contact-table .t-td {color:#404040;  text-align: left; font-size: 17px; width: 75%; position: relative}
+.contact-table .t-td input[type=text] {font-size: 17px; height: 56px;}
+.contact-table .t-td input[type=text]:hover {border: 1px solid #82B1FD; background: #EBF5FF ; color: #126FCC}
+.contact-table .t-td input[type=checkbox] {width: 18px; height: 18px; vertical-align: middle; margin-left: 8px; margin-right: 20px;}
+.contact-table .t-td .w30 {width: 30%; }
+.contact-table .t-td .w30 button.file-sel {margin-left: 15px; padding: 0 22px; background: #F58D00; border-radius: 5px; font-size: 17px; color: #fff; display: inline-block; height: 55px; line-height: 55px; position: absolute; left: 70%; top: 15px}
+.contact-table .t-td .w50 {width: 50%;}
+.contact-table .t-td .w70 {width: 70%; }
+.contact-table .t-td textarea {height: 213px;}
+@media (max-width: 997px) {
+	#content.v3 {padding: 0 ; }
+	#content.v3 .container {padding: 0!important}
+	.cont-box {border-radius: 0; box-shadow: none;}
+	.region-solar,.han-info {padding: 0}
+	#content.v3 h2{display: block; border-top: 2px solid #343953; text-align: center; font-size: 17px; color: #343953; padding: 15px 0; border-bottom: 2px solid #F4F4F4; margin-bottom: 0}
+	.region-solar .view-select {display: block; text-align: right; padding-bottom: 10px; background: #F4F5F7}
+	.region-solar .view-select .w-box {background: #fff; display: block; padding-right: 34px; padding-bottom: 10px; padding-top: 10px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); }
+	.region-solar .view-select a {display: inline-block; color: #4593FF ;font-size: 15px; padding-left: 22px}
+	.region-solar .view-select a:hover {text-decoration: none; color: #4593FF ;}
+	.region-solar .view-select a.view-map {background: url("../../img/view-map-img.png") left 50% no-repeat; background-size: 16px 16px; display: none;}
+	.region-solar .m-table{display: none; padding: 30px}
+	.region-solar .m-table .mt60 {margin-top: 0}
+	.region-solar .view-select a.view-table {background: url("../../img/view-table-img.png") left 3px no-repeat; background-size: 16px 16px; }
+	.region-solar .col-md-6 {width: 100%!important; flex: none; text-align: center}
+	.region-solar .map-img {float: inherit; max-width: 100%; max-height: 100%; padding: 40px;}
+	.region-solar .col-md-12 {padding-right: 0; padding-left: 0}
+	.region-solar .row {margin-left: 0; margin-right: 0;}
+	.table-type02 th {font-size: 17px; }
+	.table-type02 th span {font-size: 11px;}
+	.table-type02 td {font-size: 15px;}
+	.region-solar p {font-size: 13px;}
+	.han-info h3 a {display: none}
+	.han-info h3 {font-size: 15px; color: #4593FF ;display: block; padding-bottom: 10px; background: #F4F5F7 ;padding-top: 0; margin-bottom: 0}
+	.han-info h3 .w-box {background: #fff; display: block; padding-bottom: 20px; padding-top: 20px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); }
+	.han-info .select-area {border: 0; background: #F7F9FC; margin-top: 0; padding: 28px 20px 5px;}
+	.han-info .select-area ul {margin-bottom: 0}
+	.han-info .select-area li {width: 50%; padding-left: 0; padding-bottom: 15px;}
+	.han-info .select-area li:nth-child(odd) {padding-right: 5px;}
+	.han-info .select-area li:nth-child(even) {padding-left: 5px;}
+	.han-info .select-area li:first-child {padding-left: 0}
+	.han-info .select-area li select {width: 100%; border:1px solid #4B4B4B; padding: 0 20px; background:#fff url("../../img/ico-arrow3.png") 95% 50% no-repeat; background-size: 9px 7px;}
+	.han-info .select-area .button-area { position: fixed; bottom: 25px; left: 25px; right: 25px; z-index: 2}
+	.han-info .select-area button {width: 49%; height: 55px; font-size: 21px; display: inline-block; margin: 0; border-radius: 5px; float: left}
+	.han-info .select-area button.reset {float:  right}
+	.region-power {padding: 0 20px 100px;}
+	.region-power .power-box-area .power-box  {width: 100%}
+	.contact-table .t-th,.contact-table .t-td {width: 100%!important; display: block!important}
+	.contact-btn-area{ padding: 20px}
+	.contact-btn-area button {height: 55px; font-size: 21px; display: inline-block; margin: 0; border-radius: 5px; padding: 0; width: 100%}
+	.contact-table {padding: 0 20px}
+	.contact-table .t-td .w30 button.file-sel {left:inherit!important; font-size: 14px; height: 51px; right: 0; top: 0; background: #707070}
+	.contact-table .t-th {font-size: 15px!important; background: #fff!important; text-align: left!important; border-bottom: 0; padding: 25px 0 13px;}
+	.contact-table .t-td {border: 0; padding: 0}
+	.contact-table .t-td input[type=text] {font-size: 14px; height: 51px;}
+	.contact-table .t-td .w50 {width: 100%;}
+	.contact-table .t-td textarea.w70 {height: 134px; width: 100%}
+
+
+
+}
 /* table */
 .table-type01 td,.table-type01 th {text-align: center; font-size: 19px; font-family:'hyundailight'!important; }
 .table-type01 th {color: #747474; font-family:'hyundailight'!important; padding: 33px 0; border-bottom: 1px solid #070707}
@@ -468,7 +577,11 @@
 .table-type01 th.line1 {border-bottom: 1px solid #C6C6C6}
 .table-type01 td .td-select{border:0; width: 100%; text-align: center; background:#E6EFF8 url("../../img/ico-arrow.png") no-repeat right 50%; background-size: 19px 8px;}
 
-
+.table-type02 td,.table-type02 th {text-align: center;  font-family:'hyundailight'!important; }
+.table-type02 th {color: #000000;padding: 13px 0; border-bottom: 1px solid #d9d9d9;font-size: 17px; border-top: 1px solid #6A6A6A; background: #F5F9FC}
+.table-type02 th span {font-size: 14px;}
+.table-type02 td {color:#474747; padding:15px; border-bottom: 1px solid #969696; font-size: 18px; font-family:'hyundailight'!important;}
+.table-type02 td:nth-child(odd) {background: #F4F7FA}
 
 
 

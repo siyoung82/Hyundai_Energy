@@ -93,6 +93,7 @@ hr { display: none; }
 .mt80 {margin-top: 80px;}
 .mt15 {margin-top: 15px;}
 .mt20 {margin-top: 20px;}
+.mt60 {margin-top: 60px;}
 
 #skip_navigation p { margin: 0px; padding: 0px }
 #skip_navigation a.accessibility { z-index: 1000; position :absolute; display: block; width:100%; left: 0; text-align: center; top: -10000px; font-size: 1.3em }
@@ -181,6 +182,7 @@ text-align: center;
 margin-bottom: 0;
 padding-top: 55px;
 }
+.gnb-list a:hover {color: #FB8E00}
 .gnb-list a.admin {width: 55px; height: 55px; display: inline-block; border:3px solid #FF9100; border-radius: 100px 100px; font-size: 17px; padding-left: 0; line-height: 50px; margin-left: 30px}
 .logo {
 position: absolute;
@@ -193,8 +195,12 @@ left:12px;
 display: inline-block;
 vertical-align: middle;
 }
-
-@media only screen and (max-width: 1200px){
+@media (max-width: 1200px) and (min-width: 998px){
+	.gnb li {font-size: 18px}
+	.logo {top: 55px; left: 10px;}
+	.logo img {height: 19px; width: 149px}
+}
+@media only screen and (max-width: 997px){
 	header .container {padding-left: 0; padding-right: 0;}
 	.gnb-list {padding-top: 0; }
 	.gnb {height: 100px; text-align: center}
@@ -273,6 +279,7 @@ vertical-align: middle;
 top: 0;
 right: 0; left: 0; bottom: 0; }
 #content {margin-top: 120px; background-color: #fff;}
+#content.v3 {background: #F5F6F8;padding: 90px 0 60px}
 #m-content {margin-top: 100px; background:#fff url("../../img/bg_main.png")no-repeat center bottom;}
 footer {background: #383839; font-size: 15px; color: #fff;}
 footer .copyright {margin-bottom: 0; color: #B2B2B2}
