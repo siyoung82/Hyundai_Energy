@@ -21,8 +21,22 @@ $(".view-map").click(function(){
 	$(".view-table").show();
 });
 
+$(".term").click(function(){ //조건확인
+	//alert("aa");
+	$(".left-area .area2").show();
+	$(".right-area").hide();
+	$(".tabarea").hide();
+	$(".term").addClass('op24');
+});
+$(".left-area .area2 .close-p").click(function(){ //조건확인
+	//alert("aa");
+	$(".left-area .area2").hide();
+	$(".right-area").show();
+	$(".tabarea").show();
+});
 
-
-
-
-
+$(".area6 h4 a").click(function(){ //조건확인
+	//alert("aa");
+	$(".web-table").toggleClass('v1');
+	$(".mobile-table").toggleClass('v1');
+});

@@ -515,6 +515,7 @@
 .contact-table .t-td .w50 {width: 50%;}
 .contact-table .t-td .w70 {width: 70%; }
 .contact-table .t-td textarea {height: 213px;}
+
 @media (max-width: 997px) {
 	#content.v3 {padding: 0 ; }
 	#content.v3 .container {padding: 0!important}
@@ -563,8 +564,205 @@
 	.contact-table .t-td .w50 {width: 100%;}
 	.contact-table .t-td textarea.w70 {height: 134px; width: 100%}
 
+}
 
 
+/* 경제성분석기 */
+.top-map { width: 100%; height: 285px; overflow: hidden}
+.top-map img {width: 100%; min-height: 100%}
+.economics-area {padding: 50px 0!important; margin-left: 0!important; margin-right: 0!important;  }
+.economics-area .left-area {border-radius: 4px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); background: #fff; overflow: hidden}
+.economics-area .left-area .area1 {padding: 18px; position: relative}
+.economics-area .left-area .area1 a.term {display: none;}
+.economics-area .left-area .area1 .panel-input input {border-radius: 4px; background: #F4F7FA; height: 53px; color: #474747; font-size: 16px; text-align: center}
+.economics-area .left-area .area2 h3 {font-size: 18px; color: #474747; margin-bottom: 0;padding: 10px 30px 15px 30px;}
+.economics-area .left-area .area2 .close-p {display: none;}
+.economics-info h4 {margin-bottom: 0; font-size: 17px; color: #474747 ;padding: 14px 30px; background:#E6EFF8 url("../../img/ico-arrow.png") 90% 50% no-repeat; background-size: 19px 8px;}
+.economics-info ul {padding: 10px 30px; margin-bottom: 0}
+.economics-info ul li {display: table; width: 100%; padding: 10px 0}
+.economics-info ul li span {display: table-cell; width: 50%; color: #474747}
+.economics-info ul li span em {padding-left: 5px; width: 35px; text-align: left; display: inline-block}
+.economics-area .left-area .area2 .btm-reset-btn {border-radius: 5px; background: #323755;display: block; margin: 20px; text-align: center; color: #fff; height: 51px; line-height: 51px;}
+.economics-area .left-area .area2 .btm-reset-btn:hover {text-decoration: none}
+.right-area {overflow: hidden}
+.right-area h3 {color: #474747; font-size: 32px; margin-bottom: 0; padding: 32px 15px 26px}
+.right-area .area1{ margin: 0 0 28px 0; display: block; background: #fff; overflow: hidden; text-align: center;border-radius: 4px;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);}
+.right-area .area1 div {width: 33.3%; display: inline-block; float: left;}
+.right-area .area1 div:last-child {width: 33.4%}
+.right-area .area1 div h4{background: #323755; font-size: 24px; color: #fff; padding: 20px 0;}
+.right-area .area1 div p {font-size: 26px; padding: 30px 0; margin-bottom: 0 }
+.right-area .area1 div p span {font-family:'hyundailight'!important; font-size: 23px;}
+.right-area .area2 {display: table; width: 100%; margin-bottom: 50px }
+.right-area .area2 .w28 {display: table-cell; width: 26%; }
+.right-area .area2 .w22 {display: table-cell; width: 22%; }
+.right-area .area2 .r-box {box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); margin-left: 15px; }
+.right-area .area2 .r-box .data-area {padding: 20px; color: #fff; overflow: hidden}
+.right-area .area2 .r-box .data-area h5 {font-size: 16px; margin-bottom: 5px}
+.right-area .area2 .r-box .data-area span {font-size: 19px;}
+.right-area .area2 .r-box .data-area .w50 {width: 50%; float: left}
+
+.right-area .area2 .r-box.color01 {margin-left: 0; background: #F68D00}
+.right-area .area2 .r-box.color02 {background: #57AF97}
+.right-area .area2 .r-box.color03 {background: #288CCB}
+.right-area .area2 .r-box.color04 {background: #7E77D5}
+
+.right-area .area2 > div h4{font-size: 22px;color: #080808; margin-bottom: 0!important; padding: 20px; background: #fff}
+.right-area .area2 > div h4.color01 {border-left: 5px solid #F68D00}
+.right-area .area2 > div h4.color02 {border-left: 5px solid #57AF97}
+.right-area .area2 > div h4.color03 {border-left: 5px solid #288CCB}
+.right-area .area2 > div h4.color04 {border-left: 5px solid #7E77D5}
+.right-area .area3 {overflow: hidden; margin-bottom: 15px;}
+.right-area .area3>div {width: 50%; float: left; border-left: 1px solid #707070; text-align: center; position: relative; padding: 24px 0; font-size: 33px; color: #414141; padding-left: 45px;}
+.right-area .area3>div span {font-size: 23px; position: absolute; top:3px; color: #474747; left: 120px;}
+
+.right-area .area4 { padding-top: 45px; margin-bottom: 20px;  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); background: #fff; overflow: hidden;}
+.right-area .area4 .year-data {float: left; width: 50%; background: url("../../images/content/analysis_img10.png") center top no-repeat; text-align: center}
+.right-area .area4 .chart-bar {float: right; width: 50%; padding-right: 60px; padding-bottom: 20px;}
+.right-area .area4 .year-num {font-size: 40px; font-weight: 300; padding-bottom: 20px;  padding-top: 140px;}
+.right-area .area4 .year-num span {font-size: 32px; font-family:'hyundailight'!important;}
+.right-area .area4 .btm-txt {font-size: 16px; background: #F7F9FC url("../../img/bg_house.png")85% 50% no-repeat; overflow: hidden; display: block; margin-bottom: 0!important; color: #6f6f6f; padding: 27px 100px 27px; clear: both; border-top: 1px solid #D1D1D1; background-size: 154px 123px;}
+.right-area .area4 .btm-txt li {padding: 3px 0; background: url("../../img/bullet.png") no-repeat left 50%; background-size: 3px 3px; padding-left: 15px;}
+
+.right-area .area5 {padding-bottom: 30px; overflow: hidden;}
+.right-area .area5 h3 span{color: #A7A7A7; font-size: 23px; padding-left: 5px;}
+.right-area .area5 .yield-box {width: 49%; border-radius: 5px; display: block;}
+.right-area .area5 .yield-box.v1 {float: left; }
+.right-area .area5 .yield-box.v2 {float: right;}
+
+.right-area .area5 .yield-box h4 {color: #fff; font-size: 24px; margin-bottom: 10px; background: #323755; border-radius: 4px; padding: 26px 38px 22px;}
+.right-area .area5 .yield-box .yield-cont{box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); background-color:#fff; overflow: hidden; padding: 37px 40px;}
+.right-area .area5 .yield-box .yield-cont div {width: 50%; float: left;  }
+.right-area .area5 .yield-box h5 {color: #080808; font-size: 21px;}
+.right-area .area5 .yield-box p{font-size: 26px; color: #000; margin-bottom: 0!important;text-align: center}
+
+.right-area .area6 {display: block; clear: both; margin-top: 30px;}
+.right-area .area6 h4{color: #fff; font-size: 24px; margin-bottom: 0; background: #323755; border-radius: 4px; padding: 26px 38px 22px; position: relative }
+.right-area .area6 h4 a {position: absolute; right: 40px; font-size: 18px; color: #fff; background: url("../../img/ico_acc_close.png") right 5px no-repeat; padding-right: 20px}
+.right-area .area6 h3 {font-size: 23px; color: #A7A7A7; padding: 26px 5px 14px}
+.right-area .area6 ul{background: #fff;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); display: table; width: 100%;margin-block-start: 0px!important;margin-block-end: 0px!important; padding-inline-start:0!important; padding: 12px 0}
+.right-area .area6 ul li {display: table-cell; border-right: 1px solid #e8e8e8; text-align: center; padding: 20px 0; font-size: 17px; color: #000000;}
+.right-area .area6 ul li:last-child{ border-right: 0!important;}
+.right-area .area6 ul li span {color: #000000; font-weight: 500}
+.data-table table th{font-size: 14px; text-align: center; border-bottom: 1px solid #070707;padding: 24px 0 12px;color: #000000; font-weight: normal;}
+.data-table table td {font-size: 14px;text-align: center; border-bottom: 1px solid #C6C6C6; padding: 12px 0;color: #000000; }
+.data-table table th:first-child {background: #fff!important }
+.data-table table td:first-child {background: #F2F3F4!important; }
+.data-table table td:nth-child(odd),.data-table table th:nth-child(odd) {background: #F7F9FC}
+.data-table {box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);background-color:#fff;}
+.right-area .area7 {display: block; clear: both;}
+.right-area .area7 .environment-box {border-radius: 5px;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);overflow: hidden; padding: 50px 0; background:#fff url("../../img/bg_tree.png") 100px 50% no-repeat; background-size: 145px 137px;}
+.right-area .area7 .environment-box .effect { width: 60%; float: left; border-right: 1px solid #E3E3E3; min-height: 160px; padding-left: 320px;}
+.right-area .area7 .environment-box .effect h4{font-size: 24px; padding-top: 23px;}
+.right-area .area7 .environment-box .effect p{font-size: 24px;}
+.right-area .area7 .environment-box .effect p span {font-size: 54px; color: #47725D; font-weight: bold;}
+.right-area .area7 .environment-box .tree-num {width: 40%; float: left; padding: 0 40px 0;}
+.right-area .area7 .environment-box .tree-num h4 {font-size: 18px; margin-top: 10px;}
+.right-area .area7 .environment-box .tree-num p {font-size: 26px; text-align: right; margin-bottom: 0}
+.right-area .area7 .environment-box .tree-num .bar {width: 2px; height: 18px; background: #000000; display: inline-block; margin-right: 15px; vertical-align: middle; margin-top: -3px;}
+.web-table {display: none}
+.web-table.v1 {display: block}
+
+.mobile-table {display: none}
+.tab-revenue {display: none; height: 0}
+.tab-content>.tab-pane {display: block!important}
+.fade:not(.show) {opacity: 1!important}
+.year-share {display: none}
+.nav-tabs {display: none!important}
+@media (max-width: 1298px) {
+	.right-area .area2 {display: block; margin-bottom: 20px; overflow: hidden}
+	.right-area .area2 .w28 {display: inline-block; width: 50%; float: left;}
+	.right-area .area2 .w22 {display: inline-block; width: 50%;float: left; }
+	.right-area .area2 .r-box {margin-left: 0}
+	.right-area .area5 .yield-box {width: 100%}
+	.web-table {display: none!important;}
+	.mobile-table {display: none;}
+	.mobile-table.v1 {display: block;}
+
+	.right-area .area7 .environment-box .effect {width: 100%;}
+	.right-area .area7 .environment-box .tree-num {width: 100%; float: left; padding-left: 320px;}
+
+}
+@media (max-width: 997px) {
+	.nav-tabs {display: block!important}
+
+	.top-map { width: 100%; height: 137px;}
+	#content.v5 .container {padding: 0;max-width:100%}
+	.economics-area {overflow: hidden; display: block!important; padding: 0!important}
+	.economics-area .col-md-3,.economics-area .col-md-9 {width: 100%!important; max-width: 100%!important; float: left; flex:none; -webkit-flex:none; -ms-flex:none; padding-left: 0; padding-right: 0}
+	.left-area {background:#F5F6F8!important; box-shadow: none!important; overflow: hidden;}
+	.left-area .area2 {display: none; margin-top: 10px; background: #fff; padding-bottom: 35px}
+	.right-area {background: #fff; padding: 20px!important}
+	.right-area h3 {display: none;}
+	.right-area .area2 .w28 {display: block; width: 100%; }
+	.right-area .area2 .w22 {display: block; width: 100%; }
+	.economics-area .left-area .area2 .close-p {display: inline-block; padding: 3px; float: right; margin-top: -3px}
+	.economics-area .left-area .area2 .close-p img {width: 16px; height: 16px;}
+	.web-table {display: none}
+	.data-table table th,.data-table table td {font-size: 9px;}
+	.economics-area .left-area .area1 {padding: 10px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05); background: #fff}
+	.economics-area .left-area .area1 .panel-input input {border:0 ;background: #fff; text-align: left; width: 70%}
+	.economics-area .left-area .area1 a.term {display: inline-block; position: absolute; font-size: 16px; color: #4593FF; text-decoration: underline; right: 25px; top: 25px;}
+	.economics-area .left-area .area1 a.term.op24 {opacity: 0.24}
+	.economics-area .left-area .area2 h3 {font-size: 14px; padding: 20px 25px;}
+	.economics-info h4 {margin-bottom: 0; font-size: 15px; padding: 14px 30px; background:#F4F4F4; border-top: 1px solid #D3D3D3}
+	.economics-info ul li span em {color: #959595}
+	.economics-area .left-area .area2 .btm-reset-btn {margin-bottom: 0!important; background: #FF9300}
+
+	.tab-revenue {display: block;height: 63px; clear: both;}
+	.tab-revenue li {float: left; width: 50%}
+	.tab-revenue .nav-item.show .nav-link, .nav-tabs .nav-link.active {font-size: 14px!important; color: #343953!important; border-bottom:3px solid #FF9400!important; background: #F5F6F8!important; border-right: 0!important; border-left: 0!important; border-top:0!important;}
+	/* tab */
+	.tab-revenue {background: #F5F6F8}
+	.tab-revenue .nav-link {font-size: 14px!important; color: #B1B1B1!important; text-align: center!important; height: 63px; padding-top: 30px;}
+	.tab-content>.tab-pane {display: none!important}
+	.fade:not(.show) {opacity: 0!important}
+	.tab-content>.active {display: block!important}
+	.right-area .area1 div h4 {font-size: 14px; padding: 15px 0}
+	.right-area .area1 div p {font-size: 16px; padding: 16px 0}
+	.right-area .area1 div p span {font-size: 15px;}
+	.right-area .area2 {box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);}
+	.right-area .area2 > div h4 {font-size: 15px;padding: 12px;}
+	.right-area .area2 .r-box .data-area .w100 {width: 50%; float: left}
+	.right-area .area2 .r-box .data-area .w100 .mt20 {margin-top: 0}
+	.right-area .area2 .r-box .data-area h5 {font-size: 15px;}
+	.right-area .area2 .r-box .data-area span {font-size: 17px; text-align: right; display: block; padding-right: 10px}
+	.right-area .area2 .r-box.color02 .w100,.right-area .area2 .r-box.color02 .w50 {width: 33.3%; float: left}
+	.right-area .area2 .r-box.color02 .mt20 {margin-top: 0}
+	.m-db {display: block!important; font-size: 17px!important; padding:  12px 8px 10px!important}
+	.m-db2 {display: block!important; font-size: 16px!important; padding:  12px 8px 10px!important; color: #A7A7A7}
+	.right-area .area4 .chart-bar {width: 100%; padding: 15px 15px 60px;}
+	.right-area .area4 .btm-txt {font-size: 13px; background: #F4F4F4; padding: 20px}
+	.right-area .area4 .year-num {font-size: 22px; padding: 20px 20px 0; display: block; width: 100%}
+	.right-area .area4 .year-data{display: block; width: 100%}
+	.right-area .area4 .year-num span {font-size: 22px; color: #848484}
+	.right-area .area4 {padding:0 }
+	.right-area .area3>div {border-left: 0; font-size: 15px; color: #474747; padding: 10px 0; border-top:1px solid #CFCFCF;}
+	.right-area .area3>div span {font-size: 15px; color: #A8A8A8; position: inherit; top: inherit; left: inherit; padding-right: 10px;}
+	.right-area .area3 {margin-bottom: 0;  position: absolute; top: 320px; left:10px ;right: 10px}
+	.right-area .area5 .yield-box h4,.right-area .area6 h4 {font-size: 15px; padding: 15px 20px; border-radius: 0}
+	.right-area .area5 .yield-box h5 ,.right-area .area5 .yield-box p{font-size: 15px;}
+	.right-area .area5 .yield-box .yield-cont {padding: 14px 24px; box-shadow: none;}
+	.right-area .area5 .yield-box p {text-align: right; padding-right: 10px;}
+	.right-area .area5 {box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); padding-bottom: 0}
+	.right-area .area6 ul {padding: 15px 0;}
+	.right-area .area6 ul li {font-size: 12px; border-right:0; width: 20%; padding: 0}
+	.right-area .area6 ul li:last-child {display: none;width: 0}
+	.right-area .area6 ul li span {display: block; font-size: 14px;}
+	.right-area .area6 h4 a {font-size: 15px; background: none; right: 20px; padding-right: 0}
+	.right-area .area7 {margin-top: 15px;}
+	.right-area .area7 .environment-box {padding: 28px 10px;background: #fff url("../../img/bg_tree.png") 20px 50% no-repeat!important;background-size: 80px 76px!important;}
+	.right-area .area7 .environment-box .effect {min-height: auto;}
+	.right-area .area7 .environment-box .effect ,.right-area .area7 .environment-box .tree-num{padding-left: 90px; border-right: 0}
+	.right-area .area7 .environment-box .effect h4 {padding-top: 0}
+	.right-area .area7 .environment-box .effect h4,.right-area .area7 .environment-box .effect p {font-size: 15px; margin-bottom: 0!important}
+	.right-area .area7 .environment-box .effect p span {font-size: 23px; padding-left: 9px;}
+	.right-area .area7 .environment-box .tree-num h4 {font-size: 13px; color: #989898; text-align: center}
+	.right-area .area7 .environment-box .tree-num p {font-size: 15px; color: #000; text-align: center}
+	.right-area .area7 .environment-box .tree-num .bar {display: none;}
+	.right-area .area7 .environment-box .tree-num {width: 100%; padding-right: 0}
+	.right-area .area7 .environment-box .tree-num div {width: 50%; float: left}
+	.year-share {display: inline-block;font-size: 14px; color: #C4C4C4}
+	
 }
 /* table */
 .table-type01 td,.table-type01 th {text-align: center; font-size: 19px; font-family:'hyundailight'!important; }
