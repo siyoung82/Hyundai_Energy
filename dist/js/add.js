@@ -40,3 +40,8 @@ $(".area6 h4 a").click(function(){ //조건확인
 	$(".web-table").toggleClass('v1');
 	$(".mobile-table").toggleClass('v1');
 });
+
+$(".panel-box").on('click', function() {//매핑
+    $('.panel-box-none').toggleClass('panel-box-list');
+	$('.panel-box.bgon').toggleClass('bgoff');
+  });
