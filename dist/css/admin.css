@@ -1,0 +1,300 @@
+@charset 'UTF-8';
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700italic);
+
+
+@font-face {
+	font-family: 'hyundaimedium';
+	src: url(../font/hyundaimedium.eot);
+	src: url(../font/hyundaimedium.eot?#iefix) format('embedded-opentype'),
+		url(../font/hyundaimedium.ttf) format('truetype'),
+		url(../font/hyundaimedium.otf) format('opentype'),
+		url(../font/hyundaimedium.woff2) format('woff2'),
+		url(../font/hyundaimedium.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+} 
+
+@font-face {
+	font-family:'hyundailight';
+	src: url(../font/hyundailight.eot);
+	src: url(../font/hyundailight.eot?#iefix) format('embedded-opentype'),
+		url(../font/hyundailight.ttf) format('truetype'),
+		url(../font/hyundailight.otf) format('opentype'),
+		url(../font/hyundailight.woff2) format('woff2'),
+		url(../font/hyundailight.woff) format('woff');
+	font-weight: 300;
+	font-style: normal;
+} 
+
+@font-face {
+ font-family: 'NanumSquare';
+ font-weight: 400;
+ src: url(../font/NanumSquareR.eot);
+ src: url(../font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+      url(../font/NanumSquareR.woff) format('woff'),
+      url(../font/NanumSquareR.ttf) format('truetype');
+}
+
+
+@font-face { 
+  font-family:'NotoSansKRR'; 
+  font-style:normal; 
+  font-weight:normal; 
+  src: url('../font/notokr-regular.woff2') format('woff2'), 
+        url('../font/notokr-regular.woff') format('woff'), 
+        url('../font/notokr-regular.otf') format('opentype'); 
+}
+@font-face { 
+	font-family:'NotoSansKRM'; 
+	font-style:normal; 
+	font-weight: 500; 
+	src: url('../font/notokr-medium.woff2') format('woff2'), 
+	url('../font/notokr-medium.woff') format('woff'), 
+	url('../font/notokr-medium.otf') format('opentype'); 
+} 
+
+@font-face {
+	font-family:'Roboto';
+	font-style: normal;
+	font-weight:normal;
+	src: local('Roboto'), local('Roboto-Regular'), url(https://font.gstatic.com/s/roboto/v16/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+body {background-color: #383839!important;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,fieldset,legend,th,td,input,select,button { margin: 0; padding: 0; font-family: 'hyundaimedium' , 'NotoSansKRM'!important  }
+header,footer,section,article,nav,aside,figure,figcaption { display: block }
+fieldset,img { border: 0 none }
+ul,ol { list-style: none }
+address,em { font-style: normal }
+small { font-size: 1em; }
+button {border:0 none; background-color:transparent; cursor:pointer }
+body { background: #fff; -webkit-text-size-adjust:none }
+body,th,td { color: #333; font-size: 15px; line-height: 1.5;  }
+table { border-collapse:collapse; border-spacing: 0; width: 100% }
+a { color: #262626; text-decoration: none }
+a:hover, a:focus { text-decoration: none }
+h1,h2,h3,h4,h5,h6 { font-weight: normal; font-size: 1em }
+input,select,textarea,button { font-size: 15px;  outline: none!important;outline:0px !important; }
+select::-ms-expand { display: none; } 
+select { outline: 0; appearance: none; -webkit-appearance: none; -moz-appearance: none } 
+html,body { height: 100% }
+hr { display: none; }
+
+.f_l { float: left }
+.f_r { float: right }
+.clearfix { clear: both }
+.hidden, .skip { display: block; width: 10px; height: 0; white-space: nowrap; overflow: hidden; text-indent: 120%; font-size: 0 }
+.sp_block { display: block }
+.sp_inline { display: inline }
+.txt_left { text-align: left }
+.txt_right { text-align: right }
+.txt_center { text-align: center }
+.invisible { visibility: hidden; overflow: hidden; position: absolute; left:-1000em; width: 0; height: 0; font-size: 0; line-height: 0 }
+.mt80 {margin-top: 80px;}
+.mt15 {margin-top: 15px;}
+.mt20 {margin-top: 20px;}
+.mt60 {margin-top: 60px;}
+
+#skip_navigation p { margin: 0px; padding: 0px }
+#skip_navigation a.accessibility { z-index: 1000; position :absolute; display: block; width:100%; left: 0; text-align: center; top: -10000px; font-size: 1.3em }
+#skip_navigation a.accessibility:hover,	
+#skip_navigation a.accessibility:focus,
+#skip_navigation a.accessibility:active{ position: absolute; top: 0; padding: 15px 0; font-weight: bold; color: #fff; background: #0c4da2; z-index: 2000 }
+#skip_navigation ul { margin: 0; padding: 0; height: 0; }
+
+.r-btn {display: inline-block; overflow: hidden; border-radius: 100px 100px;}
+
+
+/**** layout ****/
+@media (min-width: 1200px) {
+	.container{max-width:1410px!important;}
+}
+header {font-size: 24px; position: fixed; top: 0;  overflow: hidden; width: 100%; z-index: 9999; background: #fff;}
+
+.gnbMenu {position: fixed; right: 1.5em;top: 2.25em;
+height: 2px;
+width: 16px;
+background: #343953; }
+
+.gnbMenu:before {
+transition: all .25s;
+content: "";
+position: absolute;
+left: 0;
+top: -4px;
+height: 2px;
+width: 16px;
+background: #343953; }
+
+.gnbMenu:after {
+position: absolute;
+content: "";
+left: 0;
+top: 4px;
+height: 2px;
+width: 10px;
+background: #343953;
+transition: all .25s;
+}
+
+
+.gnb {
+text-align: right;
+width: 100%;
+position: relative;
+height: 120px; background: #fff;
+min-width: 1410px}
+
+.gnb a {
+display: inline-block;
+padding-left:36px;
+vertical-align: middle;
+text-decoration: none;
+transition: all .4s;}
+
+
+
+.gnb a:link, .gnb a:visited {
+  color: #474747;
+}
+
+.gnb a:hover {text-decoration: none}
+
+.gnb li {
+display: inline;
+font-size: 24px;
+}
+
+.gnb-list {
+display: inline-block;
+text-align: center;
+margin-bottom: 0;
+padding-top: 55px;
+}
+.gnb-list a:hover {color: #FB8E00}
+.gnb-list a.admin {width: 55px; height: 55px; display: inline-block; border:3px solid #FF9100; border-radius: 100px 100px; font-size: 17px; padding-left: 0; line-height: 50px; margin-left: 30px}
+.logo {
+position: absolute;
+left:12px;
+	top:53px;
+}
+
+.container {min-width: 1410px!important;}
+#content {margin-top: 120px; background-color: #fff;}
+footer {background: #383839; font-size: 15px; color: #fff;}
+footer .copyright {margin-bottom: 0; color: #B2B2B2}
+#footer {padding: 35px 30px; position: relative}
+#footer .btm-logo {position: absolute; right: 0; top:53px; }
+#footer .btm-logo img {width: 212px; height: 47px;}
+#footer .footer-agree {margin-top: 20px;}
+#footer .footer-agree a {border:1px solid #EFEFEF; border-radius: 5px; width: 169px; padding: 10px 0; display: inline-block; color: #EFEFEF; text-align: center; margin-right: 16px;}
+#footer .footer-agree a:hover {text-decoration: none}
+/* 매핑 */
+#fixed-container {background: #000;width:100%; position:absolute; left:0; top:120px; right:0; bottom:0px; }
+#fixed-footer {width:100%; position:absolute; left:0; right:0; bottom:0;}
+#map-bg {background: #000; opacity: 0.58;width:100%; height:100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0;}
+#map{width:100%;  z-index:0; position: fixed; left: 0; right: 0; top: 120px; bottom: 0px; overflow: hidden;}
+#map img{width:100%; min-height: 100%; height: 100%}
+@media (max-width: 1200px) {
+	#mapping-control-box,#map{top: 100px!important;}
+}
+#mapping-control-box {background: #fff; position: fixed; left: 0; bottom:0; top: 120px; width: 464px; z-index: 1}
+#mapping-info {position: fixed; left: 490px; top: 145px;z-index: 1 ;width: 100%; display: block}
+.control-box .step-box {background: #323755; padding: 40px}
+.control-box .step-box span {display: block; font-size: 21px; color: #fff;}
+.control-box .step-bar {background: #00336C; height: 6px; width: 100%;}
+.control-box .step-bar.step01 {width: 16%;}
+.control-box .step-bar.step02 {width: 32%;}
+.control-box .step-bar.step03 {width: 48%;}
+.control-box .step-bar.step04 {width: 64%;}
+.control-box .step-bar.step05 {width: 80%;}
+.control-box .step-bar.step06 {width: 100%;}
+
+.control-box .control-cont {padding: 25px 25px 70px; overflow-y: auto; height: 600px}
+.control-cont .tit {font-size: 21px;}
+.control-cont .tit .bar{height: 14px; width: 2px; background: #808080; display: inline-block; margin-left: 8px; margin-right: 19px; }
+.control-box .control-cont li {border-bottom: 2px solid #DEDEDE; overflow: hidden; padding: 20px 3px; position: relative}
+.control-box .control-cont li select {border:1.6px solid #F5F6F8; background: #F5F6F8 url("../../img/ico-arrow3.png") 95% 50% no-repeat; padding: 0 10px; background-size: 9px 7px; border-radius: 4px; height: 40px; width: 190px; line-height: 40px; color: #383838; text-align: center;}
+.control-box .control-cont li select:hover {background: #fff url("../../img/ico-arrow4.png") 95% 50% no-repeat;;border:1.6px solid #FB8F00; background-size: 9px 7px;}
+.control-box .control-cont li .form-group {position: relative; margin-top: 10px}
+.control-box .control-cont li .form-group input {background: #F5F6F8; padding: 0 10px; border-radius: 4px; height: 40px; width: 195px; line-height: 40px; color: #383838; border:0}
+.control-box .control-cont li .form-group input:hover {background: #fff ;;border:1.6px solid #FB8F00;}
+.control-box .control-cont li .form-group span {position: absolute; color: #383838; right: 15px; top: 10px}
+.control-box .control-cont li:last-child {border-bottom: 0; padding-bottom: 0}
+.control-box .control-cont li .right-input input {background: #F5F6F8; padding: 0 10px; border-radius: 4px; height: 40px; width: 130px; line-height: 40px; color: #383838; border:0; display: inline-block; text-align: center}
+.control-box .control-cont li .right-input span { text-align: right; width: 60px; display: inline-block; color: #585858; padding-right: 10px}
+.control-box .control-cont li .module-select {display: block; clear: both; padding-top: 20px; padding-bottom: 15px; overflow: hidden; border-bottom: 2px solid #FAFAFA}
+.control-box .control-cont li .module-select input {background: #F5F6F8; padding: 0 10px; border-radius: 4px; height: 40px; width: 130px; line-height: 40px; color: #383838; border:0; display: inline-block; text-align: center}
+.control-box .control-cont li .module-select span {padding: 0 15px;}
+.control-box .control-cont .module-button {text-align: right; margin-top: 20px;}
+.control-box .control-cont .module-button button {border-radius: 4px;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);border: solid 1.3px #323755; background-color: #fff; padding: 15px 22px; font-size: 17px; margin-left: 30px;}
+.control-box .control-cont .module-button button:disabled {box-shadow:none;border: solid 1.3px #d6d6d6; color:#d6d6d6 }
+.mapping-btm-btn button {border-radius: 5px; width: 190px; height: 55px; background: #FF9100; color: #fff;}
+.mapping-btm-btn button:disabled {background: #DEDEDE}
+.mapping-btm-btn {position: absolute; bottom: 30px; left:36px; right: 36px;}
+.address-box {background: #fff url("../../img/ico-search.png") 26px 50% no-repeat; background-size: 17px 17px; border: 1px solid #E0E0E0; border-radius: 5px; padding: 12px 30px 12px 55px; font-size: 17px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.42);float: left; color: #676767 }
+.panel-box {background: #fff; border: 1px solid #E0E0E0; border-radius: 5px; padding: 12px 39px; font-size: 17px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.42); float: left; margin-left: 30px; color: #676767}
+.panel-box div {display: inline-block}
+.panel-box div span:first-child {padding-right: 47px;}
+.panel-box div:last-child {margin-left: 77px;}
+.angle-control {border: 1px solid #fff;border-radius: 4px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); background: #fff; padding: 35px 19px 45px; position: relative;overflow: hidden}
+.angle-control:hover {border:1px solid #323755}
+.angle-control .input-box {background: #F5F6F8;width: 141px;height: 40px; position: relative; margin-top: 20px;}
+.angle-control:hover .input-box {background: #EBF5FF}
+.angle-control:hover .input-box input,.angle-control:hover .input-box span {color: #0C3A79}
+.angle-control .input-box input {background-color:transparent; border: 0; width: 100px;}
+.angle-control .input-box span {position: absolute; right: 8px; top:8px; color: #848484}
+.angle-control .round-slider01 {position: absolute; top: 30px; right: 40px; background: url("../../img/bg_angle01.png")center top no-repeat; width: 116px; height: 116px; padding: 6px;}
+.angle-control .round-slider02 {position: absolute; top: 30px; right: 40px; background: url("../../img/bg_angle02.png")center top no-repeat; width: 116px; height: 116px; }
+.angle-control .round-slider02 .bg-round {position: relative;}
+.angle-control .round-slider02 .bg-round .rslider {position: absolute; top: 38px; left: 6px; bottom: 0}
+
+.select-option a {border-radius: 4px;background-color: #f5f6f8;font-size: 16px; border: solid 1.5px #f5f6f8; color: #585858; font-weight: 500; display: inline-block; padding: 16px 0; text-align: center; margin-top: 15px}
+.select-option a.w50 {width: 50%;}
+.select-option a.w25 {width: 25%;}
+.select-option a:hover,.select-option a.select { box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);border: solid 1.5px #323755; color: #323755; background: #fff; text-decoration: none;}
+.text-layer {border-radius: 4px; background-color: #5f5f5f; font-size: 17px; color: #fff; padding: 20px; text-align: center; display: inline-block}
+.angle-result {border-radius: 4px;background-color: #f5f6f8; padding: 15px 0}
+.angle-result ul {margin-bottom: 0}
+.angle-result li {border-bottom: 0!important; padding: 5px!important}
+.angle-result li .tit,.angle-result li .angle-num {font-size: 19px!important; color: #6A6A6A!important; display: inline-block}
+.angle-result li .angle-num {padding-right: 20px}
+.angle-result li .angle-num em {padding-left: 15px;}
+
+/* 로그인관련 */
+
+.login-box { background: url("../../img/bg_free.png")no-repeat center bottom; min-height: 800px; overflow: hidden}
+.login-box .input-info-box {width: 100%; max-width: 827px; margin: 70px auto 0; border-radius: 13px; background: #fff; overflow: hidden; box-shadow: 0 3px 12px #C2C2C2; text-align: center; }
+.login-box .input-info-box.v1 {margin: 216px auto 0}
+.login-box .input-info-box .login-header{background: #333854; padding: 65px 0 50px 0; overflow: hidden;}
+.login-box .input-info-box .login-header h2{color: #fff; font-size: 30px;}
+.login-box .input-info-box .login-cont {padding: 55px 220px}
+.login-box .input-info-box .login-cont .input-title {font-size: 19px; color: #474747}
+.login-box .input-info-box .login-cont .form-control {border:1px solid #BFBFBF; height: 50px; line-height: 50px; padding: 0 20px; border-radius: 5px; color: #474747}
+.login-box .input-info-box .login-cont .form-group, .login-box .input-info-box .certi-n .form-control {position: relative;}
+.login-box .input-info-box .login-cont .form-group span {position: absolute; left: 22px; top: 13px;color: #474747}
+.login-box .input-info-box .login-cont .form-control.finish{background: #F8F8F8}
+.login-box .input-info-box .login-cont .error-txt {font-size: 16px; color: #D0310C; margin-bottom: 0; position: absolute; top: 58px; left: 20px}
+.login-box .input-info-box .login-cont .finish-txt {font-size: 19px; color: #474747; }
+.login-box .input-info-box .login-cont .finish-txt span {font-size: 25px;}
+.login-box .input-info-box .login-cont input::placeholder {line-height: 50px; color: #A2A2A2;}
+.login-box .input-info-box .login-cont input.p47 {padding-left: 47px}
+.login-box .input-info-box .login-cont input.p96 {padding-left: 96px}
+
+.login-box .input-info-box .login-cont select {border:1px solid #BFBFBF; height: 50px; line-height: 50px; width: 100%; border-radius: 5px; background: url("../../img/ico-arrow2.png") 93% 50% no-repeat; background-size: 9px 7px; padding: 0 10px; color: #474747}
+.login-box .input-info-box .phone-n,.login-box .input-info-box .certi-n {margin-bottom: 1rem; }
+.login-box .input-info-box .phone-n .col-md-3 {padding-right: 0px!important;}
+.login-box .input-info-box .certi-n {position: relative}
+.login-box .input-info-box .certi-n .col-md-3 {padding-left: 0!important}
+.login-box .input-info-box .certi-n button {border-radius: 5px; background: #FF9100; color: #fff; font-size: 17px; display: block; width: 100%; height: 50px; line-height: 50px;}
+.login-box .input-info-box .certi-n button:disabled {background: #DBDBDB;}
+.login-box .input-info-box input.error {border:1px solid #D0310C!important; color: #D0310C!important}
+.login-box .input-info-box .form-check {padding: 23px 0; border-bottom: 1px solid #BCBCBC}
+.login-box .input-info-box .form-check input {border: #959595 1px solid; background: #fff; width: 15px; height: 15px; vertical-align: middle}
+.login-box .input-info-box .form-check label {color: #979797; font-size: 13px; padding-left: 6px; vertical-align: middle; margin-bottom: 0}
+.login-cont .submission {border-radius: 100px 100px; background: #FF9100; padding: 20px 110px; font-size: 21px; color: #fff; margin-top: 38px; width: 100%}
+.login-cont .submission.v1 {margin-top: 20px!important}
+.login-cont .submission:disabled {border-radius: 100px 100px; background: #DBDBDB; padding: 20px 110px; font-size: 21px; color: #fff; margin-top: 38px;}
+.login-btn {background: #FF9100; height: 55px; line-height: 55px; color: #fff; font-size: 21px; font-weight: bold; border-radius: 5px; display: block; width: 100%}
+.search-btn button {width: 50%; display:inline-block; padding: 12px 0 0;}
+

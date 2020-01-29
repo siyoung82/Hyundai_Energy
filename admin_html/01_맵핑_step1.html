@@ -3,15 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, noarchive">
 <meta name="format-detection" content="telephone=no">
 <title>현대에너지 솔루션입니다.</title>
-<link href="../dist/css/common.css" rel="stylesheet">
-<link href="../dist/css/page.css" rel="stylesheet">
+<link href="../dist/css/admin.css" rel="stylesheet">
 <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="../dist/css/roundslider.min.css" rel="stylesheet">
-
 	
 </head>
 
@@ -55,23 +51,41 @@
 		<div id="mapping-control-box">
 			<div class="control-box">
 				<div class="step-box">
-					<span>STEP 4.</span>
-					<span>모듈 배치(가로 또는 세로) <br>모듈군 (1단,2단,3단)을 선택해 주세요. </span>
+					<span>STEP 1.</span>
+					<span>태양광 모듈과 인버터를 선택해 주세요.</span>
 				</div>
-				<div class="step-bar step02"></div>
+				<div class="step-bar step01"></div>
 				<div class="control-cont">
 					<ul>
 						<li>
-							<span class="tit"><span class="bar"></span>태양광 배치</span>
-							<div class="select-option">
-								<a href="#" class="w50 select">가로배치</a><a href="#" class="w50">세로배치</a>
-							</div>
+							<span class="tit f_l"><span class="bar"></span>태양광 모듈</span>
+							<span class="f_r" >
+								<select>
+								  <option>선택해주세요</option>
+								  <option>태양광 모듈</option>
+								  <option>태양광 모듈</option>
+								  <option>태양광 모듈</option>
+								</select>
+							</span>
 						</li>
 						<li>
-							<span class="tit"><span class="bar"></span>모듈군</span>
-							<div class="select-option">
-								<a href="#" class="w25 select">단 없음</a><a href="#" class="w25">1단</a><a href="#" class="w25">2단</a><a href="#" class="w25">3단</a>
-							</div>
+							<span class="tit f_l"><span class="bar"></span>태양광 인버터</span>
+							<span class="f_r" >
+								<select>
+								  <option>선택해주세요</option>
+								  <option>태양광 모듈</option>
+								  <option>태양광 모듈</option>
+								  <option>태양광 모듈</option>
+								</select>
+							</span>
+						</li>
+						<li>
+							<span class="tit f_l"><span class="bar"></span>부지의 경사각 또는 건물 지붕의 경사각</span>
+							<span class="f_r" >
+								<div class="form-group">
+									<input type="text" class="form-control"><span>도</span>
+								</div>
+							</span>
 						</li>
 					</ul>
 				</div>
@@ -91,27 +105,4 @@
 <script src="../dist/js/jquery-3.4.1.min.js"></script>
 <script src="../dist/js/bootstrap.min.js"></script>
 <script src="../dist/js/add.js"></script>
-<script src="../dist/js/roundslider.min.js"></script>
-<script>
-$("#angle01").roundSlider({
-    radius: 52,
-	circleShape: "full",
-    sliderType: "min-range",
-	mouseScrollAction: true,
-    value: 0,
-	handleSize: "+5",
-	min: 0,
-	max: 360
-});
-$("#angle02").roundSlider({
-    radius: 70,
-	circleShape: "quarter-top-right",
-    sliderType: "min-range",
-	mouseScrollAction: true,
-    value: 0,
-	handleSize: "+5",
-	min: 0,
-	max: 90
-});
-</script>
 </html>
