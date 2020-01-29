@@ -514,6 +514,8 @@
 .economics-info ul {padding: 10px 30px; margin-bottom: 0}
 .economics-info ul li {display: table; width: 100%; padding: 10px 0}
 .economics-info ul li span {display: table-cell; width: 50%; color: #474747}
+.economics-info ul li span input {text-align: right; width: 80%; display: inline-block}
+.economics-info ul li span:last-child {text-align: right}
 .economics-info ul li span em {padding-left: 5px; width: 35px; text-align: left; display: inline-block}
 .economics-area .left-area .area2 .btm-reset-btn {border-radius: 5px; background: #323755;display: block; margin: 20px; text-align: center; color: #fff; height: 51px; line-height: 51px;}
 .economics-area .left-area .area2 .btm-reset-btn:hover {text-decoration: none}
