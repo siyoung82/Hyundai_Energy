@@ -510,15 +510,45 @@
 .economics-area .left-area .area1 .panel-input input {border-radius: 4px; background: #F4F7FA; height: 53px; color: #474747; font-size: 16px; text-align: center}
 .economics-area .left-area .area2 h3 {font-size: 18px; color: #474747; margin-bottom: 0;padding: 10px 30px 15px 30px;}
 .economics-area .left-area .area2 .close-p {display: none;}
-.economics-info h4 {margin-bottom: 0; font-size: 17px; color: #474747 ;padding: 14px 30px; background:#E6EFF8 url("../../img/ico-arrow.png") 90% 50% no-repeat; background-size: 19px 8px;}
-.economics-info ul {padding: 10px 30px; margin-bottom: 0}
+.economics-info h4 {margin-bottom: 0; font-size: 17px; color: #474747 ;padding: 14px 30px; }
+.economics-info ul {padding: 10px 20px; margin-bottom: 0}
 .economics-info ul li {display: table; width: 100%; padding: 10px 0}
 .economics-info ul li span {display: table-cell; width: 50%; color: #474747}
-.economics-info ul li span input {text-align: right; width: 80%; display: inline-block}
+.economics-info ul li span input {text-align: right; width: 70%; display: inline-block; margin-right: 5px}
 .economics-info ul li span:last-child {text-align: right}
 .economics-info ul li span em {padding-left: 5px; width: 35px; text-align: left; display: inline-block}
 .economics-area .left-area .area2 .btm-reset-btn {border-radius: 5px; background: #323755;display: block; margin: 20px; text-align: center; color: #fff; height: 51px; line-height: 51px;}
 .economics-area .left-area .area2 .btm-reset-btn:hover {text-decoration: none}
+
+.left-area .area2 .card {border-radius: 0!important; border: 0!important ;}
+.left-area .area2 .card .card-header{border-bottom: 0!important; background: #fff; }
+.left-area .area2 .card .card-header a {display: block; color: #474747}
+.left-area .area2 .card .card-header a:hover{text-decoration: none}
+.left-area .area2 a.btm-btn {display: block; background: #20a8ff; border-radius: 5px 5px; text-align: center; color: #fff!important; font-weight: bold; font-size: 20px; padding: 15px 25px; margin: 25px 25px 0;}
+[data-toggle="collapse"]:after {
+    display: block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    transform: rotate(90deg) ;
+    transition: all linear 0.25s;
+    float: right;
+	background:#E6EFF8 url("../../img/ico-arrow.png") 90% 50% no-repeat;
+  }   
+[data-toggle="collapse"].collapsed:after {
+  transform: rotate(0deg) ;
+}
+.left-area .area2 .card .card-header {padding: 0!important; }
+.left-area .area2 .card .card-header h5 {font-weight: bold;}
+.left-area .area2 .card .card-header.tab-collapsed {background:#E6EFF8 url("../../img/ico-arrow5.png") 90% 50% no-repeat; background-size: 19px 8px;border-top: 1px solid #e8e8e8!important ;}
+.left-area .area2 .card .card-header {background:#E6EFF8 url("../../img/ico-arrow.png") 90% 50% no-repeat; background-size: 19px 8px;border-top: 1px solid #e8e8e8!important ;}
+.left-area .area2 .card-body {padding: 0!important; color: #3a3a3a;}
+
+
+
 .right-area {overflow: hidden}
 .right-area h3 {color: #474747; font-size: 32px; margin-bottom: 0; padding: 32px 15px 26px}
 .right-area .area1{ margin: 0 0 28px 0; display: block; background: #fff; overflow: hidden; text-align: center;border-radius: 4px;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);}

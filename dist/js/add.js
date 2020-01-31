@@ -45,3 +45,11 @@ $(".panel-box").on('click', function() {//매핑
     $('.panel-box-none').toggleClass('panel-box-list');
 	$('.panel-box.bgon').toggleClass('bgoff');
   });
+
+$('.card-header').click(function(e) { //경제성분석 
+        $('.card-header').removeClass('tab-collapsed');
+        var collapsCrnt = $(this).find('.collapse-controle').attr('aria-expanded');
+        if (collapsCrnt != 'true') {
+            $(this).addClass('tab-collapsed');
+        }
+    });

@@ -52,27 +52,53 @@
 					<section class="area2">
 						<h3 class ="subject">경제성 분석<a href="#" class="close-p"><img src="../img/btn_close.png" alt="닫기"/></a></h3>
 						<div class="economics-info">
-							<h4>설치조건</h4>
-							<ul>
-								<li><span>발전사업 용량</span><span class="text-right"><input type="text" class="form-control" value="250KW"></span></li>
-								<li><span>공사비 (KW당)</span><span class="text-right"><input type="text" class="form-control" value="160만원"></span></li>
-								<li><span>개발비 (KW당)</span><span class="text-right"><input type="text" class="form-control" value="160만원"></span></li>
-								<li><span>연간 유지보수비용</span><span class="text-right"><input type="text" class="form-control" value="160만원"></span></li>
-							</ul>
-							<h4>설치조건</h4>
-							<ul>
-								<li><span>SMP (한전계통한계)</span><span class="text-right"><input type="text" class="form-control" value="160만원"></span></li>
-								<li><span>REC (발전자회사)</span><span class="text-right"><input type="text" class="form-control" value="160만원"></span></li>
-								<li><span>REC 가중치</span><span class="text-right"><input type="text" class="form-control" value="11.0"></span></li>
-								<li><span>REC 기간</span><span class="text-right"><input type="text" class="form-control" value="11년"></span></li>
-							</ul>
-							<h4>금융조건</h4>
-							<ul>
-								<li><span>대출비율</span><span class="text-right"><input type="text" class="form-control" value="11%"></span></li>
-								<li><span>대출금리</span><span class="text-right"><input type="text" class="form-control" value="11%"></span></li>
-								<li><span>거치기간</span><span class="text-right"><input type="text" class="form-control" value="11년"></span></li>
-								<li><span>상환기간</span><span class="text-right"><input type="text" class="form-control" value="11년"></span></li>
-							</ul>
+							<div id="accordion" role="tablist">
+								<div class="card">
+									<div class="card-header tab-collapsed" role="tab" id="headingOne">
+										<h4><a class="collapsed collapse-controle" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">설치조건</a></h4>
+									</div>
+									<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+										<div class="card-body">
+											<ul>
+												<li><span>발전사업 용량</span><span class="text-right"><input type="text" class="form-control" value="250KW"><em>KW</em></span></li>
+												<li><span>공사비 (KW당)</span><span class="text-right"><input type="text" class="form-control" value="160만원"><em>만원</em></span></li>
+												<li><span>개발비 (KW당)</span><span class="text-right"><input type="text" class="form-control" value="160만원"><em>만원</em></span></li>
+												<li><span>연간 유지보수비용</span><span class="text-right"><input type="text" class="form-control" value="160만원"><em>만원</em></span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" role="tab" id="headingTwo">
+										<h4><a class="collapsed collapse-controle" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">설치조건</a></h4>
+									</div>
+									<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+										<div class="card-body">
+											<ul>
+												<li><span>SMP (한전계통한계)</span><span class="text-right"><input type="text" class="form-control" value="160만원"><em>만원</em></span></li>
+												<li><span>REC (발전자회사)</span><span class="text-right"><input type="text" class="form-control" value="160만원"><em>만원</em></span></li>
+												<li><span>REC 가중치</span><span class="text-right"><input type="text" class="form-control" value="11.0"><em></em></span></li>
+												<li><span>REC 기간</span><span class="text-right"><input type="text" class="form-control" value="11년"><em>년</em></span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" role="tab" id="headingThree">
+										<h4><a class="collapsed collapse-controle" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">금융조건</a></h4>
+									</div>
+									<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+										<div class="card-body">
+											<ul>
+												<li><span>대출비율</span><span class="text-right"><input type="text" class="form-control" value="11%"><em>%</em></span></li>
+												<li><span>대출금리</span><span class="text-right"><input type="text" class="form-control" value="11%"><em>%</em></span></li>
+												<li><span>거치기간</span><span class="text-right"><input type="text" class="form-control" value="11년"><em>년</em></span></li>
+												<li><span>상환기간</span><span class="text-right"><input type="text" class="form-control" value="11년"><em>년</em></span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<a href="#" class="btm-reset-btn">경제성 분석 다시하기</a>
 					</section>
