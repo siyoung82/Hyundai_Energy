@@ -80,7 +80,7 @@
 .land-info a.btn-tooltip img {width: 26px; ;height: 26px;}
 .table-area {background: #fff; box-shadow: 0 3px 6px #D8D8D8;  clear: both;}
 #analysis-list h4 {font-size: 22px!important; color: #474747; padding: 30px 20px 0}
-#analysis-list .subject a.subject-link {text-decoration: underline; color: #fff; font-family: 'NanumSquare'; font-size: 18px; padding-left: 10px}
+#analysis-list .subject a.subject-link {text-decoration: underline; color: #fff; font-family: 'NanumSquare'; font-size: 18px; padding-left: 8px}
 #analysis-list .btm-txt {color: #B7B7B7; font-size: 25px; text-align: center; margin-bottom: 0;font-family:'hyundailight'!important; margin-top: 20px }
 .law-box-area {display: block;margin-top: 17px;}
 .law-box-area .law-box {background: #fff; box-shadow: 0 3px 6px #D8D8D8; border-top: 5px solid #F68D00;border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6;  width: 49%; padding: 40px 28px; color: #474747; margin-bottom:10px}
@@ -214,6 +214,8 @@
 .power-box-area .power-box.v2 {float: right;}
 /* Default End */
 @media (max-width: 767px){
+	#analysis-list .card-body {padding: 5px;  background: #FDFCFD}
+
 	.top-map-area .top-map-control,.top-map-area .left-map-control {display: none;}
 	.bg-wrap01 {background: #fff; padding: 20px}
 	#f-analysis {margin-left: -15px; margin-right: -15px;}
@@ -225,7 +227,7 @@
 	#f-analysis .address-info a.edit {position: absolute; left: 80%; top: 20px}
 	#f-analysis .address-info a.edit img {width: 28px; height: 28px;}
 	#analysis-list .subject {font-size: 15px!important; padding: 15px 25px}
-	#analysis-list .card-header {border-radius: 0;  padding: 0; margin-left: 35px; cursor:pointer;}
+	#analysis-list .card-header {border-radius: 0;  padding: 0; margin: 0 5px 0 40px; cursor:pointer;}
 	#analysis-list .m-card-header{cursor:pointer}
 	#analysis-list .card {border-radius: 0; margin-bottom: 12px;}
 	#analysis-list .card-body { margin-left: 0}
@@ -325,7 +327,8 @@
 @media (max-width: 1192px) and (min-width: 768px)
 	{.set-box {top: 100px;}}
 @media (max-width: 767px){
-	.table-type01 td,.table-type01 th,.table-type01 td.bg {font-size: 13px; padding: 10px 0;}
+	.table-type01 td,.table-type01 th,.table-type01 td.bg {font-size: 13px!important; padding: 10px 5px!important; }
+	.table-type03 td,.table-type03 th {font-size: 14px!important; padding: 10px 5px!important; }
 	#fixed-container {top: 100px; bottom: 0;}
 	#map{top: 100px; bottom: 0; }
 	.set-box .help-box {background:none;}
@@ -340,7 +343,6 @@
 	.set-box .txt-box button:hover {background: #FF9200; border: 1px solid #FF9200}
 	.set-box .txt-box button.cancel,.set-box .txt-box button.finish {top:inherit;}
 	.help-box .button-help {border:0;font-size: 15px; padding: 0 28px; height: 45px; line-height: 45px; border-radius: 100px;position: absolute; right: 0; top: 75px; z-index: 99}
-
 }
 @media (max-width: 1199px) and (min-width:768px){
 	.set-box .txt-box {text-align: left; font-size: 17px}
