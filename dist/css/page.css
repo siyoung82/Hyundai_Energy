@@ -540,7 +540,7 @@
     transform: rotate(90deg) ;
     transition: all linear 0.25s;
     float: right;
-	background:#E6EFF8 url("../../img/ico-arrow.png") 90% 50% no-repeat;
+	background:#E6EFF8 url("../../img/ico-arrow5.png") 90% 50% no-repeat;
   }   
 [data-toggle="collapse"].collapsed:after {
   transform: rotate(0deg) ;

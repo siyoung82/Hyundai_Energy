@@ -53,3 +53,19 @@ $('.card-header').click(function(e) { //경제성분석
             $(this).addClass('tab-collapsed');
         }
     });
+
+$(".detail-search").on('click', function(){ //관리자 상세검색
+	 $('.detail-search-none').toggleClass('detail-search-wrap');
+	 $('.detail-search.bgon').toggleClass('bgoff');
+});
+
+$(function(){
+    $('.left-area .area2 .card .card-header').click(function(e) {
+        $('.left-area .area2 .card .card-header').removeClass('tab-collapsed');
+        var collapsCrnt = $(this).find('.collapse-controle').attr('aria-expanded');
+        if (collapsCrnt != 'true') {
+            $(this).addClass('tab-collapsed');
+        }
+    });
+}) 
+
