@@ -110,7 +110,7 @@ hr { display: none; }
 	.container{max-width:1410px!important;}
 }
 header {font-size: 24px; position: fixed; top: 0;  overflow: hidden; width: 100%; z-index: 9999; background: #fff;}
-
+header.v1 {z-index: inherit}
 .gnbMenu {position: fixed; right: 1.5em;top: 2.25em;
 height: 2px;
 width: 16px;
@@ -180,7 +180,7 @@ left:12px;
 }
 
 .container {min-width: 1410px!important;}
-#content {margin-top: 120px; background-color: #fff; min-height :600px; padding-bottom: 40px;}
+#content {margin-top: 120px; background-color: #fff; min-height :600px; padding-bottom: 60px;}
 footer {background: #383839; font-size: 15px; color: #fff;}
 footer .copyright {margin-bottom: 0; color: #B2B2B2}
 #footer {padding: 35px 30px; position: relative}
@@ -318,13 +318,33 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .login-btn {background: #FF9100; height: 55px; line-height: 55px; color: #fff; font-size: 21px; font-weight: bold; border-radius: 5px; display: block; width: 100%}
 .search-btn button {width: 50%; display:inline-block; padding: 12px 0 0;}
 
+/* 기본정보 */
+.member-info-box.v1 {border:1px solid #DBDBDB; margin-top: 40px;}
+.member-info-box.v1 .member-info {padding: 40px 0 40px 100px}
+.member-info {padding: 90px 0 100px 100px}
+.info-table {display: table; width: 75%;}
+.info-table h3 {display: table-cell; color: #000; font-size: 20px;}
+.info-table h3 .bar {width: 2px; height: 14px; background: #000000; display: inline-block; margin-right: 8px;}
+.info-table .info-table-td {display: table-cell; width: 700px;}
+.info-table .info-table-td .member {display: block;  border-bottom: 2px solid #E2E2E2; padding: 22px 0}
+.info-table .info-table-td .member.noline {border-bottom: 0}
+.info-table .info-table-td .member h4,.info-table .info-table-td .member input {float: left; }
+.info-table .info-table-td .member h4 {width: 40%; color: #6E6E6E; font-size: 18px; line-height: 44px; margin-bottom: 0}
+.info-table .info-table-td .member h4 .bar {width: 2px; height: 14px; background: #808080; display: inline-block; margin-right: 8px;}
+
+.info-table .info-table-td .member .input {width: 60%;display: inline-block; margin-bottom: 10px; position: relative}
+.info-table .info-table-td .member .input input {background: #F5F6F8; height: 44px; border-radius: 4px; width: 220px; font-size: 18px; border: 1px solid #F5F6F8}
+.info-table .info-table-td .member .input input:hover {border:1px solid #5D9BFF; background: #EBF5FF; color: #5D9BFF}
+.info-table .info-table-td .member .input .pw-false {position: absolute; right: -120px; color: #D0310C; top: 10px}
+
 /* 테이블관련 */
 .table-area {position: relative}
-.table-type01 {text-align: center}
+.table-type01 {text-align: center;border-collapse: separate;}
 .table-type01 th {font-size: 17px; color: #6E6E6E; font-family:'hyundailight'!important; padding: 23px 0; border-bottom: 2px solid #E2E2E2}
 .table-type01 td {color: #474747; border-bottom:2px solid #F2F2F2; padding: 15px 0;}
 .table-type01 tbody tr {position: relative}
-.table-type01 tbody tr:hover {box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); border-radius: 13px;}
+.table-type01 tbody tr:hover {box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); border-radius: 13px; background: #fff;  border-collapse:separate!important; width: 100%;}
+.table-type01.v1 th {border-bottom: 2px solid #313656}
 
 
 
@@ -352,7 +372,7 @@ tr:hover .member-info-layer{
 .top-search-wrap .top-search{height: 48px; line-height: 48px; background: #F5F6F8; border-radius: 4px; width: 220px; padding: 0 10px 0 20px; display: inline-block}
 .top-search-wrap .top-search input {border:0;background: #F5F6F8; width: 85%}
 .top-search-wrap .top-search a {padding-left: 5px}
-.top-search-wrap .detail-search {font-size: 14px; color: #fff; background: #313656; border-radius: 100px 100px; height: 48px; line-height: 48px; display: inline-block; padding: 0 30px; }
+.top-search-wrap .detail-search {font-size: 14px; color: #fff; background: #313656; border-radius: 100px 100px; height: 48px; line-height: 48px; display: inline-block; padding: 0 30px; margin-left: 10px }
 .top-search-wrap .detail-search:hover {text-decoration: none;}
 .top-search-wrap select {background: #F0F0F0 url("../../img/ico-arrow7.png")90% 50% no-repeat; background-size: 7px 5px; border:1px solid #F0F0F0;border-radius: 3px; height: 48px; font-size: 15px; color: #474747; padding: 0 15px; margin: 0 10px;}
 
@@ -368,8 +388,24 @@ tr:hover .member-info-layer{
 .paging a:hover,.paging a.select {opacity: 1; color: #0062ca; font-weight: bold; text-decoration: none;}
 .paging a.next,.paging a.prev {opacity: 1}
 
+.btm-btn-area{text-align: center; margin-top: 30px;}
+.btm-btn {font-size: 21px; text-align: center; border-radius: 100px 100px;display: inline-block; padding: 22px 180px; color: #fff;}
+.btm-btn:disabled {background: #DBDBDB!important}
+.btm-btn.org {background: #F58D00}
+.btm-btn.blue {background: #313656}
+
+.info-table-btn {text-align: center; font-size: 17px;background: #F58D00; border-radius: 4px; height: 44px; line-height: 44px; color: #fff; width: 100px; margin-left: 10px; }
+.info-table-btn:disabled {background: #DBDBDB!important}
+.table-list-btn {text-align: center; font-size: 17px;background: #313656; border-radius: 4px; height: 44px; line-height: 44px; color: #fff; width: 93px; }
+.table-list-btn:disabled {background: #B2B2B2}
+.table-list-btn:hover {background: #6E7188}
+.btn-del {background:url("../../img/btn-del.png") center center; width: 16px; height: 16px; background-size: 16px; font-size: 0}
+.btn-del:hover {background:url("../../img/btn-del-hover.png") center center; width: 16px; height: 16px; background-size: 16px; font-size: 0}
+
+
 /* modal */
 .delete-layer  {top: 60px!important; z-index: 100000!important}
+.delete-layer.v1 {top: 0!important}
 .modal-backdrop { width: 100%; height: 100% }
 .modal-backdrop.show {opacity: 0.41!important}
 
@@ -379,4 +415,4 @@ tr:hover .member-info-layer{
 .delete-layer .modal-footer {border-top:0;border-bottom-left-radius:0;border-bottom-right-radius:0; text-align: center; display: block; padding: 0 0 40px}
 .delete-layer .modal-footer button {display: inline-block; border-radius: 100px 100px; padding: 15px 95px; font-size: 21px; color: #fff; background: #FF9100}
 .delete-layer .modal-footer button:disabled {background: #FF9100}
-
+.delete-layer .modal-content {border: 0}
