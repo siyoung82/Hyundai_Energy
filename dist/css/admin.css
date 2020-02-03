@@ -352,18 +352,9 @@ tr:hover .member-info-layer{
 .top-search-wrap .top-search{height: 48px; line-height: 48px; background: #F5F6F8; border-radius: 4px; width: 220px; padding: 0 10px 0 20px; display: inline-block}
 .top-search-wrap .top-search input {border:0;background: #F5F6F8; width: 85%}
 .top-search-wrap .top-search a {padding-left: 5px}
-.top-search-wrap .detail-search {font-size: 14px; color: #fff; background: #313656 url("../../img/ico-arrow6.png") no-repeat 80% 50%; border-radius: 100px 100px; height: 48px; line-height: 48px; display: inline-block; padding: 0 30px 0 18px; margin-left: 25px;}
+.top-search-wrap .detail-search {font-size: 14px; color: #fff; background: #313656; border-radius: 100px 100px; height: 48px; line-height: 48px; display: inline-block; padding: 0 30px; }
 .top-search-wrap .detail-search:hover {text-decoration: none;}
-.top-search-wrap .detail-search.bgon {background: #313656 url("../../img/ico-arrow6.png") no-repeat 80% 50%;}
-.top-search-wrap .detail-search.bgoff {background: #313656 url("../../img/ico-arrow8.png") no-repeat 80% 50%; }
-.detail-search-wrap {padding: 15px 25px; border-bottom: 2px solid #E2E2E2; text-align: right; display: block!important;} 
-.detail-search-wrap .top-search{height: 40px; line-height: 40px; background: #F5F6F8; border-radius: 4px; width: 213px; padding: 0 10px 0 20px; display: inline-block; font-size: 15px;}
-.detail-search-wrap .top-search input {border:0;background: #F5F6F8; width: 85%}
-.detail-search-wrap .top-search a {padding-left: 5px}
-.detail-search-wrap .tit {color: #474747; padding-right: 5px;}
-.detail-search-wrap select {background: #F0F0F0 url("../../img/ico-arrow7.png")90% 50% no-repeat; background-size: 7px 5px; border:1px solid #F0F0F0;border-radius: 3px; height: 40px; font-size: 15px; color: #474747; padding: 0 15px; margin: 0 30px;}
-.detail-search-wrap .reset-btn {font-size: 14px; height: 40px; border:1px solid #323755; color: #383838; background: #fff; border-radius: 4px; padding: 0 22px}
-.detail-search-none {display: none}
+.top-search-wrap select {background: #F0F0F0 url("../../img/ico-arrow7.png")90% 50% no-repeat; background-size: 7px 5px; border:1px solid #F0F0F0;border-radius: 3px; height: 48px; font-size: 15px; color: #474747; padding: 0 15px; margin: 0 10px;}
 
 /* 버튼관련 */
 .view-btn,.result-btn {border-radius: 4px; padding: 14px 19px 12px}
@@ -378,7 +369,6 @@ tr:hover .member-info-layer{
 .paging a.next,.paging a.prev {opacity: 1}
 
 /* modal */
-
 .delete-layer  {top: 60px!important; z-index: 100000!important}
 .modal-backdrop { width: 100%; height: 100% }
 .modal-backdrop.show {opacity: 0.41!important}

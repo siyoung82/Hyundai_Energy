@@ -54,10 +54,7 @@ $('.card-header').click(function(e) { //경제성분석
         }
     });
 
-$(".detail-search").on('click', function(){ //관리자 상세검색
-	 $('.detail-search-none').toggleClass('detail-search-wrap');
-	 $('.detail-search.bgon').toggleClass('bgoff');
-});
+
 
 $(function(){
     $('.left-area .area2 .card .card-header').click(function(e) {
