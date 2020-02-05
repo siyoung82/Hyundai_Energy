@@ -93,6 +93,7 @@ hr { display: none; }
 .mt80 {margin-top: 80px;}
 .mt15 {margin-top: 15px;}
 .mt20 {margin-top: 20px;}
+.mt30 {margin-top: 30px;}
 .mt60 {margin-top: 60px;}
 .mt200 {margin-top: 200px!important;}
 
@@ -354,11 +355,25 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .table-type02 th {font-size: 17px; color: #000; padding: 20px 0; border-bottom: 2px solid #EFEFEF; width: 210px }
 .table-type02 th .bar {display: inline-block; width: 2px; height: 14px; background: #808080; margin-right: 15px; margin-left: 4px; vertical-align: middle}
 .table-type02 td {padding: 20px 0; border-bottom: 2px solid #EFEFEF;}
-.table-type02 td input {background: #EBF5FF; border-radius: 4px; border:1px solid #5D9BFF; height: 40px; font-size: 17px; color: #126FCC; padding: 0 15px; width: 340px}
-.table-type02 td input:disabled {background: #fff; border:1px solid #fff; color: #383838; }
+.table-type02 td input:hover {background: #EBF5FF; border-radius: 4px; border:1px solid #5D9BFF; height: 40px; font-size: 17px; color: #126FCC; padding: 0 15px; width: 340px}
+.table-type02 td input:disabled,.table-type02 td input {background: #fff; border:1px solid #fff; color: #383838; height: 40px; font-size: 17px; padding: 0 15px; width: 340px}
 .table-type02 td select {border-radius: 4px; border:1px solid #F5F6F8; height: 40px; font-size: 17px; width: 340px; padding: 0 15px; background: #F5F6F8 url("../../img/ico-arrow3.png") 95% 50% no-repeat; background-size: 9px 7px;}
 .table-type02 td select:hover {background: #fff url("../../img/ico-arrow4.png") 95% 50% no-repeat; background-size: 9px 7px; border:1px solid #FB8F00}
 
+.table-type03 {text-align: center; border:2px solid #DBDBDB}
+.table-type03:hover,.table-type03.selectd { border:2px solid #FB8F00}
+.table-type03 th {background: #F4F5F8; font-size: 17px; padding: 12px; color: #383838; font-family:'hyundailight'!important; border-bottom: 2px solid #EFEFEF;}
+.table-type03 th.line {border-top: 2px solid #EFEFEF;}
+.table-type03 td {padding:0; color: #383838; font-family:'hyundailight'!important; border-right: 1px solid #DBDBDB}
+.table-type03 td:last-child {border-right: 0}
+.table-type03 td.bg {background: #F9FAFB; padding: 9px; border-bottom: 2px solid #EFEFEF;}
+.table-type03 td button {margin: 5px 0}
+.table-type03 td button.btn-motify {border-radius: 4px; background: #313656; width: 80px; height: 38px; line-height: 38px; color: #fff; text-align: center;}
+.table-type03 td button.btn-delete,.table-type03 td button.btn-motify-end {border-radius: 4px; background: #FF9100; width: 80px; height: 38px; line-height: 38px; color: #fff; text-align: center;}
+.table-type03 td input[type='text'],.table-type03 td input[type='text']:disabled,.table-type03 td input[type='text']:disabled:hover {width: 100%; border:0; text-align: center; height: 40px; line-height: 40px; background: #fff; color: #383838}
+.table-type03 td input[type='text']:hover {width: 100%; border:1px solid #80B0FF; background: #EBF5FF; color: #126FCC; text-align: center; height: 40px; line-height: 40px;}
+.table-type03 td button.btn-motify:disabled,.table-type03 td button.btn-delete:disabled,.table-type03 td button.btn-motify-end:disabled {background: #DBDBDB; }
+.table-type03 td p {margin-bottom: 0}
 tr .member-info-layer {
     z-index:10;display:none; padding:25px 35px;
     margin-top:55px; margin-left:-1300px;
@@ -428,7 +443,7 @@ tr:hover .member-info-layer{
 .delete-layer .modal-footer button:disabled {background: #FF9100}
 .delete-layer .modal-content {border: 0}
 
-.delele-popup {
+.delele-popup,.end-popup {
     width:826px;
     height:330px;
     position:absolute;
@@ -441,9 +456,8 @@ tr:hover .member-info-layer{
 	overflow: hidden;
 	box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.33);
   }
-.delele-popup .popup-header {background: #323755; padding: 30px 0; text-align: center; color: #fff; font-size: 25px; font-weight: bold; display: block; position: relative;border-top-left-radius:0;border-top-right-radius:0; border-bottom: 0;}
-.delele-popup .popup-header .close {position: absolute; right: 70px; top: 50px; box-shadow:none; color: #fff; opacity: 1; background: url("../../img/layer_close.png") center center no-repeat; background-size: 20px 20px; font-size: 0}
-.delele-popup .popup-body {padding: 40px 0; text-align: center; color: #474747; font-size: 19px;}
-.delele-popup .popup-footer {border-top:0;border-bottom-left-radius:0;border-bottom-right-radius:0; text-align: center; display: block; padding: 0 0 40px}
-.delele-popup .popup-footer button {display: inline-block; border-radius: 100px 100px; padding: 15px 95px; font-size: 21px; color: #fff; background: #FF9100}
-.delele-popup .popup-footer button:disabled {background: #FF9100}
+.delele-popup .popup-header,.end-popup .popup-header {background: #323755; padding: 30px 0; text-align: center; color: #fff; font-size: 25px; font-weight: bold; display: block; position: relative;border-top-left-radius:0;border-top-right-radius:0; border-bottom: 0;}
+.delele-popup .popup-body,.end-popup .popup-body {padding: 40px 0; text-align: center; color: #474747; font-size: 19px;}
+.delele-popup .popup-footer,.end-popup .popup-footer {border-top:0;border-bottom-left-radius:0;border-bottom-right-radius:0; text-align: center; display: block; padding: 0 0 40px}
+.delele-popup .popup-footer button,.end-popup .popup-footer button {display: inline-block; border-radius: 100px 100px; padding: 15px 95px; font-size: 21px; color: #fff; background: #FF9100; margin: 0 10px}
+.delele-popup .popup-footer button:disabled,.end-popup .popup-footer button:disabled {background: #FF9100}

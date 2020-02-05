@@ -66,3 +66,17 @@ $(function(){
     });
 }) 
 
+  function showPopup(id) {// admin-popup
+    var popup = document.getElementById(id);
+    popup.style.display = 'block';
+  }
+$(".popup-footer .btn-cancel").click(function(){ 
+	$(".delele-popup").hide();
+});
+$(".popup-footer .btn-delete").click(function(){ 
+	$(".delele-popup").hide();
+	$(".end-popup").show();
+});
+$(".popup-footer .btn-end").click(function(){ 
+	$(".end-popup").hide();
+});

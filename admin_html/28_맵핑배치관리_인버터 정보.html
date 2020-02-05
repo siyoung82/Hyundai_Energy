@@ -40,8 +40,8 @@
 			<div class="top-tab-wrap">
 				<div class="top-tab">
 					<a href="#">기본정보</a>
-					<a href="#" class="select">태양광모듈 정보</a>
-					<a href="#">인버터 정보</a>
+					<a href="#">태양광모듈 정보</a>
+					<a href="#" class="select">인버터 정보</a>
 				</div>
 			</div>
 			<div class="top-search-wrap">
@@ -64,56 +64,39 @@
 				<tr>
 					<th scope="col">제조사</th>
 					<th scope="col">Model</th>
-					<th scope="col">최대출력</th>
-					<th scope="col">개방전압</th>
-					<th scope="col">단락전류</th>
-					<th scope="col">최대전압</th>
-					<th scope="col">최대전류</th>
-					<th scope="col">SYSTEM VOLTAGE</th>
+					<th scope="col">정격출력전력(kWp)</th>
+					<th scope="col">효율(%)</th>
+					<th scope="col">Total Load (VDC)</th>
+					<th scope="col">주파수 (Hz)</th>
+					<th scope="col">전압 (V)</th>
 					<th scope="col">수정/삭제</th>
 				</tr>
 				<tr>
-					<td rowspan="5"><input type="text" value="SolarPark" disabled></td>
-					<td  rowspan="5"><input type="text" value="SPP-305" disabled></td>
-					<td class="bg">Pmax (W)</td>
-					<td class="bg">Voc (V)</td>
-					<td class="bg">Isc (A)</td>
-					<td class="bg">Vmp (V)</td>
-					<td class="bg">Imp (A)</td>
-					<td class="bg">(V)</td>
-					<td rowspan="5">
+					<td rowspan="3"><input type="text" value="SolarPark" disabled></td>
+					<td rowspan="3"><input type="text" value="SPP-305" disabled></td>
+					<td><input type="text" value="305" disabled></td>
+					<td><input type="text" value="305" disabled></td>
+					<td><input type="text" value="305" disabled></td>
+					<td><input type="text" value="305" disabled></td>
+					<td><input type="text" value="305" disabled></td>
+					<td rowspan="3">
 						<p><button type="button" class="btn-motify">수정하기</button></p>
 						<p><button type="button" class="btn-delete" onclick="showPopup('popup');">삭제하기</button></p>
 					</td>
 				</tr>
 				<tr>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-				</tr>
-				<tr>
-					<th scope="col" class="line" colspan="4">온도보정계수(%/℃)</th>
-					<th scope="col" class="line">모듈적용온도</th>
-					<th scope="col" class="line">모듈동작온도</th>
-				</tr>
-				<tr>
-					<td class="bg">Vocc V(%)</td>
-					<td class="bg">Iscc (%)</td>
-					<td class="bg">Vmpc (%)</td>
-					<td class="bg">Impc</td>
-					<td class="bg">℃</td>
-					<td class="bg">℃</td>
+					<th scope="col" class="line">정격입력전류 (A)</th>
+					<th scope="col" class="line">최대입력전력 (kWp)</th>
+					<th scope="col" class="line">정격출력전압 (V)</th>
+					<th scope="col" class="line">정격출력전류 (A)</th>
+					<th scope="col" class="line">&nbsp;</th>
 				</tr>
 				<tr>
 					<td><input type="text" value="305" disabled></td>
 					<td><input type="text" value="305" disabled></td>
 					<td><input type="text" value="305" disabled></td>
 					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
+					<td>&nbsp;</td>
 				</tr>
 			</table>
 			<table class="table-type03 mt30">
@@ -131,56 +114,39 @@
 				<tr>
 					<th scope="col">제조사</th>
 					<th scope="col">Model</th>
-					<th scope="col">최대출력</th>
-					<th scope="col">개방전압</th>
-					<th scope="col">단락전류</th>
-					<th scope="col">최대전압</th>
-					<th scope="col">최대전류</th>
-					<th scope="col">SYSTEM VOLTAGE</th>
+					<th scope="col">정격출력전력(kWp)</th>
+					<th scope="col">효율(%)</th>
+					<th scope="col">Total Load (VDC)</th>
+					<th scope="col">주파수 (Hz)</th>
+					<th scope="col">전압 (V)</th>
 					<th scope="col">수정/삭제</th>
 				</tr>
 				<tr>
-					<td rowspan="5"><input type="text" value="SolarPark" disabled></td>
-					<td  rowspan="5"><input type="text" value="SPP-305" disabled></td>
-					<td class="bg">Pmax (W)</td>
-					<td class="bg">Voc (V)</td>
-					<td class="bg">Isc (A)</td>
-					<td class="bg">Vmp (V)</td>
-					<td class="bg">Imp (A)</td>
-					<td class="bg">(V)</td>
-					<td rowspan="5">
+					<td rowspan="3"><input type="text" value="SolarPark" disabled></td>
+					<td rowspan="3"><input type="text" value="SPP-305" disabled></td>
+					<td><input type="text" value="305" disabled></td>
+					<td><input type="text" value="305" disabled></td>
+					<td><input type="text" value="305" disabled></td>
+					<td><input type="text" value="305" disabled></td>
+					<td><input type="text" value="305" disabled></td>
+					<td rowspan="3">
 						<p><button type="button" class="btn-motify">수정하기</button></p>
 						<p><button type="button" class="btn-delete" onclick="showPopup('popup');">삭제하기</button></p>
 					</td>
 				</tr>
 				<tr>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-				</tr>
-				<tr>
-					<th scope="col" class="line" colspan="4">온도보정계수(%/℃)</th>
-					<th scope="col" class="line">모듈적용온도</th>
-					<th scope="col" class="line">모듈동작온도</th>
-				</tr>
-				<tr>
-					<td class="bg">Vocc V(%)</td>
-					<td class="bg">Iscc (%)</td>
-					<td class="bg">Vmpc (%)</td>
-					<td class="bg">Impc</td>
-					<td class="bg">℃</td>
-					<td class="bg">℃</td>
+					<th scope="col" class="line">정격입력전류 (A)</th>
+					<th scope="col" class="line">최대입력전력 (kWp)</th>
+					<th scope="col" class="line">정격출력전압 (V)</th>
+					<th scope="col" class="line">정격출력전류 (A)</th>
+					<th scope="col" class="line">&nbsp;</th>
 				</tr>
 				<tr>
 					<td><input type="text" value="305" disabled></td>
 					<td><input type="text" value="305" disabled></td>
 					<td><input type="text" value="305" disabled></td>
 					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
+					<td>&nbsp;</td>
 				</tr>
 			</table>
 		</div>
@@ -200,7 +166,7 @@
 <div class="delele-popup" id="popup">
 	<div class="popup-content">
 		<div class="popup-header">
-			<div class="popup-title">태양광모듈 정보 삭제</div>
+			<div class="popup-title">인버터 정보 삭제</div>
 		</div>
 		<div class="popup-body">
 			제조사 : Solar Park / Model : SPP-305를 삭제 하시겠습니까?
@@ -214,7 +180,7 @@
 <div class="end-popup" id="popup">
 	<div class="popup-content">
 		<div class="popup-header">
-			<div class="popup-title">태양광모듈 정보 삭제</div>
+			<div class="popup-title">인버터 정보 삭제</div>
 		</div>
 		<div class="popup-body">
 			제조사 : Solar Park / Model : SPP-305가 삭제 되었습니다.

@@ -151,8 +151,8 @@
 			양지혁 관리자를 삭제 하시겠습니까?
 		</div>
 		<div class="popup-footer">
-			<button type="button" data-dismiss="modal" aria-label="Close">취소</button>
-			<button type="button" data-toggle="modal" data-target="#deletebox-end">삭제</button>
+			<button type="button" class="btn-cancel">취소</button>
+			<button type="button">삭제</button>
 		</div>
 	</div>
 </div>
@@ -161,9 +161,13 @@
 <script src="../dist/js/bootstrap.min.js"></script>
 <script src="../dist/js/add.js"></script>
 <script type="text/javascript">
-  function showPopup(id) {
-    var popup = document.getElementById(id);
-    popup.style.display = 'block';
-  }
+function showPopup(id) {
+	var popup = document.getElementById(id);
+	popup.style.display = 'block';
+}
+$(".popup-footer .btn-cancel").click(function(){ 
+	$(".delele-popup").hide();
+});
+
 </script>
 </html>

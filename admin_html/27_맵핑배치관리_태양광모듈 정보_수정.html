@@ -49,7 +49,7 @@
 			</div>
 		</div>
 		<div class="table-area">
-			<table class="table-type03 mt30">
+			<table class="table-type03 mt30 selectd">
 				<colgroup>
 					<col width="12%">
 					<col width="12%">
@@ -73,8 +73,8 @@
 					<th scope="col">수정/삭제</th>
 				</tr>
 				<tr>
-					<td rowspan="5"><input type="text" value="SolarPark" disabled></td>
-					<td  rowspan="5"><input type="text" value="SPP-305" disabled></td>
+					<td rowspan="5"><input type="text" value="SolarPark"></td>
+					<td  rowspan="5"><input type="text" value="SPP-305"></td>
 					<td class="bg">Pmax (W)</td>
 					<td class="bg">Voc (V)</td>
 					<td class="bg">Isc (A)</td>
@@ -82,17 +82,17 @@
 					<td class="bg">Imp (A)</td>
 					<td class="bg">(V)</td>
 					<td rowspan="5">
-						<p><button type="button" class="btn-motify">수정하기</button></p>
-						<p><button type="button" class="btn-delete" onclick="showPopup('popup');">삭제하기</button></p>
+						<p><button type="button" class="btn-motify-end">수정완료</button></p>
+						<p><button type="button" class="btn-delete" disabled>삭제하기</button></p>
 					</td>
 				</tr>
 				<tr>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
 				</tr>
 				<tr>
 					<th scope="col" class="line" colspan="4">온도보정계수(%/℃)</th>
@@ -108,12 +108,12 @@
 					<td class="bg">℃</td>
 				</tr>
 				<tr>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
 				</tr>
 			</table>
 			<table class="table-type03 mt30">
@@ -140,8 +140,8 @@
 					<th scope="col">수정/삭제</th>
 				</tr>
 				<tr>
-					<td rowspan="5"><input type="text" value="SolarPark" disabled></td>
-					<td  rowspan="5"><input type="text" value="SPP-305" disabled></td>
+					<td rowspan="5"><input type="text" value="SolarPark"></td>
+					<td  rowspan="5"><input type="text" value="SPP-305"></td>
 					<td class="bg">Pmax (W)</td>
 					<td class="bg">Voc (V)</td>
 					<td class="bg">Isc (A)</td>
@@ -154,12 +154,12 @@
 					</td>
 				</tr>
 				<tr>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
 				</tr>
 				<tr>
 					<th scope="col" class="line" colspan="4">온도보정계수(%/℃)</th>
@@ -175,12 +175,12 @@
 					<td class="bg">℃</td>
 				</tr>
 				<tr>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
-					<td><input type="text" value="305" disabled></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
+					<td><input type="text" value="305"></td>
 				</tr>
 			</table>
 		</div>
@@ -196,34 +196,6 @@
 		</div>
 	</div>
 </footer>
-<!-- delete Modal -->
-<div class="delele-popup" id="popup">
-	<div class="popup-content">
-		<div class="popup-header">
-			<div class="popup-title">태양광모듈 정보 삭제</div>
-		</div>
-		<div class="popup-body">
-			제조사 : Solar Park / Model : SPP-305를 삭제 하시겠습니까?
-		</div>
-		<div class="popup-footer">
-			<button type="button" class="btn-cancel">취소</button>
-			<button type="button" class="btn-delete">삭제</button>
-		</div>
-	</div>
-</div>
-<div class="end-popup" id="popup">
-	<div class="popup-content">
-		<div class="popup-header">
-			<div class="popup-title">태양광모듈 정보 삭제</div>
-		</div>
-		<div class="popup-body">
-			제조사 : Solar Park / Model : SPP-305가 삭제 되었습니다.
-		</div>
-		<div class="popup-footer">
-			<button type="button" class="btn-end">완료</button>
-		</div>
-	</div>
-</div>
 </body>
 <script src="../dist/js/jquery-3.4.1.min.js"></script>
 <script src="../dist/js/bootstrap.min.js"></script>
