@@ -11,7 +11,7 @@
 	
 </head>
 
-<body style="background: #fff!important">
+<body>
 <div id="skip_navigation">
 	<ul>
 		<li><a class="accessibility" href="#container">본문으로 바로가기</a></li>
@@ -67,7 +67,7 @@
 					<td>고객관리팀</td>
 					<td>010-0000-0000</td>
 					<td><button type="button" class="table-list-btn" disabled>수정하기</button></td>
-					<td><button type="button" class="btn-del" data-toggle="modal" data-target="#deletebox">삭제하기</button></td>
+					<td><button type="button" class="btn-del" onclick="showPopup('popup');">삭제하기</button></td>
 				</tr>
 				<tr>
 					<td>양지혁</td>
@@ -75,7 +75,7 @@
 					<td>고객관리팀</td>
 					<td>010-0000-0000</td>
 					<td><button type="button" class="table-list-btn">수정하기</button></td>
-					<td><button type="button" class="btn-del" data-toggle="modal" data-target="#deletebox">삭제하기</button></td>
+					<td><button type="button" class="btn-del" onclick="showPopup('popup');">삭제하기</button></td>
 				</tr>
 				<tr>
 					<td>양지혁</td>
@@ -83,7 +83,7 @@
 					<td>고객관리팀</td>
 					<td>010-0000-0000</td>
 					<td><button type="button" class="table-list-btn">수정하기</button></td>
-					<td><button type="button" class="btn-del" data-toggle="modal" data-target="#deletebox">삭제하기</button></td>
+					<td><button type="button" class="btn-del" onclick="showPopup('popup');">삭제하기</button></td>
 				</tr>
 				<tr>
 					<td>양지혁</td>
@@ -91,7 +91,31 @@
 					<td>고객관리팀</td>
 					<td>010-0000-0000</td>
 					<td><button type="button" class="table-list-btn">수정하기</button></td>
-					<td><button type="button" class="btn-del" data-toggle="modal" data-target="#deletebox">삭제하기</button></td>
+					<td><button type="button" class="btn-del" onclick="showPopup('popup');">삭제하기</button></td>
+				</tr>
+					<tr>
+					<td>양지혁</td>
+					<td>energy@hisolar.com</td>
+					<td>고객관리팀</td>
+					<td>010-0000-0000</td>
+					<td><button type="button" class="table-list-btn">수정하기</button></td>
+					<td><button type="button" class="btn-del" onclick="showPopup('popup');">삭제하기</button></td>
+				</tr>
+				<tr>
+					<td>양지혁</td>
+					<td>energy@hisolar.com</td>
+					<td>고객관리팀</td>
+					<td>010-0000-0000</td>
+					<td><button type="button" class="table-list-btn">수정하기</button></td>
+					<td><button type="button" class="btn-del" onclick="showPopup('popup');">삭제하기</button></td>
+				</tr>
+				<tr>
+					<td>양지혁</td>
+					<td>energy@hisolar.com</td>
+					<td>고객관리팀</td>
+					<td>010-0000-0000</td>
+					<td><button type="button" class="table-list-btn">수정하기</button></td>
+					<td><button type="button" class="btn-del" onclick="showPopup('popup');">삭제하기</button></td>
 				</tr>
 				</tbody>
 			</table>
@@ -118,19 +142,17 @@
 	</div>
 </footer>
 <!-- delete Modal -->
-<div class="modal fade delete-layer v1" id="deletebox" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<div class="modal-title">관리자 삭제</div>
-			</div>
-			<div class="modal-body">
-				양지혁 관리자를 삭제 하시겠습니까?
-			</div>
-			<div class="modal-footer">
-				<button type="button" data-dismiss="modal" aria-label="Close">취소</button>
-				<button type="button" data-toggle="modal" data-target="#deletebox-end">삭제</button>
-			</div>
+<div class="delele-popup" id="popup">
+	<div class="popup-content">
+		<div class="popup-header">
+			<div class="popup-title">관리자 삭제</div>
+		</div>
+		<div class="popup-body">
+			양지혁 관리자를 삭제 하시겠습니까?
+		</div>
+		<div class="popup-footer">
+			<button type="button" data-dismiss="modal" aria-label="Close">취소</button>
+			<button type="button" data-toggle="modal" data-target="#deletebox-end">삭제</button>
 		</div>
 	</div>
 </div>
@@ -138,4 +160,10 @@
 <script src="../dist/js/jquery-3.4.1.min.js"></script>
 <script src="../dist/js/bootstrap.min.js"></script>
 <script src="../dist/js/add.js"></script>
+<script type="text/javascript">
+  function showPopup(id) {
+    var popup = document.getElementById(id);
+    popup.style.display = 'block';
+  }
+</script>
 </html>
