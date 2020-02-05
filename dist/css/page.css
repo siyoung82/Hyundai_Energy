@@ -41,6 +41,7 @@
 }
 /*** 기능분석 ***/
 #f-analysis {}
+#f-analysis>.container {padding: 0}
 #f-analysis .top-map-area {height: 370px; width: 100%; position: relative;}
 .top-map-area .top-map-control {border:1px solid #707070;border-radius: 8px; background: #fff; position: absolute; top: 11px; right: 100px; overflow: hidden; z-index: 99}
 .top-map-area .top-map-control a {padding: 12px 34px; color: #474747;font-size: 15px; display: inline-block; font-family: 'NanumSquare'; font-weight: bold; border-right:1px solid #707070;}
@@ -215,10 +216,9 @@
 /* Default End */
 @media (max-width: 767px){
 	#analysis-list .card-body {padding: 5px;  background: #FDFCFD}
-
+	#analysis-list .card-header.v1 {margin-left: 5px!important}
 	.top-map-area .top-map-control,.top-map-area .left-map-control {display: none;}
-	.bg-wrap01 {background: #fff; padding: 20px}
-	#f-analysis {margin-left: -15px; margin-right: -15px;}
+	.bg-wrap01 {background: #fff; padding: 20px 0}
 	#f-analysis .top-map-area {height: 137px; overflow: hidden;}
 	#f-analysis .top-map-area img {height: 137px; }
 	#f-analysis .address-info-wrap {background: #F5F6F8; overflow: hidden}
@@ -228,7 +228,7 @@
 	#f-analysis .address-info a.edit img {width: 28px; height: 28px;}
 	#analysis-list .subject {font-size: 15px!important; padding: 15px 25px}
 	#analysis-list .card-header {border-radius: 0;  padding: 0; margin: 0 5px 0 40px; cursor:pointer;}
-	#analysis-list .m-card-header{cursor:pointer}
+	#analysis-list .m-card-header{cursor:pointer;z-index: 1}
 	#analysis-list .card {border-radius: 0; margin-bottom: 12px;}
 	#analysis-list .card-body { margin-left: 0}
 
