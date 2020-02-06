@@ -444,7 +444,7 @@
 .contact-table .t-th {color: #000000;font-size: 21px;  background: #F5F9FC; text-align: center ;width: 25%;}
 .contact-table .t-th span {font-size: 21px; color: #D6815C ;font-weight: bold; padding-right: 10px;}
 .contact-table .t-td {color:#404040;  text-align: left; font-size: 17px; width: 75%; position: relative}
-.contact-table .t-td input[type=text] {font-size: 17px; height: 56px;}
+.contact-table .t-td input[type=text],.contact-table .t-td input[type=file] {font-size: 17px; height: 56px;}
 .contact-table .t-td input[type=text]:hover {border: 1px solid #82B1FD; background: #EBF5FF ; color: #126FCC}
 .contact-table .t-td input[type=checkbox] {width: 18px; height: 18px; vertical-align: middle; margin-left: 8px; margin-right: 20px;}
 .contact-table .t-td .w30 {width: 30%; }

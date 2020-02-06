@@ -342,6 +342,27 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .info-table .info-table-td .member .input input:hover {border:1px solid #5D9BFF; background: #EBF5FF; color: #5D9BFF}
 .info-table .info-table-td .member .input .pw-false {position: absolute; right: -120px; color: #D0310C; top: 10px}
 
+/* 사업성분석 관리 */
+.analysis-admin {padding: 20px 23px; overflow: hidden}
+.analysis-area .subject {background: #323755; border-radius: 4px; padding: 0 36px; overflow: hidden; height: 58px; margin: 0 5px 18px}
+.analysis-area .subject h3 {font-size: 19px; color: #fff; display: inline-block; float: left; margin-bottom: 0; line-height: 58px; }
+.analysis-area .subject button {font-size: 20px; color: #fff; display: inline-block; float: right; line-height: 58px;}
+.analysis-area .cont .boxarea {float: left}
+.analysis-area .cont .boxarea.w50 {width: 50%;}
+.analysis-area .cont .boxarea.w25 {width: 25%;}
+
+.analysis-area .cont .box {box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); margin: 0 5px; padding: 24px 30px }
+.analysis-area .cont .box h4{font-size: 17px; margin-bottom: 10px;}
+.analysis-area .cont .box .inputbox {text-align: right}
+.analysis-area .cont .box .inputbox span {width: 30px;}
+.analysis-area .cont .box.org {border-top: 5px solid #F68D00; overflow: hidden; margin-bottom: 60px;}
+.analysis-area .cont .box.blue {border-top: 5px solid #7BA3FF; overflow: hidden; margin-bottom: 25px;}
+.analysis-area .cont .box.green {border-top: 5px solid #01A707; overflow: hidden; margin-bottom: 25px;}
+
+.analysis-area .cont .box.org h4 {font-size: 17px; margin-bottom: 0; float: left; margin-top: 10px;}
+.analysis-area .cont .box h4 span {width: 2px; height: 14px; display: inline-block; background: #808080; margin-right: 15px; vertical-align: top; margin-top: 3px}
+.analysis-area .cont .box.org .inputbox {float: right}
+.analysis-area .cont .box input {border-radius: 4px; background: #F4F5F8; font-size: 22px; color: #000000; border: 0; width: 127px; height: 40px; display: inline-block; margin-right: 15px;}
 /* 테이블관련 */
 .table-area {position: relative}
 .table-area-line {border:1px solid #DBDBDB; padding: 20px 40px; margin-top: 40px;}
