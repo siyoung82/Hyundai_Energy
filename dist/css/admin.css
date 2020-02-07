@@ -249,10 +249,10 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .panel-box.bgon {background: #fff url("../../img/ico-arrow5.png") 95% 50% no-repeat; background-size: 15px 6px; }
 .panel-box.bgoff {background: #fff url("../../img/ico-arrow.png") 95% 50% no-repeat!important; background-size: 15px 6px!important; }
 
-.panel-box div {display: inline-block}
-.panel-box div span:first-child {padding-right: 47px;}
-.panel-box div:last-child {margin-left: 77px;}
-
+.panel-box div {display: inline-block; float: left}
+.panel-box div span:first-child {padding-right: 30px;}
+.panel-box div:last-child {width: 40%;text-align: right}
+.panel-box div:first-child {width: 60%}
 .panel-box-list {background: #fff; border: 1px solid #E0E0E0; border-radius: 5px; padding: 12px 30px 12px 20px; font-size: 17px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.42); float: left; margin-left: 30px; color: #676767; background-size: 15px 6px; position: absolute; left:560px; top: 56px; width: 476px; display: block!important}
 .panel-box-list .list {display: block}
 .panel-box-list .list>div {display: inline-block; float: left}
