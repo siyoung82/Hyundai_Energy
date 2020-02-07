@@ -203,6 +203,7 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .control-box .step-box {background: #323755; padding: 40px; position: relative}
 .control-box .step-box span {display: block; font-size: 21px; color: #fff;}
 .control-box .step-box span .arrange-num {color: #f3e794; display: inline-block; text-align: right; position: absolute; right: 30px; }
+.control-box .step-box .ex {font-size: 17px;background: #474A5F; border-radius: 4px; color: #A7A7A7; padding: 10px 15px; margin-top: 10px}
 .control-box .step-bar {background: #00336C; height: 6px; width: 100%;}
 .control-box .step-bar.step01 {width: 16%;}
 .control-box .step-bar.step02 {width: 32%;}
@@ -214,15 +215,20 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .control-box .control-cont {padding: 25px 25px 70px; overflow-y: auto; height: 600px}
 .control-cont .tit {font-size: 21px;}
 .control-cont .tit .bar{height: 14px; width: 2px; background: #808080; display: inline-block; margin-left: 8px; margin-right: 19px; }
-.control-box .control-cont li {border-bottom: 2px solid #DEDEDE; overflow: hidden; padding: 20px 3px; position: relative}
+.control-box .control-cont li {overflow: hidden; padding: 8px 3px; position: relative}
 .control-box .control-cont li select {border:1.6px solid #F5F6F8; background: #F5F6F8 url("../../img/ico-arrow3.png") 95% 50% no-repeat; padding: 0 10px; background-size: 9px 7px; border-radius: 4px; height: 40px; width: 190px; line-height: 40px; color: #383838; text-align: center;}
 .control-box .control-cont li select:hover {background: #fff url("../../img/ico-arrow4.png") 95% 50% no-repeat;;border:1.6px solid #FB8F00; background-size: 9px 7px;}
+
+.control-box .control-cont li.w-sel select {border:1.6px solid #323755; background: #fff url("../../img/ico-arrow7.png") 95% 50% no-repeat; padding: 0 10px; background-size: 9px 7px; border-radius: 4px; height: 40px; width: 190px; line-height: 40px; color: #383838; text-align: center;}
+.control-box .control-cont li.w-sel select:hover {background: #fff url("../../img/ico-arrow4.png") 95% 50% no-repeat;;border:1.6px solid #FB8F00; background-size: 9px 7px;}
+.control-box .control-cont li .form-group {position: relative; margin-top: 10px}
+
 .control-box .control-cont li .form-group {position: relative; margin-top: 10px}
 .control-box .control-cont li .form-group input {background: #F5F6F8; padding: 0 10px; border-radius: 4px; height: 40px; width: 195px; line-height: 40px; color: #383838; border:0}
 .control-box .control-cont li .form-group input:hover {background: #fff ;;border:1.6px solid #FB8F00;}
 .control-box .control-cont li .form-group span {position: absolute; color: #383838; right: 15px; top: 10px}
 .control-box .control-cont li:last-child {border-bottom: 0; padding-bottom: 0}
-.control-box .control-cont li .right-input input {background: #F5F6F8; padding: 0 10px; border-radius: 4px; height: 40px; width: 130px; line-height: 40px; color: #383838; border:0; display: inline-block; text-align: center}
+.control-box .control-cont li .right-input input {background: #F5F6F8; padding: 0 10px; border-radius: 4px; height: 40px; width: 190px; line-height: 40px; color: #383838; border:0; display: inline-block; text-align: center}
 .control-box .control-cont li .right-input span { text-align: right; width: 60px; display: inline-block; color: #585858; padding-right: 10px}
 .control-box .control-cont li .module-select {display: block; clear: both; padding-top: 20px; padding-bottom: 15px; overflow: hidden; border-bottom: 2px solid #FAFAFA}
 .control-box .control-cont li .module-select input {background: #F5F6F8; padding: 0 10px; border-radius: 4px; height: 40px; width: 130px; line-height: 40px; color: #383838; border:0; display: inline-block; text-align: center}
@@ -247,11 +253,13 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .panel-box div span:first-child {padding-right: 47px;}
 .panel-box div:last-child {margin-left: 77px;}
 
-.panel-box-list {background: #fff; border: 1px solid #E0E0E0; border-radius: 5px; padding: 12px 69px 12px 39px; font-size: 17px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.42); float: left; margin-left: 30px; color: #676767; background-size: 15px 6px; position: absolute; left:560px; top: 56px; width: 476px; display: block!important}
+.panel-box-list {background: #fff; border: 1px solid #E0E0E0; border-radius: 5px; padding: 12px 30px 12px 20px; font-size: 17px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.42); float: left; margin-left: 30px; color: #676767; background-size: 15px 6px; position: absolute; left:560px; top: 56px; width: 476px; display: block!important}
 .panel-box-list .list {display: block}
-.panel-box-list .list>div {display: inline-block}
+.panel-box-list .list>div {display: inline-block; float: left}
 .panel-box-list .list>div span:first-child {padding-right: 47px;}
-.panel-box-list .list>div:last-child {margin-left: 77px;}
+.panel-box-list .list>div:first-child {width: 20%}
+.panel-box-list .list>div:nth-child(2) {width: 40%}
+.panel-box-list .list>div:last-child {width: 40%; text-align: right}
 .panel-box-none {display: none}
 
 .angle-control {border: 1px solid #fff;border-radius: 4px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); background: #fff; padding: 35px 19px 45px; position: relative;overflow: hidden}
@@ -283,9 +291,10 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .arrange-box a:hover,.arrange-box a.select  {  border-radius: 12px;background-color:#EBF5FF; font-size: 17px; color: #2B93FA; text-decoration: none;}
 .arrange-box button {border:1px solid #323755; color: #323755; font-size: 17px; padding: 8px 15px 10px 15px; border-radius: 100px 100px;}
 .arrange-box button:hover {background: #FFEEB5}
-.arrange-box button.add {position: absolute; right: 15px; top: 5px}
-.arrange-box button.del {position: absolute; right: 100px; top: 5px}
-
+.arrange-box button.add {position: absolute; right: 100px; top: 5px}
+.arrange-box button.del {position: absolute; right: 15px; top: 5px}
+.arrange-box button:disabled {opacity: 0.3}
+.arrange-box button:hover:disabled {background: #fff}
 /* 로그인관련 */
 
 .login-box { background: url("../../img/bg_free.png")no-repeat center bottom; min-height: 800px; overflow: hidden}
