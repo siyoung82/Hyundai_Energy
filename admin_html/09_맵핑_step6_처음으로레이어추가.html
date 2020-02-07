@@ -44,14 +44,14 @@
 				<button type="button" disabled class="del">+ 삭제</button>
 			</div>
 			<div class="panel-box bgon">
-				<div><span>총 용량</span><span>135KW</span></div>
-				<div><span>총 수량</span><span>135장</span></div>
+				<div><span>총 용량</span><span>1351111KW</span></div>
+				<div><span>총 수량</span><span>1135장</span></div>
 			</div>
 			<div class="panel-box-none">
 				<div class="list">
 					<div>배치1</div>
-					<div><span>총 용량</span><span>135KW</span></div>
-					<div><span>총 수량</span><span>135장</span></div>
+					<div><span>총 용량</span><span>131115KW</span></div>
+					<div><span>총 수량</span><span>1351장</span></div>
 				</div>
 				<div class="list">
 					<div>배치2</div>
@@ -113,7 +113,7 @@
 				</div>
 			</div>
 			<div class="mapping-btm-btn">
-				<button type="button" class="f_l">처음으로</button>
+				<button type="button" class="f_l" data-toggle="modal" data-target="#forFirst">처음으로</button>
 				<button type="button" class="f_r">저장 후 경제성 분석</button>
 			</div>
 		</div>
@@ -122,7 +122,23 @@
 
 </div>
 <!-- //container -->
-
+<!-- delete Modal -->
+<div class="modal fade delete-layer" id="forFirst" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title">처음으로</div>
+			</div>
+			<div class="modal-body">
+				배치를 취소하고 처음으로 돌아가시겠습니까?
+			</div>
+			<div class="modal-footer">
+				<button type="button" data-dismiss="modal" aria-label="Close">취소</button>
+				<button type="button">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
 </body>
 <script src="../dist/js/jquery-3.4.1.min.js"></script>
 <script src="../dist/js/bootstrap.min.js"></script>
