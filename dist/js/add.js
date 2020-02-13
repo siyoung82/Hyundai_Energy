@@ -52,7 +52,7 @@ $('.card-header').click(function(e) { //경제성분석
         if (collapsCrnt != 'true') {
             $(this).addClass('tab-collapsed');
         }
-    });
+});
 
 
 
@@ -66,7 +66,7 @@ $(function(){
     });
 }) 
 
-  function showPopup(id) {// admin-popup
+function showPopup(id) {// admin-popup
     var popup = document.getElementById(id);
     popup.style.display = 'block';
   }

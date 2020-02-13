@@ -357,8 +357,10 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 	.m-help-cont .carousel-indicators .active {background: #0454B6}
 	.help-layer .m-help-cont .ex-tit {font-size: 15px; }
 	.help-layer .m-help-cont .ex-cont {font-size: 14px; color: #9D9D9D; }
-
-
-	
 }
 
+.tool-layer .modal-header {background: #323755; padding: 15px 0; text-align: center; color: #fff; font-size: 15px; font-weight: bold; display: block; position: relative;border-top-left-radius:0;border-top-right-radius:0; border-bottom: 0;}
+.tool-layer .modal-header .close {position: absolute; right: 25px; top: 25px; box-shadow:none; color: #fff; opacity: 1; background: url("../../img/layer_close.png") center center no-repeat; background-size: 16px 16px; font-size: 0}
+.tool-layer .m-help-cont {padding: 0!important;display: block; text-align: center}
+.tool-layer .table-scroll {height: 400px; overflow-y: auto;}
+.tool-layer .tool-btn {font-size: 16px; color: #4593FF; text-decoration: underline; margin: 8px 0 15px}
