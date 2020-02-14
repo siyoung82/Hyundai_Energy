@@ -199,7 +199,7 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 
 #mapping-control-box {background: #fff; position: fixed; left: 0; bottom:0; top: 120px; width: 464px; z-index: 1}
 #mapping-info {position: fixed; left: 490px; top: 145px;z-index: 1 ;width: 100%; display: block}
-.control-box .step-box {background: #323755; padding: 40px; position: relative}
+.control-box .step-box {background: #323755; padding: 35px 40px; position: relative}
 .control-box .step-box span {display: block; font-size: 21px; color: #fff;}
 .control-box .step-box span .arrange-num {color: #f3e794; display: inline-block; text-align: right; position: absolute; right: 30px; }
 .control-box .step-box .ex {font-size: 17px;background: #474A5F; border-radius: 4px; color: #A7A7A7; padding: 10px 15px; margin-top: 10px}
@@ -228,6 +228,9 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .control-box .control-cont li .form-group span {position: absolute; color: #383838; right: 15px; top: 10px}
 .control-box .control-cont li:last-child {border-bottom: 0; padding-bottom: 0}
 .control-box .control-cont li .right-input input {background: #F5F6F8; padding: 0 10px; border-radius: 4px; height: 40px; width: 190px; line-height: 40px; color: #383838; border:0; display: inline-block; text-align: center}
+.control-box .control-cont li .right-input.v1 input {background: #F5F6F8; padding: 0 10px; border-radius: 4px; height: 40px; width: 70px; line-height: 40px; color: #383838; border:0; display: inline-block; text-align: center}
+.control-box .control-cont li .right-input.v1 span { text-align: center; width: 50px; display: inline-block; color: #585858;}
+
 .control-box .control-cont li .right-input span { text-align: right; width: 60px; display: inline-block; color: #585858; padding-right: 10px}
 .control-box .control-cont li .module-select {display: block; clear: both; padding-top: 20px; padding-bottom: 15px; overflow: hidden; border-bottom: 2px solid #FAFAFA}
 .control-box .control-cont li .module-select input {background: #F5F6F8; padding: 0 10px; border-radius: 4px; height: 40px; width: 130px; line-height: 40px; color: #383838; border:0; display: inline-block; text-align: center}
@@ -269,7 +272,7 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .angle-control:hover .input-box input,.angle-control:hover .input-box span {color: #0C3A79}
 .angle-control .input-box input {background-color:transparent; border: 0; width: 100px;}
 .angle-control .input-box span {position: absolute; right: 8px; top:8px; color: #848484}
-.angle-control .round-slider01 {position: absolute; top: 5px; right: 25px; background: url("../../img/bg_angle01.png")center top no-repeat; width: 175px; height: 161px; padding: 28px 0 0 40px;}
+.angle-control .round-slider01 {position: absolute; top: 5px; right: 25px; background: url("../../img/bg_angle01.png")center top no-repeat; width: 181px; height: 161px; padding: 28px 0 0 40px;}
 .angle-control .round-slider02 {position: absolute; top: 30px; right: 40px; background: url("../../img/bg_angle02.png")center top no-repeat; width: 116px; height: 116px; }
 .angle-control .round-slider02 .bg-round {position: relative;}
 .angle-control .round-slider02 .bg-round .rslider {position: absolute; top: 38px; left: 6px; bottom: 0}
