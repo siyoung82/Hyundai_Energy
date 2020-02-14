@@ -77,7 +77,6 @@ h1,h2,h3,h4,h5,h6 { font-weight: normal; font-size: 1em }
 input,select,textarea,button { font-size: 15px;  outline: none!important;outline:0px !important; }
 select::-ms-expand { display: none; } 
 select { outline: 0; appearance: none; -webkit-appearance: none; -moz-appearance: none } 
-html,body { height: 100% }
 hr { display: none; }
 
 .f_l { float: left }
@@ -270,7 +269,7 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .angle-control:hover .input-box input,.angle-control:hover .input-box span {color: #0C3A79}
 .angle-control .input-box input {background-color:transparent; border: 0; width: 100px;}
 .angle-control .input-box span {position: absolute; right: 8px; top:8px; color: #848484}
-.angle-control .round-slider01 {position: absolute; top: 30px; right: 40px; background: url("../../img/bg_angle01.png")center top no-repeat; width: 116px; height: 116px; padding: 6px;}
+.angle-control .round-slider01 {position: absolute; top: 5px; right: 25px; background: url("../../img/bg_angle01.png")center top no-repeat; width: 175px; height: 161px; padding: 28px 0 0 40px;}
 .angle-control .round-slider02 {position: absolute; top: 30px; right: 40px; background: url("../../img/bg_angle02.png")center top no-repeat; width: 116px; height: 116px; }
 .angle-control .round-slider02 .bg-round {position: relative;}
 .angle-control .round-slider02 .bg-round .rslider {position: absolute; top: 38px; left: 6px; bottom: 0}
@@ -510,3 +509,87 @@ tr:hover .member-info-layer{
 .delele-popup .popup-footer,.end-popup .popup-footer {border-top:0;border-bottom-left-radius:0;border-bottom-right-radius:0; text-align: center; display: block; padding: 0 0 40px}
 .delele-popup .popup-footer button,.end-popup .popup-footer button {display: inline-block; border-radius: 100px 100px; padding: 15px 95px; font-size: 21px; color: #fff; background: #FF9100; margin: 0 10px}
 .delele-popup .popup-footer button:disabled,.end-popup .popup-footer button:disabled {background: #FF9100}
+
+
+/* 결과페이지 */
+#result-area {padding-bottom: 50px}
+#result-area section {width: 900px; margin: 0 auto; height: 100%}
+#result-area section h2 {font-size: 16px; color: #000; margin-bottom: 13px; margin-top: 40px;}
+#result-area section h3 {font-size: 14px; color: #000; margin-bottom: 13px; margin-top: 20px;}
+#result-area section h3 span {color: #ABABAB; font-size: 14px; padding-left: 5px}
+#result-area section h3 span.v1 {color: #000; }
+#result-area section h4 {font-size: 12px;}
+#result-page01 {background: url("../../img/result_img.png")center bottom no-repeat; background-size: contain; padding: 50px 60px 500px;}
+#result-page01 .result-title {font-size: 26px; color: #333854; font-weight: bold; margin-bottom: 60px; margin-top: 130px}
+#result-page01 .result-address {font-size: 25px; color: #333854; margin-bottom: 20px}
+#result-page01 .result-name {font-size: 19px; color: #333854;}
+#result-page01 .result-date {font-size: 17px; color: #333854;}
+#result-page02 .top-map-area {height: 150px; width: 100%; position: relative; border:1px solid #5C5C5C}
+#result-page02 .top-map-area .left-map-control {border:1px solid #707070;border-radius: 8px; background: #fff; position: absolute; top:95px; right: 18px; overflow: hidden;z-index: 99}
+#result-page02 .top-map-area .left-map-control a img {width: 7px!important; height: 7px!important;}
+#result-page02 .top-map-area .left-map-control a {width: 20px; height: 20px; border-bottom:1px solid #707070;text-align: center; line-height: 20px;display: block}
+#result-page02 .top-map-area .left-map-control a:last-child {border-bottom: 0;}
+#result-page02 .top-map-area .left-map-control a:hover {text-decoration: none; background: #FFEB7B }
+#result-page02 .top-map-area img {height: 148px; width: 100%} 
+
+.land-info {display: table; width: 100%;  background: #fff; border-top: 5px solid #F68D00; border-left: 1px solid #707070;border-bottom: 1px solid #707070; border-right: 1px solid #707070; }
+.land-info.v1 {border-top: 5px solid #B5E5FF;}
+.land-info.v1 div {width: auto;}
+.land-info.v1 div:last-child {width: auto}
+.land-info>div {display: table-cell; width: 12%; text-align: center;  position: relative; border-right: 1px solid #E6E6E6;padding: 12px 0}
+.land-info>div:last-child {width: 28%; border-right: 0}
+.land-info h5 {font-size: 12px; color: #747474;font-family:'hyundailight'!important; position: relative}
+.land-info p {margin-bottom: 0; font-size: 11px; color: #474747;}
+
+.re-table-type01 td,.re-table-type01 th {text-align: center; font-size: 12px;  }
+.re-table-type01 th {color: #000000; font-family:'hyundailight'!important; padding: 9px 0; border-bottom: 2px solid #070707;border-top: 1px solid #707070;border-right: 1px solid #707070;border-left: 1px solid #707070; background: #F7F9FC}
+.re-table-type01 td {color:#474747; padding:9px; border: 1px solid #707070; }
+.re-table-type01 td.bg {background: #F7F9FC}
+.re-table-type01 td em {color: #000000; font-size: 12px}
+.re-table-type01 th.line1 {border-bottom: 1px solid #070707}
+.re-table-type02 td,.re-table-type02 th {text-align: center; font-size: 12px;  }
+.re-table-type02 th {color: #000000; font-family:'hyundailight'!important; padding: 9px 0; border-bottom: 2px solid #070707;border-top: 1px solid #707070; background: #F7F9FC}
+.re-table-type02 th:first-child,.re-table-type02 td:first-child {border-left: 1px solid #707070;}
+.re-table-type02 th:last-child,.re-table-type02 td:last-child {border-right: 1px solid #707070;}
+.re-table-type02 td {color:#474747; padding:9px; border-bottom: 1px solid #707070; }
+
+.re-table-type03 {border:1px solid #707070}
+.re-table-type03 td,.re-table-type03 th {font-size: 12px; padding: 10px }
+.re-table-type03 th {color: #fff; font-family:'hyundailight'!important;  border-right: 1px solid #707070; background: #323755}
+.re-table-type03 td {color:#474747; border-right: 1px solid #707070; }
+.re-table-type03 tr:nth-child(even) td {background: #F7F9FC}
+.re-table-type03 td.noline {border-right: 0}
+.re-table-type02 td.fnt14 {font-size: 14px}
+
+.re-table-type04 {border:1px solid #707070}
+.re-table-type04 th,.re-table-type04 td {font-size: 12px; color: 000; text-align: center; padding: 10px; border-right: 1px solid #707070}
+.re-table-type04 th {background: #F7F9FC}
+.re-table-type04.v1 td {padding: 25px}
+.re-table-type04.v1 td span {font-size: 19px; color: #47725D}
+.re-table-type05 {border:1px solid #707070}
+.re-table-type05 th {color: #fff; font-family:'hyundailight'!important;  border-right: 1px solid #707070; background: #323755}
+.re-table-type05 td,.re-table-type05 th {text-align: center; border:0;font-size: 12px; padding: 10px}
+.re-table-type05 td {color:#474747; border-bottom: 1px solid #707070; }
+.re-table-type05 td:first-child,.re-table-type05.v1 th:first-child {border-right: 1px solid #707070; }
+.re-table-type05 td:nth-child(even)  {background: #F7F9FC}
+
+.power-box-area {display: inline-block;width: 100%; border-top: 5px solid #F68D00; border-bottom: 1px solid #707070; border-right: 1px solid #707070; border-left: 1px solid #707070}
+.power-box-area .power-box:last-child {border-right: 0; width: 33.4%}
+.power-box-area .power-box {background: #fff; border-right: 1px solid #E6E6E6;  width: 33.3%; padding: 11px 0; color: #474747; overflow: hidden; float: left;}
+.power-box-area .power-box .tit {position: relative; font-size: 11px;  text-align: center;color: #474747; width: 40%; vertical-align: middle; display: block;}
+.power-box-area .power-box .cont {position: relative; width: 60%; padding-right: 40px}
+.power-box-area .power-box .cont>div {overflow: hidden;}
+.power-box-area .power-box .cont>div span:first-child {color: #000000; font-size: 12px; text-align: left; width: 50px; display: inline-block; float: left;}
+.power-box-area .power-box .cont>div span:last-child {color: #474747; font-size: 12px; text-align: right;  display: inline-block; float: right;}
+.customer-cs {clear: both; }
+.customer-cs .number {background: #fff; border-top: 5px solid #F68D00; border-bottom: 1px solid #707070; border-right: 1px solid #707070; border-left: 1px solid #707070;overflow: hidden; padding: 15px 20px;}
+.customer-cs .number div {float: left; margin-right: 20px; color: #323755; font-size: 11px; }
+.customer-cs .number div span {display: block; font-size: 12px; font-family:'hyundailight'!important; color: #000000}
+.power-graph { padding-top: 45px; margin-bottom: 20px; border: 1px solid #707070; background: #fff; overflow: hidden;}
+.power-graph .year-data {float: left; width: 50%; background: url("../../images/content/analysis_img10.png") center top no-repeat; text-align: center}
+.power-graph .chart-bar {float: right; width: 50%; padding-right: 60px; padding-bottom: 20px;}
+.power-graph .year-num {font-size: 40px; font-weight: 300; padding-bottom: 20px;  padding-top: 100px;}
+.power-graph .year-num span {font-size: 32px; font-family:'hyundailight'!important;}
+.power-graph .btm-txt {font-size: 12px; background: #F7F9FC url("../../img/bg_house.png")95% 50% no-repeat; overflow: hidden; display: block; margin-bottom: 0!important; color: #6f6f6f; padding: 12px 45px;clear: both; border-top: 1px solid #D1D1D1; background-size: 90px 70px;}
+.power-graph .btm-txt li {padding: 3px 0; background: url("../../img/bullet.png") no-repeat left 50%; background-size: 3px 3px; padding-left: 15px; }
+
