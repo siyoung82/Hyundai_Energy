@@ -364,3 +364,8 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .tool-layer .m-help-cont {padding: 0!important;display: block; text-align: center}
 .tool-layer .table-scroll {height: 400px; overflow-y: auto;}
 .tool-layer .tool-btn {font-size: 16px; color: #4593FF; text-decoration: underline; margin: 8px 0 15px}
+
+/* 광고 */
+.ad-area {position: fixed; right: 60px; top:370px; width: 160px;}
+.ad-area h2 {text-align: center; color: #AAAAAA; font-size: 16px;}
+.ad-area>div {padding-bottom: 11px;}
