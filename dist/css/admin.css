@@ -515,18 +515,24 @@ tr:hover .member-info-layer{
 
 
 /* 결과페이지 */
-#result-area {padding-bottom: 50px}
-#result-area section {width: 900px; margin: 0 auto; height: 100%}
-#result-area section h2 {font-size: 16px; color: #000; margin-bottom: 13px; margin-top: 40px;}
-#result-area section h3 {font-size: 14px; color: #000; margin-bottom: 13px; margin-top: 20px;}
+.result-menu {position: fixed; left: 10%; top:50px}
+.result-menu li a {font-size: 14px; color: #B2B2B2!important; padding: 5px 0; display: block}
+.result-menu li a:hover{color: #FB8F01!important; text-decoration: none}
+.result-menu li a.fnt18 {font-size: 18px}
+#result-area {padding-bottom: 50px;overflow: hidden}
+#result-area section {width: 800px; margin: 0 auto; height: 100%;  page-break-before: always;}
+#result-area section h2 {font-size: 18px; color: #000; margin-bottom: 13px; margin-top: 40px; }
+#result-area section h3 {font-size: 16px; color: #000; margin-bottom: 13px; margin-top: 20px;}
 #result-area section h3 span {color: #ABABAB; font-size: 14px; padding-left: 5px}
 #result-area section h3 span.v1 {color: #000; }
-#result-area section h4 {font-size: 12px;}
-#result-page01 {background: url("../../img/result_img.png")center bottom no-repeat; background-size: contain; padding: 50px 60px 500px;}
-#result-page01 .result-title {font-size: 26px; color: #333854; font-weight: bold; margin-bottom: 60px; margin-top: 130px}
+#result-area section h4 {font-size: 14px;}
+#result-page01 {padding: 50px 0 0;}
+#result-page01 .result-title {font-size: 26px; color: #333854; font-weight: bold; margin-bottom: 60px; margin-top: 200px}
 #result-page01 .result-address {font-size: 25px; color: #333854; margin-bottom: 20px}
 #result-page01 .result-name {font-size: 19px; color: #333854;}
 #result-page01 .result-date {font-size: 17px; color: #333854;}
+#result-page01 .result-img {}
+#result-page01 .result-img img {width: 100%; height: 100%}
 #result-page02 .top-map-area {height: 150px; width: 100%; position: relative; border:1px solid #5C5C5C}
 #result-page02 .top-map-area .left-map-control {border:1px solid #707070;border-radius: 8px; background: #fff; position: absolute; top:95px; right: 18px; overflow: hidden;z-index: 99}
 #result-page02 .top-map-area .left-map-control a img {width: 7px!important; height: 7px!important;}
@@ -534,6 +540,12 @@ tr:hover .member-info-layer{
 #result-page02 .top-map-area .left-map-control a:last-child {border-bottom: 0;}
 #result-page02 .top-map-area .left-map-control a:hover {text-decoration: none; background: #FFEB7B }
 #result-page02 .top-map-area img {height: 148px; width: 100%} 
+
+@media print {
+	.result-menu  {display: none;}
+	#result-page01 .result-img {position: absolute; bottom: 0; left:0; right: 0;}
+	
+}
 
 .land-info {display: table; width: 100%;  background: #fff; border-top: 5px solid #F68D00; border-left: 1px solid #707070;border-bottom: 1px solid #707070; border-right: 1px solid #707070; }
 .land-info.v1 {border-top: 5px solid #B5E5FF;}
