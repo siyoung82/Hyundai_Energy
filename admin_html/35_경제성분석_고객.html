@@ -31,6 +31,7 @@
 					<li><a href="#">한전정보</a></li>
 					<li><a href="#">문의하기</a></li>
 					<li><a href="#" class="admin">관리</a></li>
+
 				</ul>
 			</div>
 			<section class="gnb-collapsed">
@@ -53,27 +54,53 @@
 					<section class="area2">
 						<h3 class ="subject">경제성 분석<a href="#" class="close-p"><img src="../img/btn_close.png" alt="닫기"/></a></h3>
 						<div class="economics-info">
-							<h4>설치조건</h4>
-							<ul>
-								<li><span>발전사업 용량</span><span class="text-right"><input type="text" class="form-control" value="250KW"></span></li>
-								<li><span>공사비 (KW당)</span><span class="text-right"><input type="text" class="form-control" value="160만원"></span></li>
-								<li><span>개발비 (KW당)</span><span class="text-right"><input type="text" class="form-control" value="160만원"></span></li>
-								<li><span>연간 유지보수비용</span><span class="text-right"><input type="text" class="form-control" value="160만원"></span></li>
-							</ul>
-							<h4>설치조건</h4>
-							<ul>
-								<li><span>SMP (한전계통한계)</span><span class="text-right"><input type="text" class="form-control" value="160만원"></span></li>
-								<li><span>REC (발전자회사)</span><span class="text-right"><input type="text" class="form-control" value="160만원"></span></li>
-								<li><span>REC 가중치</span><span class="text-right"><input type="text" class="form-control" value="11.0"></span></li>
-								<li><span>REC 기간</span><span class="text-right"><input type="text" class="form-control" value="11년"></span></li>
-							</ul>
-							<h4>금융조건</h4>
-							<ul>
-								<li><span>대출비율</span><span class="text-right"><input type="text" class="form-control" value="11%"></span></li>
-								<li><span>대출금리</span><span class="text-right"><input type="text" class="form-control" value="11%"></span></li>
-								<li><span>거치기간</span><span class="text-right"><input type="text" class="form-control" value="11년"></span></li>
-								<li><span>상환기간</span><span class="text-right"><input type="text" class="form-control" value="11년"></span></li>
-							</ul>
+							<div id="accordion" role="tablist">
+								<div class="card">
+									<div class="card-header tab-collapsed" role="tab" id="headingOne">
+										<h4><a class="collapsed collapse-controle" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">설치조건</a></h4>
+									</div>
+									<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+										<div class="card-body">
+											<ul>
+												<li><span>발전사업 용량</span><span class="text-right"><input type="text" class="form-control" value="250KW"><em>KW</em></span></li>
+												<li><span>공사비 (KW당)</span><span class="text-right"><input type="text" class="form-control" value="160만원"><em>만원</em></span></li>
+												<li><span>개발비 (KW당)</span><span class="text-right"><input type="text" class="form-control" value="160만원"><em>만원</em></span></li>
+												<li><span>연간 유지보수비용</span><span class="text-right"><input type="text" class="form-control" value="160만원"><em>만원</em></span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" role="tab" id="headingTwo">
+										<h4><a class="collapsed collapse-controle" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">설치조건</a></h4>
+									</div>
+									<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+										<div class="card-body">
+											<ul>
+												<li><span>SMP (한전계통한계)</span><span class="text-right"><input type="text" class="form-control" value="160만원"><em>만원</em></span></li>
+												<li><span>REC (발전자회사)</span><span class="text-right"><input type="text" class="form-control" value="160만원"><em>만원</em></span></li>
+												<li><span>REC 가중치</span><span class="text-right"><input type="text" class="form-control" value="11.0"><em></em></span></li>
+												<li><span>REC 기간</span><span class="text-right"><input type="text" class="form-control" value="11년"><em>년</em></span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" role="tab" id="headingThree">
+										<h4><a class="collapsed collapse-controle" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">금융조건</a></h4>
+									</div>
+									<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+										<div class="card-body">
+											<ul>
+												<li><span>대출비율</span><span class="text-right"><input type="text" class="form-control" value="11%"><em>%</em></span></li>
+												<li><span>대출금리</span><span class="text-right"><input type="text" class="form-control" value="11%"><em>%</em></span></li>
+												<li><span>거치기간</span><span class="text-right"><input type="text" class="form-control" value="11년"><em>년</em></span></li>
+												<li><span>상환기간</span><span class="text-right"><input type="text" class="form-control" value="11년"><em>년</em></span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<a href="#" class="btm-reset-btn">경제성 분석 다시하기</a>
 					</section>
@@ -194,164 +221,10 @@
 								</div>
 							</div>
 							<!-- area03 -->
-							
 							<div style="position: relative">
 								<div class="area3">
 									<div class="rec-area"><span>REC</span>80,392,264 원</div>
 									<div class="rec-area"><span>SMP</span>7,586,686 원</div>
-								</div>
-								<div class="solar-system-info">
-									<h3>태양광 시스템 정보</h3>
-									<div class="sub-title">배치1</div>
-									<div class="system-info"><!-- 관리자만 -->
-										<div class="box">
-											<h4>태양광 모듈</h4>
-											<div class="box-cont v1">
-												<div>
-													<span>제조사</span>
-													<span><input type="text" class="form-control" value="현대에너지솔루션"></span>
-												</div>
-												<div>
-													<span>모델명</span>
-													<span><input type="text" class="form-control" value="HIS-S410"></span>
-												</div>
-												<div>
-													<span>수량</span>
-													<span><input type="text" class="form-control" value="780장"></span>
-												</div>
-											</div>
-										</div>
-										<div class="box">
-											<h4>태양광 인버터</h4>
-											<div class="box-cont v1">
-												<div>
-													<span>제조사</span>
-													<span><input type="text" class="form-control" value="현대에너지솔루션"></span>
-												</div>
-												<div>
-													<span>모델명</span>
-													<span><input type="text" class="form-control" value="HIS-S410"></span>
-												</div>
-												<div>
-													<span>수량</span>
-													<span><input type="text" class="form-control" value="2대"></span>
-												</div>
-											</div>
-										</div>
-										<div class="box">
-											<h4>직병렬 구성</h4>
-											<div class="box-cont v1">
-												<div>
-													<span><input type="text" class="form-control" value="18직렬"></span>
-												</div>
-												<div>
-													<span><input type="text" class="form-control" value="20병렬"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="system-info mt15"><!-- 관리자만 -->
-										<div class="box">
-											<h4>부지경사각 또는 지붕경사각</h4>
-											<div class="box-cont v2">
-												<div>
-													<span><input type="text" class="form-control" value="12도"></span>
-												</div>
-											</div>
-										</div>
-										<div class="box">
-											<h4>태양광 경사각</h4>
-											<div class="box-cont v2">
-												<div>
-													<span><input type="text" class="form-control" value="12도"></span>
-												</div>
-											</div>
-										</div>
-										<div class="box">
-											<h4>태양광 방위각</h4>
-											<div class="box-cont v2">
-												<div>
-													<span><input type="text" class="form-control" value="180도"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="solar-system-info">
-									<div class="sub-title">배치2</div>
-									<div class="system-info"><!-- 관리자만 -->
-										<div class="box">
-											<h4>태양광 모듈</h4>
-											<div class="box-cont v1">
-												<div>
-													<span>제조사</span>
-													<span><input type="text" class="form-control" value="현대에너지솔루션"></span>
-												</div>
-												<div>
-													<span>모델명</span>
-													<span><input type="text" class="form-control" value="HIS-S410"></span>
-												</div>
-												<div>
-													<span>수량</span>
-													<span><input type="text" class="form-control" value="780장"></span>
-												</div>
-											</div>
-										</div>
-										<div class="box">
-											<h4>태양광 인버터</h4>
-											<div class="box-cont v1">
-												<div>
-													<span>제조사</span>
-													<span><input type="text" class="form-control" value="현대에너지솔루션"></span>
-												</div>
-												<div>
-													<span>모델명</span>
-													<span><input type="text" class="form-control" value="HIS-S410"></span>
-												</div>
-												<div>
-													<span>수량</span>
-													<span><input type="text" class="form-control" value="2대"></span>
-												</div>
-											</div>
-										</div>
-										<div class="box">
-											<h4>직병렬 구성</h4>
-											<div class="box-cont v1">
-												<div>
-													<span><input type="text" class="form-control" value="18직렬"></span>
-												</div>
-												<div>
-													<span><input type="text" class="form-control" value="20병렬"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="system-info mt15"><!-- 관리자만 -->
-										<div class="box">
-											<h4>부지경사각 또는 지붕경사각</h4>
-											<div class="box-cont v2">
-												<div>
-													<span><input type="text" class="form-control" value="12도"></span>
-												</div>
-											</div>
-										</div>
-										<div class="box">
-											<h4>태양광 경사각</h4>
-											<div class="box-cont v2">
-												<div>
-													<span><input type="text" class="form-control" value="12도"></span>
-												</div>
-											</div>
-										</div>
-										<div class="box">
-											<h4>태양광 방위각</h4>
-											<div class="box-cont v2">
-												<div>
-													<span><input type="text" class="form-control" value="180도"></span>
-												</div>
-											</div>
-										</div>
-									</div>
 								</div>
 								<h3 class="m-db">연간 예상 발전량</h3>
 								<!-- area04 -->

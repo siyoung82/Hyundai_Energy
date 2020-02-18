@@ -528,13 +528,13 @@ tr:hover .member-info-layer{
 #result-area section h3 span {color: #ABABAB; font-size: 14px; padding-left: 5px}
 #result-area section h3 span.v1 {color: #000; }
 #result-area section h4 {font-size: 14px;}
-#result-page01 {padding: 50px 0 0; overflow: hidden; position: relative}
+#result-page01 {padding: 50px 0 0; overflow: hidden; position: relative; }
 #result-page01 .result-title {font-size: 26px; color: #333854; font-weight: bold; margin-bottom: 60px; margin-top: 200px}
 #result-page01 .result-address::after {content: ''; display: inline-block; width: 32px; height: 5px; background: #333854; position: absolute; top: -20px; left:0}
 #result-page01 .result-address {font-size: 25px; color: #333854; margin-bottom: 20px; position: relative}
 #result-page01 .result-name {font-size: 19px; color: #333854;}
 #result-page01 .result-date {font-size: 17px; color: #333854;}
-#result-page01 .result-img {}
+#result-page01 .result-img {height: 500px}
 #result-page01 .result-img img {width: 100%; height: 100%}
 #result-page02 .top-map-area {height: 150px; width: 100%; position: relative; border:1px solid #5C5C5C}
 #result-page02 .top-map-area .left-map-control {border:1px solid #707070;border-radius: 8px; background: #fff; position: absolute; top:95px; right: 18px; overflow: hidden;z-index: 99}
@@ -546,8 +546,10 @@ tr:hover .member-info-layer{
 
 @media print {
 	.result-menu,.btn-print  {display: none;}
-	#result-page01 .result-img {position: fixed; bottom: 0; left:0; right: 0;}
-	
+	#result-page01 .result-img {position: absolute; bottom: 0; left:0; right: 0; display: block; width: 100%}
+	#result-page01 .result-img img {width: 100%; height: 100%}
+    #result-area section {height: 100%; overflow-x: hidden; min-height: 1500px; width: 90%;}
+
 }
 
 .land-info {display: table; width: 100%;  background: #fff; border-top: 5px solid #F68D00; border-left: 1px solid #707070;border-bottom: 1px solid #707070; border-right: 1px solid #707070; }
