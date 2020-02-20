@@ -472,7 +472,78 @@
 .region-solar p {font-size: 17px; color: #8D8D8D; margin-top: 15px;}
 .region-solar .map-img {max-width: 550px; max-height: 660px; float: left; width: 100%; height: 100%;}
 .region-solar .map-img img {width: 100%; height: auto}
+/* 발전량 지도 */
+.map-solar {padding: 45px 35px 45px 35px; overflow: hidden}
+#content.v6 h2 {display: none;}
+.map-solar .map-img {float: left; width: 40%; height: 100%; margin-top: 3%}
+.map-solar .map-img img {width: 100%; height: auto; max-width: 454px}
+.map-solar .m-table {width:60%; float: left;}
+.top-title {padding-top: 50px; font-size: 17px; color: #474747; text-align: center}
+.top-title p {color: #BCBCBC; margin-bottom: 30px;}
+#map-right-area {border-radius: 4px; border:2px solid #FB8F00; padding: 40px 30px; overflow: hidden; min-height: 625px}
+#map-right-area h5 {color: #000000; font-size: 21px; position: relative; padding-left: 20px; margin-bottom: 35px}
+#map-right-area h5:after {position: absolute; left: 0px; top: 2px; display: block; width: 5px; height: 20px; background: #323755; content: ''}
+.map-cont img {width:100%}
+#map-right-area .area-img,#map-right-area .area-table {width: 50%; padding: 0 10px; float: left}
+#map-right-area .row {margin-right: 0; margin-left: 0}
+#map-right-area .col-md-12 {padding-left: 0; padding-right: 0}
+#map-right-area>div {display:none;}
+#map-right-area>div:first-child {display:block}
+#map-right-area button {display: none;}
+#map-area01 .map-cont>div:first-child {margin-top: 60px;}
+#map-area16 .map-cont>div:first-child,#map-area17 .map-cont>div:first-child {margin-top: 50px;}
 
+#map-area01 .map-cont>div:last-child,#map-area04 .map-cont>div:last-child {margin-top: -60px;}
+#map-area06 .map-cont>div:last-child,#map-area15 .map-cont>div:last-child{margin-top: -30px;}
+#map-area07 .map-cont>div:last-child,#map-area10 .map-cont>div:last-child{margin-top: 80px;}
+#map-area03 .map-cont>div:first-child {margin-top: 20px;}
+#map-area03 .map-cont>div:last-child {margin-bottom: 50px;}
+#map-area16 .map-cont>div:last-child,#map-area17 .map-cont>div:last-child {margin-top: 100px;}
+.m-map-area {display: none}
+@media (max-width: 1200px) {
+	#map-right-area .area-img {display: none}
+	#map-right-area .area-table {width: 100%;}
+	.table-type02.v1 th, .table-type02.v1 td {font-size: 13px!important; padding: 8px!important}
+	#map-area01 .map-cont>div:last-child,#map-area04 .map-cont>div:last-child {margin-top: 0;}
+	#map-area06 .map-cont>div:last-child,#map-area15 .map-cont>div:last-child{margin-top: 0;}
+	#map-area07 .map-cont>div:last-child,#map-area10 .map-cont>div:last-child{margin-top: 0;}
+	#map-area16 .map-cont>div:last-child,#map-area17 .map-cont>div:last-child {margin-top: 0;}
+	#map-right-area h5 {color: #000000; font-size: 21px; position: relative; padding-left: 20px; margin-bottom: 15px}
+	#map-right-area {min-height: 425px}
+	.table-type02.v1 th, .table-type02.v1 td {font-size: 16px!important; padding: 14px!important}
+
+
+}
+
+@media (max-width: 768px) {
+	.map-solar .map-img {float: inherit; width: 100%; height: 100%; margin-top: 0; margin-bottom: 20px; text-align: center}
+    .map-solar .m-table {width:100%; float: inherit;}
+
+}
+
+@media (max-width: 480px) {
+	#content.v6 {padding: 0}
+	.map-solar .map-img {float: inherit; width: 100%; height: 100%; margin-top: 0; margin-bottom: 20px; text-align: center; display: none;}
+    .map-solar .m-table {width:100%; float: inherit;}
+	#content.v6 h2{display: block; border-top: 2px solid #343953; background: #fff; text-align: center; font-size: 17px; color: #343953; padding: 15px 0; border-bottom: 2px solid #F4F4F4; margin-bottom: 0}
+	#content.v6 .container {padding: 0}
+	#content.v6 .top-title {background: #343953; color: #fff; padding: 20px}
+	#content.v6 .top-title p {display: none;}
+	.m-map-area {display: block; overflow: hidden}
+	.m-map-area li {width:25%; float: left }
+	.m-map-area a {border-radius: 2px; border:1px solid #343953; display: block; margin:3px; padding: 15px 0; text-align: center; color: #343953!important; text-decoration: none}
+	.m-map-area a:hover {text-decoration: none; border:1px solid #F58D00; background: #FFFDEB}
+	.map-solar {padding: 25px 18px 50px;}
+	#map-right-area {border: 0; padding: 0; min-height: inherit}
+	#map-area01,#map-right-area>div:first-child {display: none;}
+	#map-right-area>div {position: absolute; background: #fff; left: 0; right: 0; top: 244px; padding: 10px 10px 20px; z-index: 100}
+	#map-right-area h5 {display: none;}
+	#map-right-area button {display: block; text-align: right; float: right; margin: 0 15px}
+
+
+}
+
+.btn-cont {cursor: pointer}
 /* 한전정보 */
 .han-info {padding: 39px 32px; min-height: 744px}
 .han-info h2 {display: none;}
@@ -826,7 +897,7 @@
 .table-type02 th span {font-size: 14px;}
 .table-type02 td {color:#474747; padding:15px; border-bottom: 1px solid #969696; font-size: 18px; font-family:'hyundailight'!important;}
 .table-type02 td:nth-child(odd) {background: #F4F7FA}
-
+.table-type02.v1 th,.table-type02.v1 td{padding: 10px; font-size: 15px}
 .table-type03 td,.table-type03 th {text-align: center;  font-family:'hyundailight'!important; }
 .table-type03 th {color: #000000;padding: 20px 0; font-size: 19px; background: #F7F9FC; border-right: 1px solid #C6C6C6}
 .table-type03 th.line1 {border-top: 1px solid #C6C6C6; color: #747474}
