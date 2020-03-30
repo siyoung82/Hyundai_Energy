@@ -685,32 +685,34 @@
 
 .btn-report-save {font-size: 21px; color: #4593FF; position: absolute; right: 13px; text-decoration: underline; top: 45px}
 .right-area {overflow: hidden}
-.right-area h3 {color: #474747; font-size: 32px; margin-bottom: 0; padding: 32px 15px 26px; position: relative}
-.right-area .area1{ margin: 0 0 28px 0; display: block; background: #fff; overflow: hidden; text-align: center;border-radius: 4px;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);}
-.right-area .area1 div {width: 33.3%; display: inline-block; float: left;}
-.right-area .area1 div:last-child {width: 33.4%}
-.right-area .area1 div h4{background: #323755; font-size: 24px; color: #fff; padding: 20px 0;}
-.right-area .area1 div p {font-size: 26px; padding: 30px 0; margin-bottom: 0 }
-.right-area .area1 div p span {font-family:'hyundailight'!important; font-size: 23px;}
-.right-area .area2 {display: table; width: 100%; margin-bottom: 50px }
-.right-area .area2 .w28 {display: table-cell; width: 26%; }
-.right-area .area2 .w22 {display: table-cell; width: 22%; }
-.right-area .area2 .r-box {box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); margin-left: 15px; }
-.right-area .area2 .r-box .data-area {padding: 20px; color: #fff; overflow: hidden}
-.right-area .area2 .r-box .data-area h5 {font-size: 16px; margin-bottom: 5px}
-.right-area .area2 .r-box .data-area span {font-size: 19px;}
-.right-area .area2 .r-box .data-area .w50 {width: 50%; float: left}
+.right-area h3 {color: #474747; font-size: 32px; margin-bottom: 0; padding: 32px 15px 26px; position: relative; }
+.right-area h3 a {position: absolute; right: 0; font-size: 21px; color: #4593FF; text-decoration: underline}
+.right-area .power-plant-name {font-size: 28px; color: #6E6E6E;padding-left: 15px; margin-top: -20px; padding-bottom: 25px}
+.right-area .area2{ margin: 0 0 28px 0; display: block; background: #fff; overflow: hidden; text-align: center;border-radius: 4px;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);}
+.right-area .area2 div {width: 33.3%; display: inline-block; float: left;}
+.right-area .area2 div:last-child {width: 33.4%}
+.right-area .area2 div h4{background: #323755; font-size: 24px; color: #fff; padding: 20px 0;}
+.right-area .area2 div p {font-size: 26px; padding: 30px 0; margin-bottom: 0 }
+.right-area .area2 div p span {font-family:'hyundailight'!important; font-size: 23px;}
+.right-area .area1 {display: table; width: 100%; margin-bottom: 25px }
+.right-area .area1 .w28 {display: table-cell; width: 26%; }
+.right-area .area1 .w22 {display: table-cell; width: 22%; }
+.right-area .area1 .r-box {box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); margin-left: 15px; }
+.right-area .area1 .r-box .data-area {padding: 20px; color: #fff; overflow: hidden}
+.right-area .area1 .r-box .data-area h5 {font-size: 16px; margin-bottom: 5px}
+.right-area .area1 .r-box .data-area span {font-size: 19px;}
+.right-area .area1 .r-box .data-area .w50 {width: 50%; float: left}
 
-.right-area .area2 .r-box.color01 {margin-left: 0; background: #F68D00}
-.right-area .area2 .r-box.color02 {background: #57AF97}
-.right-area .area2 .r-box.color03 {background: #288CCB}
-.right-area .area2 .r-box.color04 {background: #7E77D5}
+.right-area .area1 .r-box.color01 {margin-left: 0; background: #F68D00}
+.right-area .area1 .r-box.color02 {background: #57AF97}
+.right-area .area1 .r-box.color03 {background: #288CCB}
+.right-area .area1 .r-box.color04 {background: #7E77D5}
 
-.right-area .area2 > div h4{font-size: 22px;color: #080808; margin-bottom: 0!important; padding: 20px; background: #fff}
-.right-area .area2 > div h4.color01 {border-left: 5px solid #F68D00}
-.right-area .area2 > div h4.color02 {border-left: 5px solid #57AF97}
-.right-area .area2 > div h4.color03 {border-left: 5px solid #288CCB}
-.right-area .area2 > div h4.color04 {border-left: 5px solid #7E77D5}
+.right-area .area1 > div h4{font-size: 22px;color: #080808; margin-bottom: 0!important; padding: 20px; background: #fff}
+.right-area .area1 > div h4.color01 {border-left: 5px solid #F68D00}
+.right-area .area1 > div h4.color02 {border-left: 5px solid #57AF97}
+.right-area .area1 > div h4.color03 {border-left: 5px solid #288CCB}
+.right-area .area1 > div h4.color04 {border-left: 5px solid #7E77D5}
 .right-area .area3 {overflow: hidden; margin-bottom: 15px; clear: both}
 .right-area .area3>div {width: 50%; float: left; border-left: 1px solid #707070; text-align: center; position: relative; padding: 24px 0; font-size: 33px; color: #414141; padding-left: 45px;}
 .right-area .area3>div span {font-size: 23px; position: absolute; top:3px; color: #474747; left: 120px;}
@@ -760,11 +762,11 @@
 .right-area .area6 ul li {display: table-cell; border-right: 1px solid #e8e8e8; text-align: center; padding: 20px 0; font-size: 17px; color: #000000;}
 .right-area .area6 ul li:last-child{ border-right: 0!important;}
 .right-area .area6 ul li span {color: #000000; font-weight: 500}
-.data-table table th{font-size: 14px; text-align: center; border-bottom: 1px solid #070707;padding: 24px 0 12px;color: #000000; font-weight: normal;}
-.data-table table td {font-size: 14px;text-align: center; border-bottom: 1px solid #C6C6C6; padding: 12px 0;color: #000000; }
-.data-table table th:first-child {background: #fff!important }
-.data-table table td:first-child {background: #F2F3F4!important; }
-.data-table table td:nth-child(odd),.data-table table th:nth-child(odd) {background: #F7F9FC}
+.data-table table th{font-size: 16px; text-align: center; border-bottom: 1px solid #C2C2C2;border-top:1px solid #0F0F0F; background: #F5F5F5; padding: 12px 0 12px;color: #B2B2B2; font-weight: normal;}
+.data-table table td {font-size: 14px;text-align: center;  padding: 12px 0;color: #000000; }
+.data-table table th:first-child {color: #000; text-align: left; padding: 12px 10px}
+.data-table table td:first-child {background: #F5F7FA!important;text-align: left; padding: 0 10px }
+.data-table table td:nth-child(odd){background: #F7F9FC}
 .data-table {box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);background-color:#fff;}
 .right-area .area7 {display: block; clear: both;}
 .right-area .area7 .environment-box {border-radius: 5px;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);overflow: hidden; padding: 50px 0; background:#fff url("../../img/bg_tree.png") 100px 50% no-repeat; background-size: 145px 137px;}
@@ -786,10 +788,10 @@
 .year-share {display: none}
 .nav-tabs {display: none!important}
 @media (max-width: 1298px) {
-	.right-area .area2 {display: block; margin-bottom: 20px; overflow: hidden}
-	.right-area .area2 .w28 {display: inline-block; width: 50%; float: left;}
-	.right-area .area2 .w22 {display: inline-block; width: 50%;float: left; }
-	.right-area .area2 .r-box {margin-left: 0}
+	.right-area .area1 {display: block; margin-bottom: 20px; overflow: hidden}
+	.right-area .area1 .w28 {display: inline-block; width: 50%; float: left;}
+	.right-area .area1 .w22 {display: inline-block; width: 50%;float: left; }
+	.right-area .area1 .r-box {margin-left: 0}
 	.right-area .area5 .yield-box {width: 100%}
 	.web-table {display: none!important;}
 	.mobile-table {display: none;}
@@ -810,8 +812,8 @@
 	.left-area .area2 {display: none; margin-top: 10px; background: #fff; padding-bottom: 35px}
 	.right-area {background: #fff; padding: 20px!important}
 	.right-area h3 {display: none;}
-	.right-area .area2 .w28 {display: block; width: 100%; }
-	.right-area .area2 .w22 {display: block; width: 100%; }
+	.right-area .area1 .w28 {display: block; width: 100%; }
+	.right-area .area1 .w22 {display: block; width: 100%; }
 	.economics-area .left-area .area2 .close-p {display: inline-block; padding: 3px; float: right; margin-top: -3px}
 	.economics-area .left-area .area2 .close-p img {width: 16px; height: 16px;}
 	.web-table {display: none}
@@ -834,17 +836,17 @@
 	.tab-content>.tab-pane {display: none!important}
 	.fade:not(.show) {opacity: 0!important}
 	.tab-content>.active {display: block!important}
-	.right-area .area1 div h4 {font-size: 14px; padding: 15px 0}
-	.right-area .area1 div p {font-size: 16px; padding: 16px 0}
-	.right-area .area1 div p span {font-size: 15px;}
-	.right-area .area2 {box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);}
-	.right-area .area2 > div h4 {font-size: 15px;padding: 12px;}
-	.right-area .area2 .r-box .data-area .w100 {width: 50%; float: left}
-	.right-area .area2 .r-box .data-area .w100 .mt20 {margin-top: 0}
-	.right-area .area2 .r-box .data-area h5 {font-size: 15px;}
-	.right-area .area2 .r-box .data-area span {font-size: 17px; text-align: right; display: block; padding-right: 10px}
-	.right-area .area2 .r-box.color02 .w100,.right-area .area2 .r-box.color02 .w50 {width: 33.3%; float: left}
-	.right-area .area2 .r-box.color02 .mt20 {margin-top: 0}
+	.right-area .area2 div h4 {font-size: 14px; padding: 15px 0}
+	.right-area .area2 div p {font-size: 16px; padding: 16px 0}
+	.right-area .area2 div p span {font-size: 15px;}
+	.right-area .area1 {box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);}
+	.right-area .area1 > div h4 {font-size: 15px;padding: 12px;}
+	.right-area .area1 .r-box .data-area .w100 {width: 50%; float: left}
+	.right-area .area1 .r-box .data-area .w100 .mt20 {margin-top: 0}
+	.right-area .area1 .r-box .data-area h5 {font-size: 15px;}
+	.right-area .area1 .r-box .data-area span {font-size: 17px; text-align: right; display: block; padding-right: 10px}
+	.right-area .area1 .r-box.color02 .w100,.right-area .area1 .r-box.color02 .w50 {width: 33.3%; float: left}
+	.right-area .area1 .r-box.color02 .mt20 {margin-top: 0}
 	.m-db {display: block!important; font-size: 17px!important; padding:  12px 8px 10px!important}
 	.m-db2 {display: block!important; font-size: 16px!important; padding:  12px 8px 10px!important; color: #A7A7A7}
 	.right-area .area4 .chart-bar {width: 100%; padding: 15px 15px 60px;}
@@ -853,9 +855,8 @@
 	.right-area .area4 .year-data{display: block; width: 100%}
 	.right-area .area4 .year-num span {font-size: 22px; color: #848484}
 	.right-area .area4 {padding:0 }
-	.right-area .area3>div {border-left: 0; font-size: 15px; color: #474747; padding: 10px 0; border-top:1px solid #CFCFCF;}
+	.right-area .area3>div {border-left: 0; font-size: 15px; color: #474747; padding: 10px 0; }
 	.right-area .area3>div span {font-size: 15px; color: #A8A8A8; position: inherit; top: inherit; left: inherit; padding-right: 10px;}
-	.right-area .area3 {margin-bottom: 0;  position: absolute; top: 320px; left:10px ;right: 10px}
 	.right-area .area5 .yield-box h4,.right-area .area6 h4 {font-size: 15px; padding: 15px 20px; border-radius: 0}
 	.right-area .area5 .yield-box h5 ,.right-area .area5 .yield-box p{font-size: 15px;}
 	.right-area .area5 .yield-box .yield-cont {padding: 14px 24px; box-shadow: none;}

@@ -45,7 +45,10 @@ $(".panel-box").on('click', function() {//매핑
     $('.panel-box-none').toggleClass('panel-box-list');
 	$('.panel-box.bgon').toggleClass('bgoff');
   });
-
+$(".arrange-box").on('click', function() {//매핑
+    $('.arrange-box-none').toggleClass('arrange-box-list');
+	$('.arrange-box.bgon').toggleClass('bgoff');
+  });
 $('.card-header').click(function(e) { //경제성분석 
         $('.card-header').removeClass('tab-collapsed');
         var collapsCrnt = $(this).find('.collapse-controle').attr('aria-expanded');

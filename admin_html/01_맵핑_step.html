@@ -75,53 +75,69 @@
 					</div>
 				</div>
 				<div class="step-box">
-					<span>STEP 6.<div class="arrange-num">배치1</div></span>
-					<span>직렬 수에 맞게 모듈을<br>삭제 또는 추가 해주세요.</span>
-					<div class="ex">*모듈 인버터를 변경하려면 처음으로 버튼클릭 </div>
+					<span>STEP 1.<div class="arrange-num">배치1</div></span>
+					<span>태양광 모듈과 인버터를 선택해 주세요.</span>
 				</div>
-				<div class="step-bar step06"></div>
+				<div class="step-bar step01"></div>
 				<div class="control-cont">
 					<ul>
 						<li>
 							<span class="tit f_l"><span class="bar"></span>태양광 모듈</span>
-							<span class="f_r right-input">
-								<input type="text" class="form-control" value="HiS - S379RI KW">
-							</span>
-						</li>
-						<li>
-							<span class="f_r right-input">
-								<input type="text" class="form-control" value="123장">
+							<span class="f_r" >
+								<select>
+								  <option>선택해주세요</option>
+								  <option>태양광 모듈</option>
+								  <option>태양광 모듈</option>
+								  <option>태양광 모듈</option>
+								</select>
 							</span>
 						</li>
 						<li>
 							<span class="tit f_l"><span class="bar"></span>태양광 인버터</span>
-							<span class="f_r right-input">
-								<input type="text" class="form-control" value="HPS-050HL-K1-OU">
-							</span>
-						</li>
-						<li class="w-sel">
 							<span class="f_r" >
 								<select>
-								  <option>수량을 선택해주세요</option>
-								  <option>1</option>
-								  <option>2</option>
-								  <option>3</option>
+								  <option>선택해주세요</option>
+								  <option>태양광 모듈</option>
+								  <option>태양광 모듈</option>
+								  <option>태양광 모듈</option>
+								</select>
+							</span>
+						</li>
+						<!--<li>
+							<span class="tit f_l"><span class="bar"></span>직렬수</span>
+							<span class="f_r" >
+								<select>
+								  <option>선택해주세요</option>
+								  <option>태양광 모듈</option>
+								  <option>태양광 모듈</option>
+								  <option>태양광 모듈</option>
+								</select>
+							</span>
+						</li>-->
+						<li>
+							<span class="tit f_l"><span class="bar"></span>부지의 경사각 또는 건물 지붕의 경사각</span>
+							<span class="f_r" >
+								<div class="form-group">
+									<input type="text" class="form-control"><span>도</span>
+								</div>
+							</span>
+						</li>
+						<li>
+							<span class="tit f_l"><span class="bar"></span>지상형 또는 지붕형</span>
+							<span class="f_r" >
+								<select>
+								  <option>선택해주세요</option>
+								  <option>지상형</option>
+								  <option>지붕형</option>
 								</select>
 							</span>
 						</li>
 					</ul>
-					<div class="angle-result">
-						<ul>
-							<li><span class="tit f_l"><span class="bar"></span>부지 경사각</span><span class="f_r angle-num">10<em>도</em></span></li>
-							<li><span class="tit f_l"><span class="bar"></span>모듈 경사각</span><span class="f_r angle-num">10<em>도</em></span></li>
-							<li><span class="tit f_l"><span class="bar"></span>설치 방위각</span><span class="f_r angle-num">10<em>도</em></span></li>
-						</ul>
-					</div>
 				</div>
 			</div>
 			<div class="mapping-btm-btn">
-				<button type="button" class="f_l" data-toggle="modal" data-target="#forFirst">처음으로</button>
-				<button type="button" class="f_r">저장 후 경제성 분석</button>
+				<button type="button" class="f_l" disabled>처음으로</button>
+				<button type="button" class="f_r">다음</button>
 			</div>
 		</div>
 		<div id="map"><img src="../img/bg_map.jpg"  alt="지도이미지"/></div>
@@ -129,23 +145,7 @@
 
 </div>
 <!-- //container -->
-<!-- delete Modal -->
-<div class="modal fade delete-layer" id="forFirst" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<div class="modal-title">처음으로</div>
-			</div>
-			<div class="modal-body">
-				배치를 취소하고 처음으로 돌아가시겠습니까?
-			</div>
-			<div class="modal-footer">
-				<button type="button" data-dismiss="modal" aria-label="Close">취소</button>
-				<button type="button">확인</button>
-			</div>
-		</div>
-	</div>
-</div>
+
 </body>
 <script src="../dist/js/jquery-3.4.1.min.js"></script>
 <script src="../dist/js/bootstrap.min.js"></script>
