@@ -38,11 +38,15 @@
 <div id="fixed-container" class="screen-overlay-part-mask screen-overlay-part-border">
 	<div id="pb-maincontainer" class="maincontainer">
 		<div id="mapping-info">
-			<div class="arrange-box">
+			<div class="arrange-box bgon">
 				<a href="#" class="select">배치1</a>
-
 				<button type="button" disabled class="add">+ 추가</button>
 				<button type="button" disabled class="del">+ 삭제</button>
+			</div>
+			<div class="arrange-box-none">
+				<div><strong>부지면적</strong><span>0000m2</span></div>
+				<div><strong>설치면적</strong><span>0000m2</span></div>
+				<div><strong>설치용량</strong><span>0000kW</span></div>
 			</div>
 			<div class="panel-box bgon">
 				<div><span>총 용량</span><span>135KW</span></div>
@@ -60,6 +64,8 @@
 					<div><span>총 수량</span><span>135장</span></div>
 				</div>
 			</div>
+			<a href="#" class="mapping-help">Help</a>
+			<a href="#" class="mapping-edit">지적편집도 켜기</a>
 		</div>
 		<div id="mapping-control-box">
 			<div class="control-box">
@@ -97,7 +103,7 @@
 								</select>
 							</span>
 						</li>
-						<li>
+						<!--<li>
 							<span class="tit f_l"><span class="bar"></span>직렬수</span>
 							<span class="f_r" >
 								<select>
@@ -107,13 +113,23 @@
 								  <option>태양광 모듈</option>
 								</select>
 							</span>
-						</li>
+						</li>-->
 						<li>
 							<span class="tit f_l"><span class="bar"></span>부지의 경사각 또는 건물 지붕의 경사각</span>
 							<span class="f_r" >
 								<div class="form-group">
 									<input type="text" class="form-control"><span>도</span>
 								</div>
+							</span>
+						</li>
+						<li>
+							<span class="tit f_l"><span class="bar"></span>지상형 또는 지붕형</span>
+							<span class="f_r" >
+								<select>
+								  <option>선택해주세요</option>
+								  <option>지상형</option>
+								  <option>지붕형</option>
+								</select>
 							</span>
 						</li>
 					</ul>
