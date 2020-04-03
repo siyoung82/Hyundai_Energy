@@ -279,7 +279,7 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .angle-control .round-slider02 .bg-round {position: relative;}
 .angle-control .round-slider02 .bg-round .rslider {position: absolute; top: 38px; left: 6px; bottom: 0}
 .mapping-help, .mapping-edit {border: 1px solid #E0E0E0; border-radius: 4px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.42); background: #fff;  height: 56px; line-height: 56px; display: inline-block; width: 118px; text-align: center; font-size: 15px;}
-.mapping-help:hover,.mapping-edit:hover {background: #FD9125; border:1px solid #FD9125; color: #fff; text-decoration: none}
+.mapping-help:hover,.mapping-edit:hover,#mapping-info a.select {background: #FD9125; border:1px solid #FD9125; color: #fff; text-decoration: none}
 .mapping-help {position: absolute; left: 1150px}
 .mapping-edit {position: absolute; left: 1150px; top: 70px}
 
@@ -568,13 +568,13 @@ tr:hover .member-info-layer{
 #result-page01 .result-date {font-size: 17px; color: #333854;}
 #result-page01 .result-img {height: 500px}
 #result-page01 .result-img img {width: 100%; height: 100%}
-#result-page02 .top-map-area {height: 150px; width: 100%; position: relative; border:1px solid #5C5C5C}
-#result-page02 .top-map-area .left-map-control {border:1px solid #707070;border-radius: 8px; background: #fff; position: absolute; top:95px; right: 18px; overflow: hidden;z-index: 99}
+#result-page02 .top-map-area {height: 298px; width: 100%; position: relative; border:1px solid #5C5C5C}
+#result-page02 .top-map-area .left-map-control {border:1px solid #707070;border-radius: 8px; background: #fff; position: absolute; top:230px; right: 18px; overflow: hidden;z-index: 99}
 #result-page02 .top-map-area .left-map-control a img {width: 7px!important; height: 7px!important;}
 #result-page02 .top-map-area .left-map-control a {width: 20px; height: 20px; border-bottom:1px solid #707070;text-align: center; line-height: 20px;display: block}
 #result-page02 .top-map-area .left-map-control a:last-child {border-bottom: 0;} 
 #result-page02 .top-map-area .left-map-control a:hover {text-decoration: none; background: #FFEB7B }
-#result-page02 .top-map-area img {height: 148px; width: 100%} 
+#result-page02 .top-map-area img {height: 296px; width: 100%} 
 
 @media print {
 	.result-menu,.btn-print  {display: none;}
