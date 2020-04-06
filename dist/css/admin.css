@@ -247,11 +247,13 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .address-box {background-color: #323755; padding: 0 10px;}
 .address-box .line {border-bottom: 1px solid #4F557A; overflow: hidden; padding: 29px 29px 21px}
 .address-box input {background: #323755 url("../../img/ico-search.png") 26px 50% no-repeat; background-size: 17px 17px; border: 1px solid #E0E0E0; height: 50px; line-height: 50px; border-radius: 4px; text-align: center; font-size: 17px; color: #fff; width: 100%; padding: 0 20px 0 50px}
-.panel-box {border: 1px solid #E0E0E0; border-radius: 5px; padding: 0 69px 0 39px; font-size: 17px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.42); float: left; margin-left: 30px; color: #676767;  cursor: pointer; width: 476px; background: #fff; height: 56px; line-height: 56px;}
-.panel-box.bgon {background: #fff url("../../img/ico-arrow10.png") 98% 50% no-repeat; background-size: 38px 38px; }
-.panel-box.bgoff {background: #fff url("../../img/ico-arrow9.png") 98% 50% no-repeat!important; background-size: 38px 38px; }
-.arrange-box.bgon {background: #fff url("../../img/ico-arrow10.png") 98% 50% no-repeat; background-size: 38px 38px; }
-.arrange-box.bgoff {background: #fff url("../../img/ico-arrow9.png") 98% 50% no-repeat!important; background-size: 38px 38px; }
+.panel-box {border: 1px solid #E0E0E0; border-radius: 5px; padding: 0 69px 0 39px; font-size: 17px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.42); float: left; margin-left: 30px; color: #676767; width: 476px; background: #fff; height: 56px; line-height: 56px; position: relative}
+
+.arrange-onoff,.panel-onoff {font-size: 0; width: 38px; height: 38px; display: inline-block}
+.arrange-onoff.openbtn,.panel-onoff.openbtn {background: #fff url("../../img/ico-arrow10.png") left 50% no-repeat;  }
+.arrange-onoff.closebtn,.panel-onoff.closebtn  {background: #fff url("../../img/ico-arrow9.png") left 50% no-repeat!important;  }
+.arrange-onoff.openbtn,.arrange-onoff.closebtn,.panel-onoff.openbtn,.panel-onoff.closebtn  {background-size: 38px 38px; cursor: pointer; position: absolute; right: 10px; top:9px}
+
 
 .panel-box div {display: inline-block; float: left}
 .panel-box div span:first-child {padding-right: 30px;}
@@ -295,7 +297,7 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .angle-result li .angle-num {padding-right: 20px}
 .angle-result li .angle-num em {padding-left: 15px;}
 
-.arrange-box {border: 1px solid #E0E0E0; border-radius: 5px; padding: 0 15px 0 15px; font-size: 17px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.42); float: left; background: #fff; height: 56px; width: 610px; position: relative; cursor: pointer}
+.arrange-box {border: 1px solid #E0E0E0; border-radius: 5px; padding: 0 15px 0 15px; font-size: 17px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.42); float: left; background: #fff; height: 56px; width: 610px; position: relative; }
 .arrange-box a {  border-radius: 12px;background-color:#fff; font-size: 17px; color: #676767; padding: 0 25px; display: inline-block; height: 45px; line-height: 45px; margin-top: 5px}
 .arrange-box a:hover,.arrange-box a.select  {  border-radius: 12px;background-color:#EBF5FF; font-size: 17px; color: #2B93FA; text-decoration: none;}
 .arrange-box button {border:1px solid #323755; color: #323755; font-size: 17px; padding: 8px 15px 10px 15px; border-radius: 100px 100px;}
@@ -653,3 +655,12 @@ tr:hover .member-info-layer{
 .power-graph .btm-txt {font-size: 12px; background: #F7F9FC url("../../img/bg_house.png")95% 50% no-repeat; overflow: hidden; display: block; margin-bottom: 0!important; color: #6f6f6f; padding: 12px 45px;clear: both; border-top: 1px solid #D1D1D1; background-size: 90px 70px;}
 .power-graph .btm-txt li {padding: 3px 0; background: url("../../img/bullet.png") no-repeat left 50%; background-size: 3px 3px; padding-left: 15px; }
 
+/* error page */
+.error-page {background: url("../../img/404_error.png") center 80px no-repeat; text-align: center; color: #333854}
+.error-page .error-title {padding-top: 500px; font-size: 24px;}
+.error-page p {font-size: 20px; margin-bottom: 0;}
+.error-page button {box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); border-radius: 100px 100px; width: 200px; height: 62px; line-height: 62px; margin: 0 22px; font-size: 18px;}
+.error-page .btn-area {padding: 35px 0 90px 0; overflow: hidden; }
+.error-page .btn-area button {color: #fff; margin-bottom: 10px}
+.error-page .btn-area .go-home {background: #FF9100}
+.error-page .btn-area .go-prev {background: #333854}

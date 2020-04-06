@@ -920,3 +920,23 @@
 	.table-type04.v1 tr td:first-child {width: 100px;}
 
 }
+
+/* error page */
+.error-page {background: url("../../img/404_error.png") center 80px no-repeat; text-align: center; color: #333854}
+.error-page .error-title {padding-top: 500px; font-size: 24px;}
+.error-page p {font-size: 20px; margin-bottom: 0;}
+.error-page button {box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); border-radius: 100px 100px; width: 200px; height: 62px; line-height: 62px; margin: 0 22px; font-size: 18px;}
+.error-page .btn-area {padding: 35px 0 90px 0; overflow: hidden; }
+.error-page .btn-area button {color: #fff; margin-bottom: 10px}
+.error-page .btn-area .go-home {background: #FF9100}
+.error-page .btn-area .go-prev {background: #333854}
+
+@media (max-width: 600px) {
+	.error-page {background: url("../../img/404_error.png") center top no-repeat; background-size: 80% auto}
+	.error-page .error-title {padding-top: 60%; font-size: 18px;}
+    .error-page p {font-size: 14px;}
+	.error-page .btn-area {padding: 35px 0 50px 0; overflow: hidden; }
+
+
+}
+

@@ -41,13 +41,13 @@ $(".area6 h4 a").click(function(){ //조건확인
 	$(".mobile-table").toggleClass('v1');
 });
 
-$(".panel-box").on('click', function() {//매핑
+$(".panel-onoff").on('click', function() {//매핑
     $('.panel-box-none').toggleClass('panel-box-list');
-	$('.panel-box.bgon').toggleClass('bgoff');
+	$('.panel-onoff.openbtn').toggleClass('closebtn');
   });
-$(".arrange-box").on('click', function() {//매핑
+$(".arrange-onoff").on('click', function() {//매핑
     $('.arrange-box-none').toggleClass('arrange-box-list');
-	$('.arrange-box.bgon').toggleClass('bgoff');
+	$('.arrange-onoff.openbtn').toggleClass('closebtn');
   });
 $('.card-header').click(function(e) { //경제성분석 
         $('.card-header').removeClass('tab-collapsed');
