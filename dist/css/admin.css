@@ -235,7 +235,7 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .control-box .control-cont li .module-select {display: block; clear: both; padding-top: 20px; padding-bottom: 15px; overflow: hidden; border-bottom: 2px solid #FAFAFA}
 .control-box .control-cont li .module-select input {background: #F5F6F8; padding: 0 10px; border-radius: 4px; height: 40px; width: 130px; line-height: 40px; color: #383838; border:0; display: inline-block; text-align: center}
 .control-box .control-cont li .module-select span {padding: 0 15px;}
-.control-box .control-cont .module-button {text-align: right; margin-top: 20px;}
+.control-box .control-cont .module-button {text-align: right; padding-top: 20px; clear: both; }
 .control-box .control-cont .module-button button {border-radius: 4px;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);border: solid 1.3px #323755; background-color: #fff; padding: 15px 22px; font-size: 17px; margin-left: 30px;}
 .control-box .control-cont .module-button button:disabled {box-shadow:none;border: solid 1.3px #d6d6d6; color:#d6d6d6 }
 .control-box .control-cont .arrange-add {display: block; width: 100%; margin-top: 20px;}
