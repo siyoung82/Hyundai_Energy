@@ -397,8 +397,8 @@
 	.set-box .txt-box .txt-ex {padding-right: 0;}
 	.set-box .txt-box .process-num {padding-right: 10px; }
 	.set-box .txt-box button {font-size: 15px; text-align: center; border-radius: 100px 100px; padding: 10px 0; width: 183px;  }
-	.set-box .txt-box button.finish {background: #B5BCC3; color: #fff; border:1px solid #BFBFBF; position: fixed; bottom: 20px;  right: 20px!important; left: inherit!important;width: 42%!important; display: inline-block}
-	.set-box .txt-box button.cancel {background: #B5BCC3; color: #fff; border: 1px solid #BFBFBF; position: fixed; bottom: 20px; left: 20px!important; width: 42%!important;  right: inherit!important; display: inline-block}
+	.set-box .txt-box button.finish {background: #B5BCC3; color: #fff; border:1px solid #BFBFBF; position: fixed; bottom: 60px;  right: 20px!important; left: inherit!important;width: 42%!important; display: inline-block}
+	.set-box .txt-box button.cancel {background: #B5BCC3; color: #fff; border: 1px solid #BFBFBF; position: fixed; bottom: 60px; left: 20px!important; width: 42%!important;  right: inherit!important; display: inline-block}
 	.set-box .txt-box button:disabled.finish {background: #B5BCC3; color: #fff; border:1px solid #BFBFBF; position: fixed; bottom: 20px; left: 20px;}
 	.set-box .txt-box button:hover {background: #FF9200; border: 1px solid #FF9200}
 	.set-box .txt-box button.cancel,.set-box .txt-box button.finish {top:inherit;}
@@ -823,10 +823,9 @@
 	.economics-area .left-area .area1 a.term {display: inline-block; position: absolute; font-size: 16px; color: #4593FF; text-decoration: underline; right: 25px; top: 25px;}
 	.economics-area .left-area .area1 a.term.op24 {opacity: 0.24}
 	.economics-area .left-area .area2 h3 {font-size: 14px; padding: 20px 25px;}
-	.economics-info h4 {margin-bottom: 0; font-size: 15px; padding: 14px 30px; background:#F4F4F4; border-top: 1px solid #D3D3D3}
+	.economics-info h4 {margin-bottom: 0; font-size: 15px; padding: 14px 30px; border-top: 1px solid #D3D3D3}
 	.economics-info ul li span em {color: #959595}
 	.economics-area .left-area .area2 .btm-reset-btn {margin-bottom: 0!important; background: #FF9300}
-
 	.tab-revenue {display: block;height: 63px; clear: both;}
 	.tab-revenue li {float: left; width: 50%}
 	.tab-revenue .nav-item.show .nav-link, .nav-tabs .nav-link.active {font-size: 14px!important; color: #343953!important; border-bottom:3px solid #FF9400!important; background: #F5F6F8!important; border-right: 0!important; border-left: 0!important; border-top:0!important;}
