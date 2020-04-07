@@ -109,9 +109,11 @@ hr { display: none; }
 @media (min-width: 1200px) {
 	.container{max-width:1410px!important;}
 }
-header {font-size: 24px; position: fixed; top: 0;  overflow: hidden; width: 100%; z-index: 9999; background: #fff;}
+header {font-size: 24px; position: fixed;
+-webkit-transform:translateZ(0);top: 0;  overflow: hidden; width: 100%; z-index: 9999; background: #fff;}
 header>.container {padding: 0}
-.gnbMenu {position: fixed; right: 1.5em;top: 2.25em;
+.gnbMenu {position: fixed;
+-webkit-transform:translateZ(0);right: 1.5em;top: 2.25em;
 height: 2px;
 width: 16px;
 background: #343953; }
@@ -167,7 +169,7 @@ font-size: 24px;
 .gnb-collapsed {
 display: none;
 position: fixed;
-top: 0.875em;
+-webkit-transform:translateZ(0);top: 0.875em;
 right: 1.125em;
 height: 24px;
 width: 24px;
@@ -253,7 +255,7 @@ vertical-align: middle;
 	.gnb-list li a {padding: 24px 0; display: block}
 	.Overlay {
 		position: fixed;
-		top: 0;
+-webkit-transform:translateZ(0);top: 0;
 		right: 0;
 		width: 0;
 		height: 100%;
@@ -276,7 +278,7 @@ vertical-align: middle;
 
 .Overlay-bg {}
 .Overlay-bg-on {opacity: 0.62;background: #000; position: fixed;
-top: 0;
+-webkit-transform:translateZ(0);top: 0;
 right: 0; left: 0; bottom: 0; }
 #content {margin-top: 120px; background-color: #fff;}
 #content.v3 {background: #F5F6F8;padding: 90px 0 60px}
@@ -373,7 +375,8 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .tool-layer .tool-btn {font-size: 16px; color: #4593FF; text-decoration: underline; margin: 8px 0 15px}
 
 /* 광고 */
-.ad-area {position: fixed; right: 60px; top:370px; width: 160px;}
+.ad-area {position: fixed;
+-webkit-transform:translateZ(0);right: 60px; top:370px; width: 160px;}
 .ad-area h2 {text-align: center; color: #AAAAAA; font-size: 16px;}
 .ad-area>div {padding-bottom: 11px;}
 
