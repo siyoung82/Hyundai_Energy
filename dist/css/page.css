@@ -385,10 +385,11 @@
 .set-box .txt-box button.finish {background: #fff; color: #0454B6; border:1px solid #fff; position: absolute; right: 0; top: 24px}
 .set-box .txt-box button.cancel {color: #fff; border: 1px solid #fff; position: absolute; right: 145px; top: 24px}
 .set-box .txt-box button:disabled.finish {background: #5E617A;  color: #273C6B; border:1px solid #5E617A}
-
+.mobile-btn {display: none}
 @media (max-width: 1192px) and (min-width: 768px)
 	{.set-box {top: 100px;}}
 @media (max-width: 767px){
+	.mobile-btn {position: fixed; bottom: 30px; display: block; width: 100%}
 	.table-type01 td,.table-type01 th,.table-type01 td.bg {font-size: 13px!important; padding: 10px 5px!important; }
 	.table-type03 td,.table-type03 th {font-size: 14px!important; padding: 10px 5px!important; }
 	#fixed-container {top: 100px; bottom: 0; z-index: 10}
@@ -398,7 +399,14 @@
 	.set-box .txt-box {font-size: 16px; padding: 20px 0;}
 	.set-box .txt-box .txt-ex {padding-right: 0;}
 	.set-box .txt-box .process-num {padding-right: 10px; }
-	.set-box .txt-box button {font-size: 15px; text-align: center; border-radius: 100px 100px; padding: 10px 0; width: 183px;  }
+	.set-box .txt-box button {display: none;}
+	.mobile-btn button {font-size: 15px; text-align: center; border-radius: 100px 100px; padding: 10px 0; width: 183px;  }
+	.mobile-btn button.finish {background: #B5BCC3; color: #fff; border:1px solid #BFBFBF; width: 48%!important; display: inline-block; float: left}
+	.mobile-btn button.cancel {background: #B5BCC3; color: #fff; border: 1px solid #BFBFBF;width: 48%!important;  display: inline-block; float: right}
+	.mobile-btn button:disabled.finish {background: #B5BCC3; color: #fff; border:1px solid #BFBFBF; position: fixed;
+  left: 20px;}
+	.mobile-btn button:hover {background: #FF9200; border: 1px solid #FF9200}
+	/*.set-box .txt-box button {font-size: 15px; text-align: center; border-radius: 100px 100px; padding: 10px 0; width: 183px;  }
 	.set-box .txt-box button.finish {background: #B5BCC3; color: #fff; border:1px solid #BFBFBF; position: fixed;
 right: 20px!important; left: inherit!important;width: 42%!important; display: inline-block; bottom: 60px!important; }
 	.set-box .txt-box button.cancel {background: #B5BCC3; color: #fff; border: 1px solid #BFBFBF; position: fixed;
@@ -406,7 +414,7 @@ left: 20px!important; width: 42%!important;  right: inherit!important; display: 
 	.set-box .txt-box button:disabled.finish {background: #B5BCC3; color: #fff; border:1px solid #BFBFBF; position: fixed;
   left: 20px;}
 	.set-box .txt-box button:hover {background: #FF9200; border: 1px solid #FF9200}
-	.set-box .txt-box button.cancel,.set-box .txt-box button.finish {top:auto; z-index: 1000;} 
+	.set-box .txt-box button.cancel,.set-box .txt-box button.finish {top:auto; z-index: 1000;} */
 	.help-box .button-help {border:0;font-size: 15px; padding: 0 28px; height: 45px; line-height: 45px; border-radius: 100px;position: fixed; /*right: 0; top: 75px;*/ right: 20px; top:187px; z-index: 99}
 }
 @media (max-width: 1199px) and (min-width:768px){
