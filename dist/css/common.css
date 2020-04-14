@@ -110,7 +110,7 @@ hr { display: none; }
 	.container{max-width:1410px!important;}
 }
 header {font-size: 24px; position: fixed;
-top: 0;  overflow: hidden; width: 100%; z-index: 99999; background: #fff;}
+top: 0;  width: 100%; z-index: 9999; background: #fff;}
 header>.container {padding: 0}
 .gnbMenu {position: fixed;
 right: 1.5em;top: 2.25em;
@@ -173,7 +173,7 @@ top: 0.875em;
 right: 1.125em;
 height: 24px;
 width: 24px;
-z-index: 1000000;;
+z-index: 1053;
 cursor: pointer;
 transition: all .25s;
 }
@@ -204,7 +204,7 @@ vertical-align: middle;
 }
 @media only screen and (max-width: 997px){
 	header .container {padding-left: 0; padding-right: 0;}
-	.gnb-list {padding-top: 100px; }
+	.gnb-list {padding-top: 0; }
 	.gnb {height: 100px; text-align: center}
 	.gnb a {padding-left: 0;}
 	.logo {top: 35px; left: 21px;}
@@ -231,13 +231,19 @@ vertical-align: middle;
 		top: 0px;
 		width: 16px
 	}
-	.gnb-collapsed {display: block; z-index: 1000000;}
+	.gnb-collapsed {display: block; z-index: 100000000!important;}
 
 	.gnb-list {
 		position: relative;
-
+		height: 70%;
+		top: 50%;
 		width: 100%;
 
+		-ms-transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		  transform: translateY(-50%);
 	}
 
 	.gnb-list li {
@@ -249,19 +255,20 @@ vertical-align: middle;
 	.gnb-list li a {padding: 24px 0; display: block}
 	.Overlay {
 		position: fixed;
-        top: 0;
+top: 0;
 		right: 0;
 		width: 0;
 		height: 100%;
 		visibility: hidden;
 		transition: opacity .35s, visibility .35s, width .35s;
-		background: #fff; z-index: 100001;
+		overflow: hidden;
+		background: #fff; z-index: 10520;
 	}
 
 	.Overlay-on {
 		width: 80%;
 		visibility: visible;
-		z-index: 100000;
+		z-index: 10520;
 	}
 	#content {margin-top: 100px!important}
 	.gnb-list li:last-child {border-bottom: 0}
