@@ -204,7 +204,7 @@ vertical-align: middle;
 }
 @media only screen and (max-width: 997px){
 	header .container {padding-left: 0; padding-right: 0;}
-	.gnb-list {padding-top: 0; }
+	.gnb-list {padding-top: 100px; }
 	.gnb {height: 100px; text-align: center}
 	.gnb a {padding-left: 0;}
 	.logo {top: 35px; left: 21px;}
@@ -235,15 +235,9 @@ vertical-align: middle;
 
 	.gnb-list {
 		position: relative;
-		height: 70%;
-		top: 50%;
+		height: 100%;
 		width: 100%;
 
-		-ms-transform: translateY(-50%);
-		-webkit-transform: translateY(-50%);
-		-moz-transform: translateY(-50%);
-		-o-transform: translateY(-50%);
-		  transform: translateY(-50%);
 	}
 
 	.gnb-list li {

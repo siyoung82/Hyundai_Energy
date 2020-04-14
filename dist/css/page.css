@@ -394,7 +394,7 @@
 	#fixed-container {top: 100px; bottom: 0; z-index: 10}
 	#map{top: 100px; bottom: 0; }
 	.set-box .help-box {background:none;}
-	.set-box {top: 100px;  }
+	.set-box {top: 100px; overflow: hidden; }
 	.set-box .txt-box {font-size: 16px; padding: 20px 0;}
 	.set-box .txt-box .txt-ex {padding-right: 0;}
 	.set-box .txt-box .process-num {padding-right: 10px; }
