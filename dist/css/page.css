@@ -23,6 +23,8 @@
 .address-list:hover,.address-list.select .road-num {color: #126FCC;}
 .road-num {color: #000000; margin-bottom: 13px; font-size: 15px;}
 .road-name {color: #000000; font-size: 15px;}
+.video-area {background: #fff; padding-bottom: 40px; overflow: hidden}
+.video-area li{float: left; width: 33.3%; text-align: center}
 @media (max-width: 767px) {
 	.main-input { }
 	.main-input .slogen{font-size: 23px; text-align: center; padding-top: 40px;}
@@ -37,6 +39,9 @@
 	.road-name {color: #979797; font-size: 15px;}
 	.address-list span {font-size: 10px; margin-right:10px; height: 20px; width: 50px; line-height: 20px; }
 	.address-list {padding: 20px 15px; border-bottom: 1px solid #707070; }
+	.video-area {margin-top: -50px;}
+	.video-area li {width: 100%}
+	.video-area li video {width: 100%!important; height: 100%!important}
 
 }
 /*** 기능분석 ***/
