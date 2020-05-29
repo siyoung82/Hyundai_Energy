@@ -269,15 +269,24 @@ footer .copyright {margin-bottom: 0; color: #B2B2B2}
 .panel-box-list .list>div:last-child {width: 35%; text-align: right}
 .panel-box-none {display: none}
 
-.angle-control {border: 1px solid #fff;border-radius: 4px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); background: #fff; padding: 35px 19px 45px; position: relative;overflow: hidden}
-.angle-control:hover {border:1px solid #323755}
-.angle-control .input-box {background: #F5F6F8;width: 141px;height: 40px; position: relative; margin-top: 20px;}
+.angle-control {border: 1px solid #fff; background: #fff; padding: 25px 0; position: relative;overflow: hidden}
+.angle-control .input-box {background: #F5F6F8;width: 170px;height: 36px; position: relative; margin-top: 20px;}
+.angle-control .input-box button.btn-minus {background:url("../../img/btn_basic_minus.png") no-repeat; left: 0;}
+.angle-control .input-box button.btn-plus {background:url("../../img/btn_basic_plus.png") no-repeat; right: 0; }
+.angle-control .input-box button:disabled.btn-minus,.angle-control .input-box button:hover:disabled.btn-minus {background:url("../../img/btn_disable_minus.png") no-repeat; left: 0;}
+.angle-control .input-box button:disabled.btn-plus,.angle-control .input-box button:hover:disabled.btn-plus {background:url("../../img/btn_disable_plus.png") no-repeat; right: 0; }
+.angle-control .input-box button:hover.btn-minus {background:url("../../img/btn_select_minus.png") no-repeat; left: 0;}
+.angle-control .input-box button:hover.btn-plus {background:url("../../img/btn_select_plus.png") no-repeat; right: 0; }
+.angle-control .input-box .angle-data {line-height: 36px; padding: 0 45px; color: #515151; text-align: center}
+.angle-control .input-box .angle-data em {color: #878786; font-size: 14px;}
+.angle-control .input-box button {width: 34px; height: 36px; font-size: 0; position: absolute;top:0}
 .angle-control:hover .input-box {background: #EBF5FF}
 .angle-control:hover .input-box input,.angle-control:hover .input-box span {color: #0C3A79}
 .angle-control .input-box input {background-color:transparent; border: 0; width: 100px;}
 .angle-control .input-box span {position: absolute; right: 8px; top:8px; color: #848484}
-.angle-control .round-slider01 {position: absolute; top: 5px; right: 25px; background: url("../../img/bg_angle01.png")center top no-repeat; width: 181px; height: 161px; padding: 28px 0 0 40px;}
-.angle-control .round-slider02 {position: absolute; top: 30px; right: 40px; background: url("../../img/bg_angle02.png")center top no-repeat; width: 116px; height: 116px; }
+.angle-control .ex {font-size: 14px; color: #d4d4d4; margin-top: 15px}
+.angle-control .round-slider01 {position: absolute; top: 5px; right: 0; background: url("../../img/bg_angle01.png")center top no-repeat; width: 181px; height: 161px; padding: 28px 0 0 40px;}
+.angle-control .round-slider02 {position: absolute; top: 30px; right: 15px; background: url("../../img/bg_angle02.png")center top no-repeat; width: 116px; height: 116px; }
 .angle-control .round-slider02 .bg-round {position: relative;}
 .angle-control .round-slider02 .bg-round .rslider {position: absolute; top: 38px; left: 6px; bottom: 0}
 .mapping-help, .mapping-edit {border: 1px solid #E0E0E0; border-radius: 4px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.42); background: #fff;  height: 56px; line-height: 56px; display: inline-block; width: 118px; text-align: center; font-size: 15px;}
