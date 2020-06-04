@@ -865,8 +865,9 @@ left: 20px!important; width: 42%!important;  right: inherit!important; display: 
 	.right-area .area1 .r-box .data-area .w100 {width: 50%; float: left}
 	.right-area .area1 .r-box .data-area .w100 .mt20 {margin-top: 0}
 	.right-area .area1 .r-box .data-area h5 {font-size: 15px;}
-	.right-area .area1 .r-box .data-area span {font-size: 17px; text-align: right; display: block; padding-right: 10px}
-	.right-area .area1 .r-box.color02 .w100,.right-area .area1 .r-box.color02 .w50 {width: 33.3%; float: left}
+	.right-area .area1 .r-box .data-area span {font-size: 17px; text-align: right; display: block; padding-right: 40px}
+	.right-area .area1 .r-box .data-area span.only-num {padding-right: 60px!important}
+	.right-area .area1 .r-box.color02 .w100,.right-area .area1 .r-box.color02 .w50 {width: 50; float: left}
 	.right-area .area1 .r-box.color02 .mt20 {margin-top: 0}
 	.m-db {display: block!important; font-size: 17px!important; padding:  12px 8px 10px!important}
 	.m-db2 {display: block!important; font-size: 16px!important; padding:  12px 8px 10px!important; color: #A7A7A7}
