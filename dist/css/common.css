@@ -204,7 +204,8 @@ vertical-align: middle;
 }
 @media only screen and (max-width: 997px){
 	header .container {padding-left: 0; padding-right: 0;}
-	.gnb-list {padding-top: 100px; }
+	.gnb li {font-size: 20px}
+	.gnb-list {padding-top: 80px; }
 	.gnb {height: 100px; text-align: center}
 	.gnb a {padding-left: 0;}
 	.logo {top: 35px; left: 21px;}
@@ -246,7 +247,7 @@ vertical-align: middle;
 	}
 	.gnb-list li:first-child {border-top: 1px solid #EEEEEE;}
 	.gnb-list li:hover {  background-color: #f0f5fa;}
-	.gnb-list li a {padding: 24px 0; display: block}
+	.gnb-list li a {padding: 18px 0; display: block}
 	.Overlay {
 		position: fixed;
 top: 0;
@@ -255,12 +256,12 @@ top: 0;
 		height: 100%;
 		visibility: hidden;
 		transition: opacity .35s, visibility .35s, width .35s;
-		overflow: hidden;
+	    overflow-y: auto;
 		background: #fff; z-index: 10520;
 	}
 
 	.Overlay-on {
-		width: 80%;
+		width: 70%;
 		visibility: visible;
 		z-index: 10520;
 	}
